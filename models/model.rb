@@ -34,6 +34,11 @@ end
 
 class AllocationSwitchableProduct < ActiveRecord::Base
     self.table_name = "allocation_switchable_products"
+    #prepaid method here
+    def prepaid?
+        self.prepaid
+
+    end
 end
 
 class AllocationMatchingProduct < ActiveRecord::Base
@@ -43,4 +48,9 @@ end
 
 class AllocationAlternateProduct < ActiveRecord::Base
     self.table_name = "allocation_alternate_products"
+end
+
+
+class OrdersNextMonthUpdate < ActiveRecord::Base
+    self.table_name = "orders_next_month_updated"
 end

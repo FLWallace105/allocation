@@ -68,14 +68,16 @@ module BackgroundHelper
 
 
         if my_prod.nil?
+            sub.bad_subscription = true
+            sub.save!
             stuff_to_return = { "sku" => "skip"}
             
         else
             puts "my_prod  not nil"
             
-
+            puts "my_prod is prepaid #{my_prod.prepaid?}"
         
-            if my_prod.prepaid == true
+            if my_prod.prepaid?
                 stuff_to_return = { "properties" => my_line_items }
                 puts "here"
             else
@@ -100,6 +102,8 @@ module BackgroundHelper
         if my_threepk.nil?
             puts "Can't find the switchable product"
             #Mark the subscription as bad, don't process
+            sub.bad_subscription = true
+            sub.save!
 
         else
             puts "Switchable product threepk = #{my_threepk.threepk}"
@@ -114,7 +118,7 @@ module BackgroundHelper
             puts recharge_data.inspect
             if recharge_data['sku'] == "skip"
                 puts "Skipping this one folks bad data in the subscription"
-                #Mark the subscription as bad, don't process
+                #already Marked the subscription as bad, don't process
             else
                 puts "Here is the stuff to send to Recharge"
                 puts recharge_data.inspect
