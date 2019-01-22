@@ -70,5 +70,9 @@ task :load_allocation_alternate_products do |t|
     Allocation::Setup.new.load_allocation_alternate_products
 end
 
+desc 'load orders_next_month_updated table via SQL statements'
+task :load_orders_next_month_updated do |t|
+    Allocation::Setup.new.setup_orders_to_be_updated
+end
 
 end

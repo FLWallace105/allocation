@@ -149,6 +149,17 @@ module Allocation
 
     end
 
+    def setup_orders_to_be_updated
+        puts "Hi setting up the orders to be updated for next month"
+        OrdersNextMonthUpdate.delete_all
+        ActiveRecord::Base.connection.reset_pk_sequence!('orders_next_month_updated')
+        orders_update = "insert into orders_next_month_updated (order_id, transaction_id, charge_status, payment_processor, status, order_type, charge_id, address_id, shopify_order_id, shopify_order_number, shopify_cart_token, shipping_date, scheduled_at, shipped_date, processed_at, customer_id, first_name, last_name, is_prepaid, created_at, updated_at, email, line_items, total_price, shipping_address, billing_address, synced_at ) select order_id, transaction_id, charge_status, payment_processor, status, order_type, charge_id, address_id, shopify_order_id, shopify_order_number, shopify_cart_token, shipping_date, scheduled_at, shipped_date, processed_at, customer_id, first_name, last_name, is_prepaid, created_at, updated_at, email, line_items, total_price, shipping_address, billing_address, synced_at from orders where scheduled_at > '2019-01-22' and is_prepaid = 1 "
+        ActiveRecord::Base.connection.execute(orders_update)
+        puts "All done now!"
+
+
+    end
+
     def load_allocation_collections
         AllocationCollection.delete_all
         ActiveRecord::Base.connection.reset_pk_sequence!('allocation_collections')

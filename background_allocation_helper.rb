@@ -11,6 +11,23 @@ Dotenv.load
 
 module BackgroundHelper
 
+    def determine_limits(recharge_header, limit)
+        puts "recharge_header = #{recharge_header}"
+        my_numbers = recharge_header.split("/")
+        my_numerator = my_numbers[0].to_f
+        my_denominator = my_numbers[1].to_f
+        my_limits = (my_numerator/ my_denominator)
+        puts "We are using #{my_limits} % of our API calls"
+        if my_limits > limit
+            puts "Sleeping 10 seconds"
+            sleep 10
+        else
+            puts "not sleeping at all"
+        end
+  
+      end
+
+
     def create_recharge_data(sub, my_alternate_product)
         found_collection = false
         found_unique_id = false
@@ -94,7 +111,7 @@ module BackgroundHelper
         return stuff_to_return
     end
 
-    def background_update_sub(my_local_collection, sub)
+    def background_update_sub(my_local_collection, sub, recharge_change_header)
         puts "Figuring what collection details to push to Recharge"
         puts my_local_collection.inspect
         puts sub.inspect
@@ -122,6 +139,22 @@ module BackgroundHelper
             else
                 puts "Here is the stuff to send to Recharge"
                 puts recharge_data.inspect
+                body = recharge_data.to_json
+                #recharge_change_header
+                #my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{my_sub_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
+                #puts my_update_sub.inspect
+                #recharge_limit = my_update_sub.response["x-recharge-limit"]
+                #determine_limits(recharge_limit, 0.65)
+                if my_update_sub.code == 200
+                    sub.updated = true
+                    time_updated = DateTime.now
+                    time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
+                    sub.processed_at = time_updated_str
+                    sub.save!
+                    puts "processed subscription_id #{sub.subscription_id}"
+                else
+                    puts "Cannot process subscription_id #{sub.subscription_id}"
+                end
             end
 
             exit
@@ -155,7 +188,7 @@ module BackgroundHelper
 
     end
 
-    def allocate_single_subscription(my_index, my_size_hash, sub, exclude)
+    def allocate_single_subscription(my_index, my_size_hash, sub, exclude, recharge_change_header)
         puts "Allocating single subscription"
         puts my_index.inspect
         puts my_size_hash.inspect
@@ -191,7 +224,7 @@ module BackgroundHelper
 
                 #Now adjust subscription, assume it has been updated
                 #send to some method to update the subscription
-                background_update_sub(my_local_collection, sub)
+                background_update_sub(my_local_collection, sub, recharge_change_header)
                 exit
                 
 
@@ -220,8 +253,9 @@ module BackgroundHelper
     end
 
 
-    def allocate_subscriptions
+    def allocate_subscriptions(recharge_change_header)
         puts "Starting allocation"
+        my_now = Time.now
         my_size_hash = Hash.new
         mysubs = SubscriptionsNextMonthUpdate.where("updated = ? and bad_subscription = ?", false, false)
         mysubs.each do |sub|
@@ -262,7 +296,17 @@ module BackgroundHelper
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end
-                allocate_single_subscription(my_index, my_size_hash, sub, "sports-jacket")
+                allocate_single_subscription(my_index, my_size_hash, sub, "sports-jacket",recharge_change_header )
+                #see if running more than eight minutes
+                my_current = Time.now
+                duration = (my_current - my_now).ceil
+                puts "Been running #{duration} seconds"
+                
+
+                if duration > 480
+                    puts "Been running more than 8 minutes must exit"
+                    break
+                end
                 
             end
 
@@ -280,7 +324,8 @@ module BackgroundHelper
     def background_allocate_subscriptions(params)
         puts "Starting background allocation"
         puts params.inspect
-        allocate_subscriptions
+        recharge_change_header = params['recharge_change_header']
+        allocate_subscriptions(recharge_change_header)
 
 
 
