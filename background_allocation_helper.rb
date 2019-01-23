@@ -163,14 +163,7 @@ module BackgroundHelper
     end
 
 
-    def allocate_single_subscription(my_index, my_size_hash, sub)
-        puts "Allocating single subscription"
-        puts my_index.inspect
-        puts my_size_hash.inspect
-        puts sub.inspect
-
-    end
-
+    
     def determine_outlier_sizes(my_size_hash)
         contains_outlier_size = false
         my_size_hash.each do |key, value|
@@ -225,7 +218,7 @@ module BackgroundHelper
                 #Now adjust subscription, assume it has been updated
                 #send to some method to update the subscription
                 background_update_sub(my_local_collection, sub, recharge_change_header)
-                exit
+                
                 
 
                 #Adjust inventory
