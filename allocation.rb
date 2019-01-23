@@ -8,6 +8,7 @@ require 'active_record'
 require "sinatra/activerecord"
 require_relative 'models/model'
 require_relative 'background_allocation_helper'
+require_relative 'background_order_helper'
 #require 'pry'
 
 module Allocation
@@ -271,6 +272,21 @@ module Allocation
           background_allocate_subscriptions(params)
         end
       end
+
+    def background_allocate_orders
+        params = {"action" => "allocating orders for next month", "recharge_change_header" => @my_staging_change_header}
+        Resque.enqueue(BackgroundOrderAllocate, params)
+
+
+    end
+
+    class BackgroundOrderAllocate
+        extend BackgroundOrderHelper
+        @queue = "background_order_allocation"
+        def self.perform(params)
+            background_allocate_orders(params)
+        end
+    end
 
 
 

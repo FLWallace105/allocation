@@ -75,4 +75,11 @@ task :load_orders_next_month_updated do |t|
     Allocation::Setup.new.setup_orders_to_be_updated
 end
 
+
+desc 'background prepaid orders to be updated'
+task :background_prepaid_orders do |t|
+    Allocation::Setup.new.background_allocate_orders
+end
+
+
 end
