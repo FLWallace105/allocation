@@ -169,7 +169,6 @@ module BackgroundHelper
 
 
     
-
     def determine_outlier_sizes(my_size_hash)
         contains_outlier_size = false
         my_size_hash.each do |key, value|
