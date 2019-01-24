@@ -19,8 +19,8 @@ module BackgroundHelper
         my_limits = (my_numerator/ my_denominator)
         puts "We are using #{my_limits} % of our API calls"
         if my_limits > limit
-            puts "Sleeping 10 seconds"
-            sleep 10
+            puts "Sleeping 15 seconds"
+            sleep 15
         else
             puts "not sleeping at all"
         end
@@ -140,11 +140,12 @@ module BackgroundHelper
                 puts "Here is the stuff to send to Recharge"
                 puts recharge_data.inspect
                 body = recharge_data.to_json
-                #recharge_change_header
-                #my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{my_sub_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
-                #puts my_update_sub.inspect
-                #recharge_limit = my_update_sub.response["x-recharge-limit"]
-                #determine_limits(recharge_limit, 0.65)
+                puts body
+                puts "-----"
+                my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
+                puts my_update_sub.inspect
+                recharge_limit = my_update_sub.response["x-recharge-limit"]
+                determine_limits(recharge_limit, 0.65)
                 if my_update_sub.code == 200
                     sub.updated = true
                     time_updated = DateTime.now
@@ -153,23 +154,21 @@ module BackgroundHelper
                     sub.save!
                     puts "processed subscription_id #{sub.subscription_id}"
                 else
+                    sub.bad_subscription = true
+                    sub.save!
                     puts "Cannot process subscription_id #{sub.subscription_id}"
                 end
+                puts "sent info to Recharge"
             end
-
-            exit
+            puts "Done handling a valid threepk value"
+            
         end
-        
+        puts "Done with processing the subscription"
+        #exit
     end
 
 
-    def allocate_single_subscription(my_index, my_size_hash, sub)
-        puts "Allocating single subscription"
-        puts my_index.inspect
-        puts my_size_hash.inspect
-        puts sub.inspect
-
-    end
+    
 
     def determine_outlier_sizes(my_size_hash)
         contains_outlier_size = false
@@ -225,21 +224,19 @@ module BackgroundHelper
                 #Now adjust subscription, assume it has been updated
                 #send to some method to update the subscription
                 background_update_sub(my_local_collection, sub, recharge_change_header)
-                exit
+               
                 
 
                 #Adjust inventory
-                puts mylocal_inventory.inspect
-                mylocal_inventory.inventory_available -= 1
-                mylocal_inventory.inventory_reserved += 1
-                mylocal_inventory.save!
+                if sub.bad_subscription == false
+                    puts mylocal_inventory.inspect
+                    mylocal_inventory.inventory_available -= 1
+                    mylocal_inventory.inventory_reserved += 1
+                    mylocal_inventory.save!
+                else
+                    puts "Not adjusting inventory, bad subscription"
+                end
                 
-                sub.updated = true
-                time_updated = DateTime.now
-                time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
-                sub.processed_at = time_updated_str
-                sub.save!
-
                 
                 else
                     puts "Excluding #{k}, #{v} from inventory calcs this collection!"
@@ -297,6 +294,7 @@ module BackgroundHelper
                     puts "my_index = #{my_index}"
                 end
                 allocate_single_subscription(my_index, my_size_hash, sub, "sports-jacket",recharge_change_header )
+                puts "done with a subscription!"
                 #see if running more than eight minutes
                 my_current = Time.now
                 duration = (my_current - my_now).ceil
