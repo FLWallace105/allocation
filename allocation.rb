@@ -48,7 +48,9 @@ module Allocation
 
         size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
 
-        ActiveRecord::Base.connection.execute(size_count_sql)
+        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions_next_month_updated.id), sub_line_items.name, sub_line_items.value from subscriptions_next_month_updated, sub_line_items where subscriptions_next_month_updated.subscription_id = sub_line_items.subscription_id and subscriptions_next_month_updated.updated = 'f' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
+
+        ActiveRecord::Base.connection.execute(new_size_count_sql)
 
 
     end

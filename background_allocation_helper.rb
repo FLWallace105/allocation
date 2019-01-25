@@ -213,6 +213,7 @@ module BackgroundHelper
             #exit
         else
             puts "Allocating this subscription and doing inventory adjustment"
+            background_update_sub(my_local_collection, sub, recharge_change_header)
             #exit
             #allocate here
             my_size_hash.each do |k, v|
@@ -222,7 +223,7 @@ module BackgroundHelper
 
                 #Now adjust subscription, assume it has been updated
                 #send to some method to update the subscription
-                background_update_sub(my_local_collection, sub, recharge_change_header)
+                
                
                 
 

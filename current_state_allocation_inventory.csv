@@ -1,0 +1,70 @@
+id,collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
+1,Steel the Show,1,0,150,XS,tops
+2,Steel the Show,1,38,962,S,tops
+3,Steel the Show,1,111,989,M,tops
+4,Steel the Show,1,149,551,L,tops
+5,Steel the Show,1,0,150,XL,tops
+6,Steel the Show,1,0,150,XS,leggings
+7,Steel the Show,1,48,952,S,leggings
+8,Steel the Show,1,0,1100,M,leggings
+9,Steel the Show,1,241,459,L,leggings
+10,Steel the Show,1,9,141,XL,leggings
+11,Steel the Show,1,66,84,XS,sports-bra
+12,Steel the Show,1,252,748,S,sports-bra
+13,Steel the Show,1,0,1100,M,sports-bra
+14,Steel the Show,1,11,689,L,sports-bra
+15,Steel the Show,1,0,150,XL,sports-bra
+16,Chill Mode,2,0,150,XS,tops
+17,Chill Mode,2,0,900,S,tops
+18,Chill Mode,2,73,1027,M,tops
+19,Chill Mode,2,167,533,L,tops
+20,Chill Mode,2,0,150,XL,tops
+21,Chill Mode,2,0,150,XS,leggings
+22,Chill Mode,2,8,892,S,leggings
+23,Chill Mode,2,5,1095,M,leggings
+24,Chill Mode,2,181,519,L,leggings
+25,Chill Mode,2,46,104,XL,leggings
+26,Chill Mode,2,71,79,XS,sports-bra
+27,Chill Mode,2,179,721,S,sports-bra
+28,Chill Mode,2,0,1100,M,sports-bra
+29,Chill Mode,2,0,700,L,sports-bra
+30,Chill Mode,2,0,150,XL,sports-bra
+31,Flower Bud,3,0,95,XS,tops
+32,Flower Bud,3,0,600,S,tops
+33,Flower Bud,3,107,643,M,tops
+34,Flower Bud,3,30,320,L,tops
+35,Flower Bud,3,0,100,XL,tops
+36,Flower Bud,3,0,95,XS,leggings
+37,Flower Bud,3,0,600,S,leggings
+38,Flower Bud,3,35,715,M,leggings
+39,Flower Bud,3,74,276,L,leggings
+40,Flower Bud,3,28,72,XL,leggings
+41,Flower Bud,3,44,51,XS,sports-bra
+42,Flower Bud,3,105,495,S,sports-bra
+43,Flower Bud,3,0,750,M,sports-bra
+44,Flower Bud,3,0,350,L,sports-bra
+45,Flower Bud,3,0,100,XL,sports-bra
+46,The Jet Set,4,0,100,S,tops
+47,The Jet Set,4,2,248,M,tops
+48,The Jet Set,4,21,229,L,tops
+49,The Jet Set,4,0,100,XL,tops
+50,The Jet Set,4,0,100,S,leggings
+51,The Jet Set,4,0,250,M,leggings
+52,The Jet Set,4,8,242,L,leggings
+53,The Jet Set,4,15,85,XL,leggings
+54,The Jet Set,4,27,73,S,sports-bra
+55,The Jet Set,4,0,250,M,sports-bra
+56,The Jet Set,4,0,250,L,sports-bra
+57,The Jet Set,4,0,100,XL,sports-bra
+58,Morning Mantra,5,0,200,S,tops
+59,Morning Mantra,5,7,393,M,tops
+60,Morning Mantra,5,14,336,L,tops
+61,Morning Mantra,5,18,282,XL,tops
+62,Morning Mantra,5,0,200,S,leggings
+63,Morning Mantra,5,0,400,M,leggings
+64,Morning Mantra,5,0,350,L,leggings
+65,Morning Mantra,5,39,261,XL,leggings
+66,Morning Mantra,5,39,161,S,sports-bra
+67,Morning Mantra,5,0,400,M,sports-bra
+68,Morning Mantra,5,0,350,L,sports-bra
+69,Morning Mantra,5,0,300,XL,sports-bra
