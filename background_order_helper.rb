@@ -12,15 +12,57 @@ Dotenv.load
 module BackgroundOrderHelper
 
     def create_recharge_data(order, my_alternate_product)
+        puts "got here"
+        puts my_alternate_product.inspect
         found_collection = false
         found_unique_id = false
         found_sports_jacket = false
         tops_size = ""
-        my_unique_id = SecureRandom.uuid
+        
         my_line_items = order.line_items
-        #update only the product_collection in the order line_items
-        #Hard code product_collection value here
-
+        puts "-------------"
+        puts my_line_items.inspect
+        puts "--------------"
+        my_properties = Array.new
+        local_product_id = 999
+        local_variant_id = 999
+        quantity = 1
+        title = "funky"
+        my_line_items.each do |myline|
+            puts myline.inspect
+            local_product_id = myline['shopify_product_id']
+            local_variant_id = myline['shopify_variant_id']
+            quantity = myline['quantity']
+            title = myline['title']
+            #puts myline['properties']
+            my_properties = myline['properties']
+            
+            #my_properties.map do |mystuff|
+            #     #puts "#{key}, #{value}"
+            #    if mystuff['name'] == 'product_collection'
+             #       mystuff['value'] = my_alternate_product.product_collection 
+             #   end                    
+            #end
+            #puts my_properties.inspect
+            #my_recharge_line_items << my_properties
+        end
+        puts my_properties.inspect
+        my_properties.map do |mystuff|
+            #puts "#{key}, #{value}"
+            puts mystuff.inspect
+            if mystuff['name'] == 'product_collection'
+                mystuff['value'] = my_alternate_product.collection_name 
+            end                    
+        end
+        puts "*************"
+        puts my_properties.inspect
+        puts "*****************"
+        
+        my_data = { "line_items" => [ { "properties" => my_properties, "product_id" => 1635509436467, "variant_id" => 15880479965235, "quantity" => 1, "title" => title}]}
+        #puts my_line_items
+        puts "Here is what we will return to send to ReCharge: #{my_data}"
+        return my_data
+        
 
 
     end
@@ -71,39 +113,60 @@ module BackgroundOrderHelper
             my_alternate_product = AllocationAlternateProduct.find_by_product_id(outgoing_product_id)
             puts "Alternate product = #{my_alternate_product.inspect}"
 
-            exit
+            
             recharge_data = create_recharge_data(order, my_alternate_product)
             puts recharge_data.inspect
-            if recharge_data['sku'] == "skip"
-                puts "Skipping this one folks bad data in the subscription"
-                #already Marked the subscription as bad, don't process
+            
+
+
+            my_update_order = HTTParty.put("https://api.rechargeapps.com/orders/#{order.order_id}", :headers => recharge_change_header, :body =>recharge_data.to_json, :timeout => 80)
+            puts my_update_order.inspect
+
+            if my_update_order.code == 200
+                order.updated = true
+                
+                time_updated = DateTime.now
+                time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
+                order.updated_at = time_updated_str
+                order.save
+
             else
-                puts "Here is the stuff to send to Recharge"
-                puts recharge_data.inspect
-                body = recharge_data.to_json
-                #recharge_change_header
-                #my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{my_sub_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
-                #puts my_update_sub.inspect
-                #recharge_limit = my_update_sub.response["x-recharge-limit"]
-                #determine_limits(recharge_limit, 0.65)
-                if my_update_sub.code == 200
-                    sub.updated = true
-                    time_updated = DateTime.now
-                    time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
-                    sub.processed_at = time_updated_str
-                    sub.save!
-                    puts "processed subscription_id #{sub.subscription_id}"
-                else
-                    puts "Cannot process subscription_id #{sub.subscription_id}"
-                end
+                puts "WE could not update the order order_id = #{my_order_id}"
+
             end
 
-            exit
+
+            
+            
+            
         end
         
     end
 
+    def quick_fix_staging(my_local_collection, order, recharge_change_header)
+        puts "I am here"
+        recharge_data = create_recharge_data(order, my_local_collection)
+        puts recharge_data.inspect
+            
 
+
+        my_update_order = HTTParty.put("https://api.rechargeapps.com/orders/#{order.order_id}", :headers => recharge_change_header, :body =>recharge_data.to_json, :timeout => 80)
+        puts my_update_order.inspect
+        puts "Got this back from ReCharge"
+        #if my_update_order.parsed_response['errors']
+        #    order.updated = true
+        #        
+        #    time_updated = DateTime.now
+        #    time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
+        #    order.updated_at = time_updated_str
+        #    order.save
+
+       # else
+        #    puts "WE could not update the order order_id = #{my_order_id}"
+
+       # end
+
+    end
 
 
 
@@ -131,20 +194,20 @@ module BackgroundOrderHelper
         puts order.inspect
         can_allocate = true
         my_local_collection = AllocationCollection.find_by_collection_id(my_index)
-        my_size_hash.each do |k, v|
-            puts "#{k}, #{v}"
-            if k != exclude
-            mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
-            puts mylocal_inventory.inspect
-                if mylocal_inventory.inventory_available <= 0
-                    can_allocate = false
-                end
-            else
-                puts "Excluding #{k}, #{v} from allocation calculations this collection!"
-            end
-            
-            
-        end
+        #temporarily turn off these checks for Staging with stuff mucked up
+        #my_size_hash.each do |k, v|
+        #    puts "#{k}, #{v}"
+        #    if k != exclude
+        #    mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
+        #    puts mylocal_inventory.inspect
+        #        if mylocal_inventory.inventory_available <= 0
+        #            can_allocate = false
+        #        end
+        #    else
+        #        puts "Excluding #{k}, #{v} from allocation calculations this collection!"
+        #    end
+                  
+        #end
         puts "Can we allocate to this collection #{my_local_collection.collection_name}  ? #{can_allocate}"
         if !can_allocate
             puts "can't allocate"
@@ -153,36 +216,35 @@ module BackgroundOrderHelper
             puts "Allocating this subscription and doing inventory adjustment"
             #exit
             #allocate here
-            my_size_hash.each do |k, v|
-                puts "#{k}, #{v}"
-                if k != exclude
-                mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
+            #commented out, Neville's migration hosed data
+            #background_update_order(my_local_collection, order, recharge_change_header)
+            quick_fix_staging(my_local_collection, order, recharge_change_header)
+            
+           # my_size_hash.each do |k, v|
+            #    puts "#{k}, #{v}"
+            #    if k != exclude
+           #     mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
 
                 #Now adjust subscription, assume it has been updated
                 #send to some method to update the subscription
-                background_update_order(my_local_collection, order, recharge_change_header)
-                exit
+                
                 
 
                 #Adjust inventory
-                puts mylocal_inventory.inspect
-                mylocal_inventory.inventory_available -= 1
-                mylocal_inventory.inventory_reserved += 1
-                mylocal_inventory.save!
+                #puts mylocal_inventory.inspect
+                #mylocal_inventory.inventory_available -= 1
+                #mylocal_inventory.inventory_reserved += 1
+                #mylocal_inventory.save!
                 
-                order.updated = true
-                time_updated = DateTime.now
-                time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
-                order.processed_at = time_updated_str
-                order.save!
+                
 
                 
-                else
-                    puts "Excluding #{k}, #{v} from inventory calcs this collection!"
-                end
-                puts "Done inventory adjustment"
+           #     else
+            #        puts "Excluding #{k}, #{v} from inventory calcs this collection!"
+            #    end
+            #    puts "Done inventory adjustment"
                 
-            end
+           # end
 
 
         end
@@ -196,6 +258,7 @@ module BackgroundOrderHelper
         my_size_hash = Hash.new
         myorders = OrdersNextMonthUpdate.where("updated = ? and bad_order = ?", false, false)
         myorders.each do |myord|
+            puts myord.inspect
             my_size_hash = Hash.new
             my_line_items = myord.line_items
             #puts my_line_items.inspect
@@ -238,6 +301,8 @@ module BackgroundOrderHelper
                     puts "my_index = #{my_index}"
                 end
                 allocate_single_order(my_index, my_size_hash, myord, "sports-jacket",recharge_change_header )
+                puts "done with one order"
+                
                 #see if running more than eight minutes
                 my_current = Time.now
                 duration = (my_current - my_now).ceil

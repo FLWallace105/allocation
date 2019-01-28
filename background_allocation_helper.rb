@@ -213,7 +213,12 @@ module BackgroundHelper
             #exit
         else
             puts "Allocating this subscription and doing inventory adjustment"
-            background_update_sub(my_local_collection, sub, recharge_change_header)
+            #background_update_sub(my_local_collection, sub, recharge_change_header)
+            #above uncomment for real run and allocation
+
+            #below is for testing only dry run
+            sub.updated = true
+            sub.save!
             #exit
             #allocate here
             my_size_hash.each do |k, v|
@@ -221,12 +226,7 @@ module BackgroundHelper
                 if k != exclude
                 mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
 
-                #Now adjust subscription, assume it has been updated
-                #send to some method to update the subscription
                 
-               
-                
-
                 #Adjust inventory
                 if sub.bad_subscription == false
                     puts mylocal_inventory.inspect

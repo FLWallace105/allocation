@@ -144,7 +144,7 @@ module Allocation
         ActiveRecord::Base.connection.reset_pk_sequence!('subscriptions_next_month_updated')
 
 
-        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE'"
+        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and next_charge_scheduled_at is not null"
 
         ActiveRecord::Base.connection.execute(subs_update)
         puts "All done"
@@ -166,7 +166,7 @@ module Allocation
     def load_allocation_collections
         AllocationCollection.delete_all
         ActiveRecord::Base.connection.reset_pk_sequence!('allocation_collections')
-        CSV.foreach('allocation_collections.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
+        CSV.foreach('allocation_collections_production.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
             puts row.inspect
             myallocation = AllocationCollection.create(collection_name: row['collection_name'], collection_id: row['collection_id'], collection_product_id: row['collection_product_id'])
 
@@ -177,7 +177,7 @@ module Allocation
     def load_allocation_matching_products
         AllocationMatchingProduct.delete_all
         ActiveRecord::Base.connection.reset_pk_sequence!('allocation_matching_products')
-        CSV.foreach('allocation_matching_products.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
+        CSV.foreach('allocation_matching_products_production.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
             puts row.inspect
             my_matching = AllocationMatchingProduct.create(product_title: row['product_title'], incoming_product_id: row['incoming_product_id'], threepk: row['threepk'], outgoing_product_id: row['outgoing_product_id'])
 
@@ -189,7 +189,7 @@ module Allocation
     def load_allocation_alternate_products
         AllocationAlternateProduct.delete_all
         ActiveRecord::Base.connection.reset_pk_sequence!('allocation_alternate_products')
-        CSV.foreach('allocation_alternate_products.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
+        CSV.foreach('allocation_alternate_products_production.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
             puts row.inspect
             my_alternate = AllocationAlternateProduct.create(product_title: row['product_title'], product_id: row['product_id'], variant_id: row['variant_id'], sku: row['sku'], product_collection: row['product_collection'])
 
@@ -225,7 +225,7 @@ module Allocation
     def load_allocation_switchable_products_table
         AllocationSwitchableProduct.delete_all
         ActiveRecord::Base.connection.reset_pk_sequence!('allocation_switchable_products')
-        CSV.foreach('switchable_products.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
+        CSV.foreach('allocation_switchable_products_production.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
             puts row.inspect
             myswitchable = AllocationSwitchableProduct.create(product_title: row['product_title'], shopify_product_id: row['shopify_product_id'], threepk: row['threepk'], prepaid: row['prepaid'])
 
