@@ -164,7 +164,7 @@ module BackgroundHelper
             
         end
         puts "Done with processing the subscription"
-        #exit
+        exit
     end
 
 
@@ -228,7 +228,7 @@ module BackgroundHelper
             #exit
         else
             puts "Allocating this subscription and doing inventory adjustment"
-            #background_update_sub(my_local_collection, sub, recharge_change_header)
+            background_update_sub(my_local_collection, sub, recharge_change_header)
             #above uncomment for real run and allocation
 
             #below is for testing only dry run
