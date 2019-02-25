@@ -165,7 +165,7 @@ module BackgroundHelper
             
         end
         puts "Done with processing the subscription"
-        exit
+        #exit
     end
 
 
