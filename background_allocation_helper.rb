@@ -195,16 +195,25 @@ module BackgroundHelper
         my_local_collection = AllocationCollection.find_by_collection_id(my_index)
         my_size_hash.each do |k, v|
             puts "#{k}, #{v}"
-            if k != exclude
+            if k != exclude && my_index > 1
             mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
             puts mylocal_inventory.inspect
                 if mylocal_inventory.inventory_available <= 0
                     can_allocate = false
                 end
+            #else
+             #   puts "Excluding #{k}, #{v} from allocation calculations this collection!"
+            elsif my_index = 1 && k != "tops"
+                mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
+                puts mylocal_inventory.inspect
+                if mylocal_inventory.inventory_available <= 0
+                    can_allocate = false
+                end
+
+
             else
                 puts "Excluding #{k}, #{v} from allocation calculations this collection!"
             end
-            
             
         end
         puts "Can we allocate to this collection #{my_local_collection.collection_name}  ? #{can_allocate}"
@@ -288,8 +297,8 @@ module BackgroundHelper
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
-                    puts "can generate random 1-5"
-                    my_total_length = 5
+                    puts "can generate random 1-4"
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end
