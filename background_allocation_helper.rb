@@ -191,6 +191,12 @@ module BackgroundHelper
         puts my_index.inspect
         puts my_size_hash.inspect
         puts sub.inspect
+        #my_index == 1 is the first collection, sports-jacket no top, remove tops from my_size_hash
+        #if my_index == 1
+        #    my_size_hash.delete(:tops)
+        #end
+
+
         can_allocate = true
         my_local_collection = AllocationCollection.find_by_collection_id(my_index)
         my_size_hash.each do |k, v|
@@ -203,7 +209,7 @@ module BackgroundHelper
                 end
             #else
              #   puts "Excluding #{k}, #{v} from allocation calculations this collection!"
-            elsif my_index = 1 && k != "tops"
+            elsif my_index == 1 && k != "tops"
                 mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
                 puts mylocal_inventory.inspect
                 if mylocal_inventory.inventory_available <= 0
