@@ -142,6 +142,7 @@ module BackgroundHelper
                 body = recharge_data.to_json
                 puts body
                 puts "-----"
+                puts "recharge_change_header = #{recharge_change_header}"
                 my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
                 puts my_update_sub.inspect
                 recharge_limit = my_update_sub.response["x-recharge-limit"]
