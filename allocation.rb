@@ -280,7 +280,7 @@ module Allocation
       end
 
     def background_allocate_orders
-        params = {"action" => "allocating orders for next month", "recharge_change_header" => @my_staging_change_header}
+        params = {"action" => "allocating orders for next month", "recharge_change_header" => @my_change_header}
         Resque.enqueue(BackgroundOrderAllocate, params)
 
 
