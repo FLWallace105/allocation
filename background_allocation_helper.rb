@@ -232,25 +232,37 @@ module BackgroundHelper
             #above uncomment for real run and allocation
 
             #below is for testing only dry run
-            sub.updated = true
-            sub.save!
+            #sub.updated = true
+            #sub.save!
             #exit
             #allocate here
             my_size_hash.each do |k, v|
                 puts "#{k}, #{v}"
-                if k != exclude
-                mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
+                if k != exclude && my_index > 1
+                    mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
 
-                
-                #Adjust inventory
-                if sub.bad_subscription == false
-                    puts mylocal_inventory.inspect
-                    mylocal_inventory.inventory_available -= 1
-                    mylocal_inventory.inventory_reserved += 1
-                    mylocal_inventory.save!
-                else
-                    puts "Not adjusting inventory, bad subscription"
-                end
+                    #Adjust inventory
+                    if sub.bad_subscription == false
+                        puts mylocal_inventory.inspect
+                        mylocal_inventory.inventory_available -= 1
+                        mylocal_inventory.inventory_reserved += 1
+                        mylocal_inventory.save!
+                    else
+                        puts "Not adjusting inventory, bad subscription"
+                    end
+
+                elsif my_index == 1 && k != "tops"
+                    mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
+            
+                    #Adjust inventory
+                    if sub.bad_subscription == false
+                        puts mylocal_inventory.inspect
+                        mylocal_inventory.inventory_available -= 1
+                        mylocal_inventory.inventory_reserved += 1
+                        mylocal_inventory.save!
+                    else
+                        puts "Not adjusting inventory, bad subscription"
+                    end
                 
                 
                 else
