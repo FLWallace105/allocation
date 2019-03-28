@@ -300,7 +300,7 @@ module BackgroundHelper
             #allocate here
             my_size_hash.each do |k, v|
                 puts "#{k}, #{v}"
-                if k != exclude && my_index > 1
+                if k != exclude 
                     mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
 
                     #Adjust inventory
@@ -313,18 +313,18 @@ module BackgroundHelper
                         puts "Not adjusting inventory, bad subscription"
                     end
 
-                elsif my_index == 1 && k != "tops"
-                    mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
+                #elsif my_index == 1 && k != "tops"
+                #    mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
             
                     #Adjust inventory
-                    if sub.bad_subscription == false
-                        puts mylocal_inventory.inspect
-                        mylocal_inventory.inventory_available -= 1
-                        mylocal_inventory.inventory_reserved += 1
-                        mylocal_inventory.save!
-                    else
-                        puts "Not adjusting inventory, bad subscription"
-                    end
+                #    if sub.bad_subscription == false
+                #        puts mylocal_inventory.inspect
+                #        mylocal_inventory.inventory_available -= 1
+                #        mylocal_inventory.inventory_reserved += 1
+                #        mylocal_inventory.save!
+                #    else
+                #        puts "Not adjusting inventory, bad subscription"
+                #    end
                 
                 
                 else
@@ -347,6 +347,15 @@ module BackgroundHelper
         mysubs.each do |sub|
             my_size_hash = {}
             puts sub.inspect
+            #fix for missing sizes
+            found_legging = false
+            found_tops = false
+            found_bra = false
+            legging_size = ""
+            tops_size = ""
+            bra_size = ""
+
+
             mysizes = SubLineItem.where("subscription_id = ?", sub.subscription_id)
             puts mysizes.inspect
             mysizes.each do |mys|
@@ -355,13 +364,33 @@ module BackgroundHelper
                     my_size_hash['sports-jacket'] = mys.value.upcase
                 when "tops", "TOPS", "top"
                     my_size_hash['tops'] = mys.value.upcase
+                    found_tops = true
+                    tops_size = mys.value.upcase
                 when "sports-bra"
                     my_size_hash['sports-bra'] = mys.value.upcase
+                    found_bra = true
+                    bra_size = mys.value.upcase
                 when "leggings"
                     my_size_hash['leggings'] = mys.value.upcase
+                    found_legging = true
+                    legging_size = mys.value.upcase
                 end
             
             end
+
+            #stuff in missing sizes
+            if found_tops == false && found_legging == true
+                my_size_hash['tops'] =  legging_size
+            end
+
+            if found_legging == false && found_tops == true
+                my_size_hash['leggings'] =  tops_size
+            end
+
+            if found_bra == false && found_legging == true
+                my_size_hash['sports-bra'] = legging_size
+            end
+
             puts my_size_hash.inspect
             if my_size_hash.length < 3
                 puts "Can't do anything"
