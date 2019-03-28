@@ -106,21 +106,18 @@ module BackgroundHelper
         if found_gloves == false
             puts "We are adding legging size to missing gloves size"
             puts "leggings_size = #{leggings_size}"
-            case leggings_size
-            when "XS", "S"
+            #case statement not working, brute force if statement
+            if leggings_size == "S" || leggings_size == "XS"
                 gloves_size = "S"
-                puts "setting glove size small"
-            when "M", "L"
+            elsif leggings_size == "M" || leggings_size == "L"
                 gloves_size = "M"
-                puts "setting glove size medium"
-            when "XL"
+            elsif leggings_size == "XL"
                 gloves_size = "L"
-                puts "setting glove size large"
             else
                 gloves_size = "M"
-                puts "can't find anything, setting glove size medium by default"
-
             end
+
+
             my_line_items << { "name" => "gloves", "value" => gloves_size}
             puts "pushing glove sizes: #{gloves_size}"
             puts my_line_items
