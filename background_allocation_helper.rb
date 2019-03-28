@@ -71,7 +71,7 @@ module BackgroundHelper
             if mystuff['name'] == "sports-bra"
                 found_sports_bra = true
             end
-            if mystuff['name'] == "leggings"
+            if mystuff['name'].downcase! == "leggings"
                 found_leggings = true
                 leggings_size = mystuff['value']
             end
@@ -103,6 +103,7 @@ module BackgroundHelper
 
         if found_gloves == false
             puts "We are adding legging size to missing gloves size"
+            puts "leggings_size = #{leggings_size}"
             case leggings_size.upcase!
             when "XS", "S"
                 gloves_size = "S"
@@ -115,6 +116,8 @@ module BackgroundHelper
 
             end
             my_line_items << { "name" => "gloves", "value" => gloves_size}
+            puts "pushing glove sizes: #{gloves_size}"
+            puts my_line_items
 
         end
 
