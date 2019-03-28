@@ -74,6 +74,7 @@ module BackgroundHelper
             if mystuff['name'].downcase! == "leggings"
                 found_leggings = true
                 leggings_size = mystuff['value']
+                puts "Attention -- leggings_size = #{leggings_size}"
             end
 
             if mystuff['name'].downcase! == "gloves"
@@ -83,7 +84,7 @@ module BackgroundHelper
         end
         puts "my_line_items = #{my_line_items.inspect}"
         puts "---------"
-        puts "tops_size = #{tops_size}"
+        puts "tops_size = #{tops_size} and leggings_size = #{leggings_size}"
         puts "found_gloves = #{found_gloves}"
 
         if found_unique_id == false
