@@ -108,13 +108,17 @@ module BackgroundHelper
             puts "leggings_size = #{leggings_size}"
             case leggings_size.upcase!
             when "XS", "S"
-                gloves_size = "S"
+                gloves_size == "S"
+                puts "setting glove size small"
             when "M", "L"
-                gloves_size = "M"
+                gloves_size == "M"
+                puts "setting glove size medium"
             when "XL"
-                gloves_size = "L"
+                gloves_size == "L"
+                puts "setting glove size large"
             else
-                gloves_size = "M"
+                gloves_size == "M"
+                puts "can't find anything, setting glove size medium by default"
 
             end
             my_line_items << { "name" => "gloves", "value" => gloves_size}
