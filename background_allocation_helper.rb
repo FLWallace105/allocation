@@ -106,18 +106,18 @@ module BackgroundHelper
         if found_gloves == false
             puts "We are adding legging size to missing gloves size"
             puts "leggings_size = #{leggings_size}"
-            case leggings_size.upcase!
+            case leggings_size
             when "XS", "S"
-                gloves_size == "S"
+                gloves_size = "S"
                 puts "setting glove size small"
             when "M", "L"
-                gloves_size == "M"
+                gloves_size = "M"
                 puts "setting glove size medium"
             when "XL"
-                gloves_size == "L"
+                gloves_size = "L"
                 puts "setting glove size large"
             else
-                gloves_size == "M"
+                gloves_size = "M"
                 puts "can't find anything, setting glove size medium by default"
 
             end
