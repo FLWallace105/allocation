@@ -71,13 +71,13 @@ module BackgroundHelper
             if mystuff['name'] == "sports-bra"
                 found_sports_bra = true
             end
-            if mystuff['name'].downcase! == "leggings"
+            if mystuff['name'] == "leggings"
                 found_leggings = true
                 leggings_size = mystuff['value']
                 puts "Attention -- leggings_size = #{leggings_size}"
             end
 
-            if mystuff['name'].downcase! == "gloves"
+            if mystuff['name'] == "gloves"
                 found_gloves = true
             end
 
