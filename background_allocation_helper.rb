@@ -32,7 +32,17 @@ module BackgroundHelper
         found_collection = false
         found_unique_id = false
         found_sports_jacket = false
+
+        found_tops = false
+        found_sports_bra = false
+        found_leggings = false
+        found_gloves = false
+        sports_jacket_size = ""
+
         tops_size = ""
+        leggings_size = ""
+        gloves_size = ""
+
         my_unique_id = SecureRandom.uuid
         my_line_items = sub.raw_line_items
 
@@ -48,11 +58,28 @@ module BackgroundHelper
             end
             if mystuff['name'] == "sports-jacket"
                 found_sports_jacket = true
+                sports_jacket_size = mystuff['value']
             end
             if mystuff['name'] == "tops"
                 tops_size = mystuff['value']
                 puts "ATTENTION -- Tops SIZE = #{tops_size}"
             end
+            #check missing sizes
+            if mystuff['name'] == "tops"
+                found_tops = true
+            end
+            if mystuff['name'] == "sports-bra"
+                found_sports_bra = true
+            end
+            if mystuff['name'] == "leggings"
+                found_leggings = true
+                leggings_size = mystuff['value']
+            end
+
+            if mystuff['name'] == "gloves"
+                found_gloves = true
+            end
+
         end
         puts "my_line_items = #{my_line_items.inspect}"
         puts "---------"
@@ -61,6 +88,33 @@ module BackgroundHelper
         if found_unique_id == false
             puts "We are adding the unique_identifier to the line item properties"
             my_line_items << { "name" => "unique_identifier", "value" => my_unique_id }
+
+        end
+
+        if found_tops == false
+            puts "We are adding legging size to missing top size"
+            my_line_items << { "name" => "tops", "value" => leggings_size }
+        end
+
+        if found_sports_bra == false
+            puts "We are adding legging size to missing sports-bra size"
+            my_line_items << { "name" => "sports-bra", "value" => leggings_size }
+        end
+
+        if found_gloves == false
+            puts "We are adding legging size to missing gloves size"
+            case leggings_size.upcase!
+            when "XS", "S"
+                gloves_size = "S"
+            when "M", "L"
+                gloves_size = "M"
+            when "XL"
+                gloves_size = "L"
+            else
+                gloves_size = "M"
+
+            end
+            my_line_items << { "name" => "gloves", "value" => gloves_size}
 
         end
 
@@ -202,7 +256,8 @@ module BackgroundHelper
         my_local_collection = AllocationCollection.find_by_collection_id(my_index)
         my_size_hash.each do |k, v|
             puts "#{k}, #{v}"
-            if k != exclude && my_index > 1
+            #if k != exclude && my_index > 1
+            if k != exclude 
             mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
             puts mylocal_inventory.inspect
                 if mylocal_inventory.inventory_available <= 0
@@ -210,12 +265,12 @@ module BackgroundHelper
                 end
             #else
              #   puts "Excluding #{k}, #{v} from allocation calculations this collection!"
-            elsif my_index == 1 && k != "tops"
-                mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
-                puts mylocal_inventory.inspect
-                if mylocal_inventory.inventory_available <= 0
-                    can_allocate = false
-                end
+            #elsif my_index == 1 && k != "tops"
+            #    mylocal_inventory = AllocationInventory.where("collection_id = ? and size = ? and mytype = ?", my_index, v, k).first
+            #    puts mylocal_inventory.inspect
+            #    if mylocal_inventory.inventory_available <= 0
+            #        can_allocate = false
+            #    end
 
 
             else

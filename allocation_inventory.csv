@@ -1,58 +1,58 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Mauve Muse - 5 ITEMS,1,242,0,XS,sports-jacket
-Mauve Muse - 5 ITEMS,1,1955,0,S,sports-jacket
-Mauve Muse - 5 ITEMS,1,1988,0,M,sports-jacket
-Mauve Muse - 5 ITEMS,1,1094,0,L,sports-jacket
-Mauve Muse - 5 ITEMS,1,243,0,XL,sports-jacket
-Mauve Muse - 5 ITEMS,1,234,0,XS,leggings
-Mauve Muse - 5 ITEMS,1,1661,0,S,leggings
-Mauve Muse - 5 ITEMS,1,2286,0,M,leggings
-Mauve Muse - 5 ITEMS,1,1095,0,L,leggings
-Mauve Muse - 5 ITEMS,1,246,0,XL,leggings
-Mauve Muse - 5 ITEMS,1,245,0,XS,sports-bra
-Mauve Muse - 5 ITEMS,1,1364,0,S,sports-bra
-Mauve Muse - 5 ITEMS,1,2276,0,M,sports-bra
-Mauve Muse - 5 ITEMS,1,1092,0,L,sports-bra
-Mauve Muse - 5 ITEMS,1,545,0,XL,sports-bra
-First Impression - 5 ITEMS,2,97,0,XS,tops
-First Impression - 5 ITEMS,2,960,0,S,tops
-First Impression - 5 ITEMS,2,928,0,M,tops
-First Impression - 5 ITEMS,2,546,0,L,tops
-First Impression - 5 ITEMS,2,116,0,XL,tops
-First Impression - 5 ITEMS,2,103,0,XS,leggings
-First Impression - 5 ITEMS,2,797,0,S,leggings
-First Impression - 5 ITEMS,2,1041,0,M,leggings
-First Impression - 5 ITEMS,2,551,0,L,leggings
-First Impression - 5 ITEMS,2,112,0,XL,leggings
-First Impression - 5 ITEMS,2,110,0,XS,sports-bra
-First Impression - 5 ITEMS,2,666,0,S,sports-bra
-First Impression - 5 ITEMS,2,1056,0,M,sports-bra
-First Impression - 5 ITEMS,2,545,0,L,sports-bra
-First Impression - 5 ITEMS,2,267,0,XL,sports-bra
-Starstruck - 5 ITEMS,3,102,0,XS,tops
-Starstruck - 5 ITEMS,3,967,0,S,tops
-Starstruck - 5 ITEMS,3,992,0,M,tops
-Starstruck - 5 ITEMS,3,563,0,L,tops
-Starstruck - 5 ITEMS,3,129,0,XL,tops
-Starstruck - 5 ITEMS,3,102,0,XS,leggings
-Starstruck - 5 ITEMS,3,825,0,S,leggings
-Starstruck - 5 ITEMS,3,1140,0,M,leggings
-Starstruck - 5 ITEMS,3,558,0,L,leggings
-Starstruck - 5 ITEMS,3,129,0,XL,leggings
-Starstruck - 5 ITEMS,3,105,0,XS,sports-bra
-Starstruck - 5 ITEMS,3,679,0,S,sports-bra
-Starstruck - 5 ITEMS,3,1129,0,M,sports-bra
-Starstruck - 5 ITEMS,3,563,0,L,sports-bra
-Starstruck - 5 ITEMS,3,278,0,XL,sports-bra
-To the Limit - 5 ITEMS,4,97,0,S,tops
-To the Limit - 5 ITEMS,4,294,0,M,tops
-To the Limit - 5 ITEMS,4,319,0,L,tops
-To the Limit - 5 ITEMS,4,176,0,XL,tops
-To the Limit - 5 ITEMS,4,111,0,S,leggings
-To the Limit - 5 ITEMS,4,298,0,M,leggings
-To the Limit - 5 ITEMS,4,316,0,L,leggings
-To the Limit - 5 ITEMS,4,186,0,XL,leggings
-To the Limit - 5 ITEMS,4,101,0,S,sports-bra
-To the Limit - 5 ITEMS,4,302,0,M,sports-bra
-To the Limit - 5 ITEMS,4,322,0,L,sports-bra
-To the Limit - 5 ITEMS,4,186,0,XL,sports-bra
+Spring Blossom - 5 Items,1,122,0,XS,tops
+Spring Blossom - 5 Items,1,1066,0,S,tops
+Spring Blossom - 5 Items,1,1084,0,M,tops
+Spring Blossom - 5 Items,1,580,0,L,tops
+Spring Blossom - 5 Items,1,150,0,XL,tops
+Spring Blossom - 5 Items,1,162,0,XS,leggings
+Spring Blossom - 5 Items,1,908,0,S,leggings
+Spring Blossom - 5 Items,1,1221,0,M,leggings
+Spring Blossom - 5 Items,1,609,0,L,leggings
+Spring Blossom - 5 Items,1,158,0,XL,leggings
+Spring Blossom - 5 Items,1,150,0,XS,sports-bra
+Spring Blossom - 5 Items,1,749,0,S,sports-bra
+Spring Blossom - 5 Items,1,1199,0,M,sports-bra
+Spring Blossom - 5 Items,1,600,0,L,sports-bra
+Spring Blossom - 5 Items,1,300,0,XL,sports-bra
+Brooklyn - 5 Items,2,286,0,XS,tops
+Brooklyn - 5 Items,2,2082,0,S,tops
+Brooklyn - 5 Items,2,2048,0,M,tops
+Brooklyn - 5 Items,2,1245,0,L,tops
+Brooklyn - 5 Items,2,291,0,XL,tops
+Brooklyn - 5 Items,2,300,0,XS,leggings
+Brooklyn - 5 Items,2,1800,0,S,leggings
+Brooklyn - 5 Items,2,2360,0,M,leggings
+Brooklyn - 5 Items,2,1220,0,L,leggings
+Brooklyn - 5 Items,2,320,0,XL,leggings
+Brooklyn - 5 Items,2,312,0,XS,sports-bra
+Brooklyn - 5 Items,2,1863,0,S,sports-bra
+Brooklyn - 5 Items,2,2504,0,M,sports-bra
+Brooklyn - 5 Items,2,1250,0,L,sports-bra
+Brooklyn - 5 Items,2,623,0,XL,sports-bra
+Prism Perfect - 5 Items,3,145,0,XS,tops
+Prism Perfect - 5 Items,3,1051,0,S,tops
+Prism Perfect - 5 Items,3,1053,0,M,tops
+Prism Perfect - 5 Items,3,612,0,L,tops
+Prism Perfect - 5 Items,3,146,0,XL,tops
+Prism Perfect - 5 Items,3,160,0,XS,leggings
+Prism Perfect - 5 Items,3,920,0,S,leggings
+Prism Perfect - 5 Items,3,1160,0,M,leggings
+Prism Perfect - 5 Items,3,622,0,L,leggings
+Prism Perfect - 5 Items,3,158,0,XL,leggings
+Prism Perfect - 5 Items,3,150,0,XS,sports-bra
+Prism Perfect - 5 Items,3,732,0,S,sports-bra
+Prism Perfect - 5 Items,3,1165,0,M,sports-bra
+Prism Perfect - 5 Items,3,601,0,L,sports-bra
+Prism Perfect - 5 Items,3,300,0,XL,sports-bra
+Basic Training - 5 Items,4,266,0,S,tops
+Basic Training - 5 Items,4,590,0,M,tops
+Basic Training - 5 Items,4,413,0,L,tops
+Basic Training - 5 Items,4,231,0,XL,tops
+Basic Training - 5 Items,4,420,0,S,leggings
+Basic Training - 5 Items,4,396,0,M,leggings
+Basic Training - 5 Items,4,216,0,L,leggings
+Basic Training - 5 Items,4,135,0,XL,leggings
+Basic Training - 5 Items,4,335,0,S,sports-bra
+Basic Training - 5 Items,4,585,0,M,sports-bra
+Basic Training - 5 Items,4,330,0,L,sports-bra
+Basic Training - 5 Items,4,165,0,XL,sports-bra
