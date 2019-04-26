@@ -117,17 +117,18 @@ module BackgroundHelper
                 gloves_size = "M"
             end
 
-
-            my_line_items << { "name" => "gloves", "value" => gloves_size}
-            puts "pushing glove sizes: #{gloves_size}"
-            puts my_line_items
+           # Floyd Wallace 4/25/19 -- no longer pushing glove sizes into subs
+           # my_line_items << { "name" => "gloves", "value" => gloves_size}
+           # puts "pushing glove sizes: #{gloves_size}"
+           # puts my_line_items
 
         end
 
-        if found_sports_jacket == false
-            puts "We are adding the sports-bra size for the sports-jacket size"
-            my_line_items << { "name" => "sports-jacket", "value" => tops_size}
-        end
+        #Floyd Wallace 4/25/19 not adding sports-jacket this month
+        #if found_sports_jacket == false
+        #    puts "We are adding the sports-bra size for the sports-jacket size"
+        #    my_line_items << { "name" => "sports-jacket", "value" => tops_size}
+        #end
 
         if found_collection == false
             # only if I did not find the product_collection property in the line items do I need to add it
@@ -234,7 +235,7 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-            if  (value == "XS")
+            if  (value == "XS") || (value == "XL")
                 contains_outlier_size = true
             end
         end
@@ -437,11 +438,91 @@ module BackgroundHelper
 
     end
 
+    def overflow_subscriptions(recharge_change_header)
+        #use Brooklyn index 2 for April 2019
+        puts "Starting allocation"
+        my_now = Time.now
+        my_size_hash = Hash.new
+        mysubs = SubscriptionsNextMonthUpdate.where("updated = ? and bad_subscription = ?", false, false)
+        mysubs.each do |sub|
+            my_size_hash = {}
+            puts sub.inspect
+            #fix for missing sizes
+            found_legging = false
+            found_tops = false
+            found_bra = false
+            legging_size = ""
+            tops_size = ""
+            bra_size = ""
+
+
+            mysizes = SubLineItem.where("subscription_id = ?", sub.subscription_id)
+            puts mysizes.inspect
+            mysizes.each do |mys|
+                case mys.name
+                when "sports-jacket"
+                    my_size_hash['sports-jacket'] = mys.value.upcase
+                when "tops", "TOPS", "top"
+                    my_size_hash['tops'] = mys.value.upcase
+                    found_tops = true
+                    tops_size = mys.value.upcase
+                when "sports-bra"
+                    my_size_hash['sports-bra'] = mys.value.upcase
+                    found_bra = true
+                    bra_size = mys.value.upcase
+                when "leggings"
+                    my_size_hash['leggings'] = mys.value.upcase
+                    found_legging = true
+                    legging_size = mys.value.upcase
+                end
+            
+            end
+
+            #stuff in missing sizes
+            if found_tops == false && found_legging == true
+                my_size_hash['tops'] =  legging_size
+            end
+
+            if found_legging == false && found_tops == true
+                my_size_hash['leggings'] =  tops_size
+            end
+
+            if found_bra == false && found_legging == true
+                my_size_hash['sports-bra'] = legging_size
+            end
+
+            if my_size_hash.length < 3
+                puts "Can't do anything"
+                sub.bad_subscription = true
+                sub.save!
+            else
+                puts "Can allocate this subscription"
+                my_index = 2
+                allocate_single_subscription(my_index, my_size_hash, sub, "sports-jacket",recharge_change_header )
+                puts "done with a subscription!"
+                #see if running more than eight minutes
+                my_current = Time.now
+                duration = (my_current - my_now).ceil
+                puts "Been running #{duration} seconds"
+                
+
+                if duration > 480
+                    puts "Been running more than 8 minutes must exit"
+                    break
+                end
+
+            end
+
+    end
+
     def background_allocate_subscriptions(params)
         puts "Starting background allocation"
         puts params.inspect
         recharge_change_header = params['recharge_change_header']
         allocate_subscriptions(recharge_change_header)
+
+        #uncomment for overflow and comment above for overflow
+        #overflow_subscriptions(recharge_change_header)
 
 
 

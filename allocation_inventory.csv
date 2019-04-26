@@ -1,58 +1,56 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Spring Blossom - 5 Items,1,122,0,XS,tops
-Spring Blossom - 5 Items,1,1066,0,S,tops
-Spring Blossom - 5 Items,1,1084,0,M,tops
-Spring Blossom - 5 Items,1,580,0,L,tops
-Spring Blossom - 5 Items,1,150,0,XL,tops
-Spring Blossom - 5 Items,1,162,0,XS,leggings
-Spring Blossom - 5 Items,1,908,0,S,leggings
-Spring Blossom - 5 Items,1,1221,0,M,leggings
-Spring Blossom - 5 Items,1,609,0,L,leggings
-Spring Blossom - 5 Items,1,158,0,XL,leggings
-Spring Blossom - 5 Items,1,150,0,XS,sports-bra
-Spring Blossom - 5 Items,1,749,0,S,sports-bra
-Spring Blossom - 5 Items,1,1199,0,M,sports-bra
-Spring Blossom - 5 Items,1,600,0,L,sports-bra
-Spring Blossom - 5 Items,1,300,0,XL,sports-bra
-Brooklyn - 5 Items,2,286,0,XS,tops
-Brooklyn - 5 Items,2,2082,0,S,tops
-Brooklyn - 5 Items,2,2048,0,M,tops
-Brooklyn - 5 Items,2,1245,0,L,tops
-Brooklyn - 5 Items,2,291,0,XL,tops
-Brooklyn - 5 Items,2,300,0,XS,leggings
-Brooklyn - 5 Items,2,1800,0,S,leggings
-Brooklyn - 5 Items,2,2360,0,M,leggings
-Brooklyn - 5 Items,2,1220,0,L,leggings
-Brooklyn - 5 Items,2,320,0,XL,leggings
-Brooklyn - 5 Items,2,312,0,XS,sports-bra
-Brooklyn - 5 Items,2,1863,0,S,sports-bra
-Brooklyn - 5 Items,2,2504,0,M,sports-bra
-Brooklyn - 5 Items,2,1250,0,L,sports-bra
-Brooklyn - 5 Items,2,623,0,XL,sports-bra
-Prism Perfect - 5 Items,3,145,0,XS,tops
-Prism Perfect - 5 Items,3,1051,0,S,tops
-Prism Perfect - 5 Items,3,1053,0,M,tops
-Prism Perfect - 5 Items,3,612,0,L,tops
-Prism Perfect - 5 Items,3,146,0,XL,tops
-Prism Perfect - 5 Items,3,160,0,XS,leggings
-Prism Perfect - 5 Items,3,920,0,S,leggings
-Prism Perfect - 5 Items,3,1160,0,M,leggings
-Prism Perfect - 5 Items,3,622,0,L,leggings
-Prism Perfect - 5 Items,3,158,0,XL,leggings
-Prism Perfect - 5 Items,3,150,0,XS,sports-bra
-Prism Perfect - 5 Items,3,732,0,S,sports-bra
-Prism Perfect - 5 Items,3,1165,0,M,sports-bra
-Prism Perfect - 5 Items,3,601,0,L,sports-bra
-Prism Perfect - 5 Items,3,300,0,XL,sports-bra
-Basic Training - 5 Items,4,266,0,S,tops
-Basic Training - 5 Items,4,590,0,M,tops
-Basic Training - 5 Items,4,413,0,L,tops
-Basic Training - 5 Items,4,231,0,XL,tops
-Basic Training - 5 Items,4,420,0,S,leggings
-Basic Training - 5 Items,4,396,0,M,leggings
-Basic Training - 5 Items,4,216,0,L,leggings
-Basic Training - 5 Items,4,135,0,XL,leggings
-Basic Training - 5 Items,4,335,0,S,sports-bra
-Basic Training - 5 Items,4,585,0,M,sports-bra
-Basic Training - 5 Items,4,330,0,L,sports-bra
-Basic Training - 5 Items,4,165,0,XL,sports-bra
+Desert Bloom - 5 Items,1,239,0,XS,tops
+Desert Bloom - 5 Items,1,1294,0,S,tops
+Desert Bloom - 5 Items,1,1301,0,M,tops
+Desert Bloom - 5 Items,1,718,0,L,tops
+Desert Bloom - 5 Items,1,303,0,XL,tops
+Desert Bloom - 5 Items,1,110,0,XS,leggings
+Desert Bloom - 5 Items,1,1102,0,S,leggings
+Desert Bloom - 5 Items,1,1598,0,M,leggings
+Desert Bloom - 5 Items,1,808,0,L,leggings
+Desert Bloom - 5 Items,1,240,0,XL,leggings
+Desert Bloom - 5 Items,1,110,0,XS,sports-bra
+Desert Bloom - 5 Items,1,1020,0,S,sports-bra
+Desert Bloom - 5 Items,1,1460,0,M,sports-bra
+Desert Bloom - 5 Items,1,700,0,L,sports-bra
+Desert Bloom - 5 Items,1,320,0,XL,sports-bra
+Victory Lap - 5 Items,2,440,0,XS,tops
+Victory Lap - 5 Items,2,1933,0,S,tops
+Victory Lap - 5 Items,2,1935,0,M,tops
+Victory Lap - 5 Items,2,1085,0,L,tops
+Victory Lap - 5 Items,2,582,0,XL,tops
+Victory Lap - 5 Items,2,203,0,XS,leggings
+Victory Lap - 5 Items,2,1620,0,S,leggings
+Victory Lap - 5 Items,2,2372,0,M,leggings
+Victory Lap - 5 Items,2,1190,0,L,leggings
+Victory Lap - 5 Items,2,400,0,XL,leggings
+Victory Lap - 5 Items,2,380,0,XS,sports-bra
+Victory Lap - 5 Items,2,1880,0,S,sports-bra
+Victory Lap - 5 Items,2,1880,0,M,sports-bra
+Victory Lap - 5 Items,2,980,0,L,sports-bra
+Victory Lap - 5 Items,2,500,0,XL,sports-bra
+Rise Up - 5 Items,3,276,0,XS,tops
+Rise Up - 5 Items,3,1301,0,S,tops
+Rise Up - 5 Items,3,1294,0,M,tops
+Rise Up - 5 Items,3,804,0,L,tops
+Rise Up - 5 Items,3,339,0,XL,tops
+Rise Up - 5 Items,3,130,0,XS,leggings
+Rise Up - 5 Items,3,1266,0,S,leggings
+Rise Up - 5 Items,3,1731,0,M,leggings
+Rise Up - 5 Items,3,1031,0,L,leggings
+Rise Up - 5 Items,3,237,0,XL,leggings
+Rise Up - 5 Items,3,250,0,XS,sports-bra
+Rise Up - 5 Items,3,1220,0,S,sports-bra
+Rise Up - 5 Items,3,1217,0,M,sports-bra
+Rise Up - 5 Items,3,677,0,L,sports-bra
+Rise Up - 5 Items,3,330,0,XL,sports-bra
+Rose Quartz - 5 Items,4,630,0,S,tops
+Rose Quartz - 5 Items,4,612,0,M,tops
+Rose Quartz - 5 Items,4,356,0,L,tops
+Rose Quartz - 5 Items,4,239,0,XL,tops
+Rose Quartz - 5 Items,4,570,0,S,leggings
+Rose Quartz - 5 Items,4,770,0,M,leggings
+Rose Quartz - 5 Items,4,570,0,L,leggings
+Rose Quartz - 5 Items,4,570,0,S,sports-bra
+Rose Quartz - 5 Items,4,770,0,M,sports-bra
+Rose Quartz - 5 Items,4,570,0,L,sports-bra
