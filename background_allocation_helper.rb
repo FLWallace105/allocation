@@ -125,10 +125,10 @@ module BackgroundHelper
         end
 
         #Floyd Wallace 4/25/19 not adding sports-jacket this month
-        #if found_sports_jacket == false
+        if found_sports_jacket == false
         #    puts "We are adding the sports-bra size for the sports-jacket size"
         #    my_line_items << { "name" => "sports-jacket", "value" => tops_size}
-        #end
+        end
 
         if found_collection == false
             # only if I did not find the product_collection property in the line items do I need to add it
@@ -512,7 +512,7 @@ module BackgroundHelper
                 end
 
             end
-
+        end
     end
 
     def background_allocate_subscriptions(params)
