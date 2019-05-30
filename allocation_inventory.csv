@@ -1,56 +1,70 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Desert Bloom - 5 Items,1,239,0,XS,tops
-Desert Bloom - 5 Items,1,1294,0,S,tops
-Desert Bloom - 5 Items,1,1301,0,M,tops
-Desert Bloom - 5 Items,1,718,0,L,tops
-Desert Bloom - 5 Items,1,303,0,XL,tops
-Desert Bloom - 5 Items,1,110,0,XS,leggings
-Desert Bloom - 5 Items,1,1102,0,S,leggings
-Desert Bloom - 5 Items,1,1598,0,M,leggings
-Desert Bloom - 5 Items,1,808,0,L,leggings
-Desert Bloom - 5 Items,1,240,0,XL,leggings
-Desert Bloom - 5 Items,1,110,0,XS,sports-bra
-Desert Bloom - 5 Items,1,1020,0,S,sports-bra
-Desert Bloom - 5 Items,1,1460,0,M,sports-bra
-Desert Bloom - 5 Items,1,700,0,L,sports-bra
-Desert Bloom - 5 Items,1,320,0,XL,sports-bra
-Victory Lap - 5 Items,2,440,0,XS,tops
-Victory Lap - 5 Items,2,1933,0,S,tops
-Victory Lap - 5 Items,2,1935,0,M,tops
-Victory Lap - 5 Items,2,1085,0,L,tops
-Victory Lap - 5 Items,2,582,0,XL,tops
-Victory Lap - 5 Items,2,203,0,XS,leggings
-Victory Lap - 5 Items,2,1620,0,S,leggings
-Victory Lap - 5 Items,2,2372,0,M,leggings
-Victory Lap - 5 Items,2,1190,0,L,leggings
-Victory Lap - 5 Items,2,400,0,XL,leggings
-Victory Lap - 5 Items,2,380,0,XS,sports-bra
-Victory Lap - 5 Items,2,1880,0,S,sports-bra
-Victory Lap - 5 Items,2,1880,0,M,sports-bra
-Victory Lap - 5 Items,2,980,0,L,sports-bra
-Victory Lap - 5 Items,2,500,0,XL,sports-bra
-Rise Up - 5 Items,3,276,0,XS,tops
-Rise Up - 5 Items,3,1301,0,S,tops
-Rise Up - 5 Items,3,1294,0,M,tops
-Rise Up - 5 Items,3,804,0,L,tops
-Rise Up - 5 Items,3,339,0,XL,tops
-Rise Up - 5 Items,3,130,0,XS,leggings
-Rise Up - 5 Items,3,1266,0,S,leggings
-Rise Up - 5 Items,3,1731,0,M,leggings
-Rise Up - 5 Items,3,1031,0,L,leggings
-Rise Up - 5 Items,3,237,0,XL,leggings
-Rise Up - 5 Items,3,250,0,XS,sports-bra
-Rise Up - 5 Items,3,1220,0,S,sports-bra
-Rise Up - 5 Items,3,1217,0,M,sports-bra
-Rise Up - 5 Items,3,677,0,L,sports-bra
-Rise Up - 5 Items,3,330,0,XL,sports-bra
-Rose Quartz - 5 Items,4,630,0,S,tops
-Rose Quartz - 5 Items,4,612,0,M,tops
-Rose Quartz - 5 Items,4,356,0,L,tops
-Rose Quartz - 5 Items,4,239,0,XL,tops
-Rose Quartz - 5 Items,4,570,0,S,leggings
-Rose Quartz - 5 Items,4,770,0,M,leggings
-Rose Quartz - 5 Items,4,570,0,L,leggings
-Rose Quartz - 5 Items,4,570,0,S,sports-bra
-Rose Quartz - 5 Items,4,770,0,M,sports-bra
-Rose Quartz - 5 Items,4,570,0,L,sports-bra
+Good Intentions - 5 Items,1,241,0,XS,tops
+Good Intentions - 5 Items,1,1300,0,S,tops
+Good Intentions - 5 Items,1,1340,0,M,tops
+Good Intentions - 5 Items,1,683,0,L,tops
+Good Intentions - 5 Items,1,360,0,XL,tops
+Good Intentions - 5 Items,1,123,0,XS,leggings
+Good Intentions - 5 Items,1,1144,0,S,leggings
+Good Intentions - 5 Items,1,1675,0,M,leggings
+Good Intentions - 5 Items,1,869,0,L,leggings
+Good Intentions - 5 Items,1,301,0,XL,leggings
+Good Intentions - 5 Items,1,223,0,XS,sports-bra
+Good Intentions - 5 Items,1,1267,0,S,sports-bra
+Good Intentions - 5 Items,1,1268,0,M,sports-bra
+Good Intentions - 5 Items,1,659,0,L,sports-bra
+Good Intentions - 5 Items,1,360,0,XL,sports-bra
+Off The Track - 5 Items,2,199,0,XS,tops
+Off The Track - 5 Items,2,1074,0,S,tops
+Off The Track - 5 Items,2,1079,0,M,tops
+Off The Track - 5 Items,2,599,0,L,tops
+Off The Track - 5 Items,2,274,0,XL,tops
+Off The Track - 5 Items,2,86,0,XS,leggings
+Off The Track - 5 Items,2,904,0,S,leggings
+Off The Track - 5 Items,2,1327,0,M,leggings
+Off The Track - 5 Items,2,704,0,L,leggings
+Off The Track - 5 Items,2,202,0,XL,leggings
+Off The Track - 5 Items,2,94,0,XS,sports-bra
+Off The Track - 5 Items,2,897,0,S,sports-bra
+Off The Track - 5 Items,2,1292,0,M,sports-bra
+Off The Track - 5 Items,2,669,0,L,sports-bra
+Off The Track - 5 Items,2,274,0,XL,sports-bra
+Catch Up - 5 Items,3,107,0,XS,tops
+Catch Up - 5 Items,3,727,0,S,tops
+Catch Up - 5 Items,3,739,0,M,tops
+Catch Up - 5 Items,3,382,0,L,tops
+Catch Up - 5 Items,3,176,0,XL,tops
+Catch Up - 5 Items,3,0,0,XS,leggings
+Catch Up - 5 Items,3,325,0,S,leggings
+Catch Up - 5 Items,3,748,0,M,leggings
+Catch Up - 5 Items,3,650,0,L,leggings
+Catch Up - 5 Items,3,310,0,XL,leggings
+Catch Up - 5 Items,3,65,0,XS,sports-bra
+Catch Up - 5 Items,3,615,0,S,sports-bra
+Catch Up - 5 Items,3,880,0,M,sports-bra
+Catch Up - 5 Items,3,426,0,L,sports-bra
+Catch Up - 5 Items,3,180,0,XL,sports-bra
+Dream Chaser - 5 Items,4,236,0,XS,tops
+Dream Chaser - 5 Items,4,1211,0,S,tops
+Dream Chaser - 5 Items,4,1218,0,M,tops
+Dream Chaser - 5 Items,4,670,0,L,tops
+Dream Chaser - 5 Items,4,320,0,XL,tops
+Dream Chaser - 5 Items,4,116,0,XS,leggings
+Dream Chaser - 5 Items,4,1011,0,S,leggings
+Dream Chaser - 5 Items,4,1498,0,M,leggings
+Dream Chaser - 5 Items,4,790,0,L,leggings
+Dream Chaser - 5 Items,4,240,0,XL,leggings
+Dream Chaser - 5 Items,4,120,0,XS,sports-bra
+Dream Chaser - 5 Items,4,960,0,S,sports-bra
+Dream Chaser - 5 Items,4,1451,0,M,sports-bra
+Dream Chaser - 5 Items,4,750,0,L,sports-bra
+Dream Chaser - 5 Items,4,320,0,XL,sports-bra
+Ready To Run - 5 Items,5,160,0,S,tops
+Ready To Run - 5 Items,5,412,0,M,tops
+Ready To Run - 5 Items,5,413,0,L,tops
+Ready To Run - 5 Items,5,222,0,S,leggings
+Ready To Run - 5 Items,5,511,0,M,leggings
+Ready To Run - 5 Items,5,512,0,L,leggings
+Ready To Run - 5 Items,5,558,0,S,sports-bra
+Ready To Run - 5 Items,5,760,0,M,sports-bra
+Ready To Run - 5 Items,5,552,0,L,sports-bra
