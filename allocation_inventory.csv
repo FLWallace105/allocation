@@ -1,55 +1,76 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Good Intentions - 5 Items,1,241,0,XS,tops
-Good Intentions - 5 Items,1,1300,0,S,tops
-Good Intentions - 5 Items,1,1340,0,M,tops
-Good Intentions - 5 Items,1,683,0,L,tops
-Good Intentions - 5 Items,1,360,0,XL,tops
-Good Intentions - 5 Items,1,123,0,XS,leggings
-Good Intentions - 5 Items,1,1144,0,S,leggings
-Good Intentions - 5 Items,1,1675,0,M,leggings
-Good Intentions - 5 Items,1,869,0,L,leggings
-Good Intentions - 5 Items,1,301,0,XL,leggings
-Good Intentions - 5 Items,1,223,0,XS,sports-bra
-Good Intentions - 5 Items,1,1267,0,S,sports-bra
-Good Intentions - 5 Items,1,1268,0,M,sports-bra
-Good Intentions - 5 Items,1,659,0,L,sports-bra
-Good Intentions - 5 Items,1,360,0,XL,sports-bra
-Off The Track - 5 Items,2,199,0,XS,tops
-Off The Track - 5 Items,2,1074,0,S,tops
-Off The Track - 5 Items,2,1079,0,M,tops
-Off The Track - 5 Items,2,599,0,L,tops
-Off The Track - 5 Items,2,274,0,XL,tops
-Off The Track - 5 Items,2,86,0,XS,leggings
-Off The Track - 5 Items,2,904,0,S,leggings
-Off The Track - 5 Items,2,1327,0,M,leggings
-Off The Track - 5 Items,2,704,0,L,leggings
-Off The Track - 5 Items,2,202,0,XL,leggings
-Off The Track - 5 Items,2,94,0,XS,sports-bra
-Off The Track - 5 Items,2,897,0,S,sports-bra
-Off The Track - 5 Items,2,1292,0,M,sports-bra
-Off The Track - 5 Items,2,669,0,L,sports-bra
-Off The Track - 5 Items,2,274,0,XL,sports-bra
-Catch Up - 5 Items,3,107,0,XS,tops
-Catch Up - 5 Items,3,727,0,S,tops
-Catch Up - 5 Items,3,739,0,M,tops
-Catch Up - 5 Items,3,382,0,L,tops
-Catch Up - 5 Items,3,176,0,XL,tops
-Catch Up - 5 Items,3,0,0,XS,leggings
-Catch Up - 5 Items,3,325,0,S,leggings
-Catch Up - 5 Items,3,748,0,M,leggings
-Catch Up - 5 Items,3,650,0,L,leggings
-Catch Up - 5 Items,3,310,0,XL,leggings
-Catch Up - 5 Items,3,65,0,XS,sports-bra
-Catch Up - 5 Items,3,615,0,S,sports-bra
-Catch Up - 5 Items,3,880,0,M,sports-bra
-Catch Up - 5 Items,3,426,0,L,sports-bra
-Catch Up - 5 Items,3,180,0,XL,sports-bra
-Ready To Run - 5 Items,4,160,0,S,tops
-Ready To Run - 5 Items,4,412,0,M,tops
-Ready To Run - 5 Items,4,413,0,L,tops
-Ready To Run - 5 Items,4,222,0,S,leggings
-Ready To Run - 5 Items,4,511,0,M,leggings
-Ready To Run - 5 Items,4,512,0,L,leggings
-Ready To Run - 5 Items,4,558,0,S,sports-bra
-Ready To Run - 5 Items,4,760,0,M,sports-bra
-Ready To Run - 5 Items,4,552,0,L,sports-bra
+High Tide - 5 Items,1,192,0,XS,tops
+High Tide - 5 Items,1,1028,0,S,tops
+High Tide - 5 Items,1,1046,0,M,tops
+High Tide - 5 Items,1,581,0,L,tops
+High Tide - 5 Items,1,281,0,XL,tops
+High Tide - 5 Items,1,88,0,XS,leggings
+High Tide - 5 Items,1,823,0,S,leggings
+High Tide - 5 Items,1,1209,0,M,leggings
+High Tide - 5 Items,1,645,0,L,leggings
+High Tide - 5 Items,1,195,0,XL,leggings
+High Tide - 5 Items,1,93,0,XS,sports-bra
+High Tide - 5 Items,1,850,0,S,sports-bra
+High Tide - 5 Items,1,1177,0,M,sports-bra
+High Tide - 5 Items,1,613,0,L,sports-bra
+High Tide - 5 Items,1,253,0,XL,sports-bra
+Beach Bash - 5 Items,2,248,0,XS,tops
+Beach Bash - 5 Items,2,1239,0,S,tops
+Beach Bash - 5 Items,2,1281,0,M,tops
+Beach Bash - 5 Items,2,709,0,L,tops
+Beach Bash - 5 Items,2,349,0,XL,tops
+Beach Bash - 5 Items,2,126,0,XS,leggings
+Beach Bash - 5 Items,2,1028,0,S,leggings
+Beach Bash - 5 Items,2,1636,0,M,leggings
+Beach Bash - 5 Items,2,835,0,L,leggings
+Beach Bash - 5 Items,2,265,0,XL,leggings
+Beach Bash - 5 Items,2,232,0,XS,sports-bra
+Beach Bash - 5 Items,2,1105,0,S,sports-bra
+Beach Bash - 5 Items,2,2003,0,M,sports-bra
+Beach Bash - 5 Items,2,803,0,L,sports-bra
+Beach Bash - 5 Items,2,421,0,XL,sports-bra
+Simple Life - 5 Items,3,131,0,XS,tops
+Simple Life - 5 Items,3,711,0,S,tops
+Simple Life - 5 Items,3,745,0,M,tops
+Simple Life - 5 Items,3,406,0,L,tops
+Simple Life - 5 Items,3,194,0,XL,tops
+Simple Life - 5 Items,3,62,0,XS,leggings
+Simple Life - 5 Items,3,550,0,S,leggings
+Simple Life - 5 Items,3,916,0,M,leggings
+Simple Life - 5 Items,3,476,0,L,leggings
+Simple Life - 5 Items,3,146,0,XL,leggings
+Simple Life - 5 Items,3,68,0,XS,sports-bra
+Simple Life - 5 Items,3,630,0,S,sports-bra
+Simple Life - 5 Items,3,882,0,M,sports-bra
+Simple Life - 5 Items,3,453,0,L,sports-bra
+Simple Life - 5 Items,3,194,0,XL,sports-bra
+Sangria Splash - 5 Items,4,190,0,XS,tops
+Sangria Splash - 5 Items,4,953,0,S,tops
+Sangria Splash - 5 Items,4,978,0,M,tops
+Sangria Splash - 5 Items,4,539,0,L,tops
+Sangria Splash - 5 Items,4,265,0,XL,tops
+Sangria Splash - 5 Items,4,117,0,XS,leggings
+Sangria Splash - 5 Items,4,791,0,S,leggings
+Sangria Splash - 5 Items,4,1289,0,M,leggings
+Sangria Splash - 5 Items,4,712,0,L,leggings
+Sangria Splash - 5 Items,4,247,0,XL,leggings
+Sangria Splash - 5 Items,4,100,0,XS,sports-bra
+Sangria Splash - 5 Items,4,799,0,S,sports-bra
+Sangria Splash - 5 Items,4,113,0,M,sports-bra
+Sangria Splash - 5 Items,4,602,0,L,sports-bra
+Sangria Splash - 5 Items,4,264,0,XL,sports-bra
+Feels Like Summer - 5 Items,5,0,0,XS,tops
+Feels Like Summer - 5 Items,5,206,0,S,tops
+Feels Like Summer - 5 Items,5,492,0,M,tops
+Feels Like Summer - 5 Items,5,484,0,L,tops
+Feels Like Summer - 5 Items,5,210,0,XL,tops
+Feels Like Summer - 5 Items,5,0,0,XS,leggings
+Feels Like Summer - 5 Items,5,168,0,S,leggings
+Feels Like Summer - 5 Items,5,370,0,M,leggings
+Feels Like Summer - 5 Items,5,368,0,L,leggings
+Feels Like Summer - 5 Items,5,184,0,XL,leggings
+Feels Like Summer - 5 Items,5,91,0,XS,sports-bra
+Feels Like Summer - 5 Items,5,167,0,S,sports-bra
+Feels Like Summer - 5 Items,5,300,0,M,sports-bra
+Feels Like Summer - 5 Items,5,266,0,L,sports-bra
+Feels Like Summer - 5 Items,5,128,0,XL,sports-bra
