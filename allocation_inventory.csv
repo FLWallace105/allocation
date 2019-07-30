@@ -1,76 +1,61 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-High Tide - 5 Items,1,192,0,XS,tops
-High Tide - 5 Items,1,1028,0,S,tops
-High Tide - 5 Items,1,1046,0,M,tops
-High Tide - 5 Items,1,581,0,L,tops
-High Tide - 5 Items,1,281,0,XL,tops
-High Tide - 5 Items,1,88,0,XS,leggings
-High Tide - 5 Items,1,823,0,S,leggings
-High Tide - 5 Items,1,1209,0,M,leggings
-High Tide - 5 Items,1,645,0,L,leggings
-High Tide - 5 Items,1,195,0,XL,leggings
-High Tide - 5 Items,1,93,0,XS,sports-bra
-High Tide - 5 Items,1,850,0,S,sports-bra
-High Tide - 5 Items,1,1177,0,M,sports-bra
-High Tide - 5 Items,1,613,0,L,sports-bra
-High Tide - 5 Items,1,253,0,XL,sports-bra
-Beach Bash - 5 Items,2,248,0,XS,tops
-Beach Bash - 5 Items,2,1239,0,S,tops
-Beach Bash - 5 Items,2,1281,0,M,tops
-Beach Bash - 5 Items,2,709,0,L,tops
-Beach Bash - 5 Items,2,349,0,XL,tops
-Beach Bash - 5 Items,2,126,0,XS,leggings
-Beach Bash - 5 Items,2,1028,0,S,leggings
-Beach Bash - 5 Items,2,1636,0,M,leggings
-Beach Bash - 5 Items,2,835,0,L,leggings
-Beach Bash - 5 Items,2,265,0,XL,leggings
-Beach Bash - 5 Items,2,232,0,XS,sports-bra
-Beach Bash - 5 Items,2,1105,0,S,sports-bra
-Beach Bash - 5 Items,2,2003,0,M,sports-bra
-Beach Bash - 5 Items,2,803,0,L,sports-bra
-Beach Bash - 5 Items,2,421,0,XL,sports-bra
-Simple Life - 5 Items,3,131,0,XS,tops
-Simple Life - 5 Items,3,711,0,S,tops
-Simple Life - 5 Items,3,745,0,M,tops
-Simple Life - 5 Items,3,406,0,L,tops
-Simple Life - 5 Items,3,194,0,XL,tops
-Simple Life - 5 Items,3,62,0,XS,leggings
-Simple Life - 5 Items,3,550,0,S,leggings
-Simple Life - 5 Items,3,916,0,M,leggings
-Simple Life - 5 Items,3,476,0,L,leggings
-Simple Life - 5 Items,3,146,0,XL,leggings
-Simple Life - 5 Items,3,68,0,XS,sports-bra
-Simple Life - 5 Items,3,630,0,S,sports-bra
-Simple Life - 5 Items,3,882,0,M,sports-bra
-Simple Life - 5 Items,3,453,0,L,sports-bra
-Simple Life - 5 Items,3,194,0,XL,sports-bra
-Sangria Splash - 5 Items,4,190,0,XS,tops
-Sangria Splash - 5 Items,4,953,0,S,tops
-Sangria Splash - 5 Items,4,978,0,M,tops
-Sangria Splash - 5 Items,4,539,0,L,tops
-Sangria Splash - 5 Items,4,265,0,XL,tops
-Sangria Splash - 5 Items,4,117,0,XS,leggings
-Sangria Splash - 5 Items,4,791,0,S,leggings
-Sangria Splash - 5 Items,4,1289,0,M,leggings
-Sangria Splash - 5 Items,4,712,0,L,leggings
-Sangria Splash - 5 Items,4,247,0,XL,leggings
-Sangria Splash - 5 Items,4,100,0,XS,sports-bra
-Sangria Splash - 5 Items,4,799,0,S,sports-bra
-Sangria Splash - 5 Items,4,113,0,M,sports-bra
-Sangria Splash - 5 Items,4,602,0,L,sports-bra
-Sangria Splash - 5 Items,4,264,0,XL,sports-bra
-Feels Like Summer - 5 Items,5,0,0,XS,tops
-Feels Like Summer - 5 Items,5,206,0,S,tops
-Feels Like Summer - 5 Items,5,492,0,M,tops
-Feels Like Summer - 5 Items,5,484,0,L,tops
-Feels Like Summer - 5 Items,5,210,0,XL,tops
-Feels Like Summer - 5 Items,5,0,0,XS,leggings
-Feels Like Summer - 5 Items,5,168,0,S,leggings
-Feels Like Summer - 5 Items,5,370,0,M,leggings
-Feels Like Summer - 5 Items,5,368,0,L,leggings
-Feels Like Summer - 5 Items,5,184,0,XL,leggings
-Feels Like Summer - 5 Items,5,91,0,XS,sports-bra
-Feels Like Summer - 5 Items,5,167,0,S,sports-bra
-Feels Like Summer - 5 Items,5,300,0,M,sports-bra
-Feels Like Summer - 5 Items,5,266,0,L,sports-bra
-Feels Like Summer - 5 Items,5,128,0,XL,sports-bra
+Rise & Shine - 5 Items,1,181,0,XS,tops
+Rise & Shine - 5 Items,1,947,0,S,tops
+Rise & Shine - 5 Items,1,1068,0,M,tops
+Rise & Shine - 5 Items,1,674,0,L,tops
+Rise & Shine - 5 Items,1,287,0,XL,tops
+Rise & Shine - 5 Items,1,166,0,XS,leggings
+Rise & Shine - 5 Items,1,924,0,S,leggings
+Rise & Shine - 5 Items,1,1207,0,M,leggings
+Rise & Shine - 5 Items,1,631,0,L,leggings
+Rise & Shine - 5 Items,1,227,0,XL,leggings
+Rise & Shine - 5 Items,1,90,0,XS,sports-bra
+Rise & Shine - 5 Items,1,698,0,S,sports-bra
+Rise & Shine - 5 Items,1,1232,0,M,sports-bra
+Rise & Shine - 5 Items,1,762,0,L,sports-bra
+Rise & Shine - 5 Items,1,341,0,XL,sports-bra
+Adventure Time - 5 Items,2,324,0,XS,tops
+Adventure Time - 5 Items,2,1701,0,S,tops
+Adventure Time - 5 Items,2,1917,0,M,tops
+Adventure Time - 5 Items,2,1210,0,L,tops
+Adventure Time - 5 Items,2,515,0,XL,tops
+Adventure Time - 5 Items,2,302,0,XS,leggings
+Adventure Time - 5 Items,2,1684,0,S,leggings
+Adventure Time - 5 Items,2,2199,0,M,leggings
+Adventure Time - 5 Items,2,1150,0,L,leggings
+Adventure Time - 5 Items,2,413,0,XL,leggings
+Adventure Time - 5 Items,2,166,0,XS,sports-bra
+Adventure Time - 5 Items,2,1291,0,S,sports-bra
+Adventure Time - 5 Items,2,2277,0,M,sports-bra
+Adventure Time - 5 Items,2,1409,0,L,sports-bra
+Adventure Time - 5 Items,2,631,0,XL,sports-bra
+Wildflower - 5 Items,3,331,0,XS,tops
+Wildflower - 5 Items,3,1733,0,S,tops
+Wildflower - 5 Items,3,1953,0,M,tops
+Wildflower - 5 Items,3,1233,0,L,tops
+Wildflower - 5 Items,3,524,0,XL,tops
+Wildflower - 5 Items,3,298,0,XS,leggings
+Wildflower - 5 Items,3,1660,0,S,leggings
+Wildflower - 5 Items,3,2169,0,M,leggings
+Wildflower - 5 Items,3,1134,0,L,leggings
+Wildflower - 5 Items,3,407,0,XL,leggings
+Wildflower - 5 Items,3,165,0,XS,sports-bra
+Wildflower - 5 Items,3,1282,0,S,sports-bra
+Wildflower - 5 Items,3,2262,0,M,sports-bra
+Wildflower - 5 Items,3,1400,0,L,sports-bra
+Wildflower - 5 Items,3,627,0,XL,sports-bra
+Weekend Getaway - 5 Items,4,0,0,XS,tops
+Weekend Getaway - 5 Items,4,464,0,S,tops
+Weekend Getaway - 5 Items,4,519,0,M,tops
+Weekend Getaway - 5 Items,4,302,0,L,tops
+Weekend Getaway - 5 Items,4,128,0,XL,tops
+Weekend Getaway - 5 Items,4,0,0,XS,leggings
+Weekend Getaway - 5 Items,4,412,0,S,leggings
+Weekend Getaway - 5 Items,4,528,0,M,leggings
+Weekend Getaway - 5 Items,4,258,0,L,leggings
+Weekend Getaway - 5 Items,4,93,0,XL,leggings
+Weekend Getaway - 5 Items,4,0,0,XS,sports-bra
+Weekend Getaway - 5 Items,4,329,0,S,sports-bra
+Weekend Getaway - 5 Items,4,566,0,M,sports-bra
+Weekend Getaway - 5 Items,4,338,0,L,sports-bra
+Weekend Getaway - 5 Items,4,151,0,XL,sports-bra

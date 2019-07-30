@@ -403,13 +403,13 @@ module BackgroundHelper
                 my_index = 999
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
-                    puts "must generate only random 1-4"
-                    my_total_length = 4
+                    puts "must generate only random 1-3"
+                    my_total_length = 3
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
-                    puts "can generate random 1-5"
-                    my_total_length = 5
+                    puts "can generate random 1-4"
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end
