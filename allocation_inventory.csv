@@ -1,61 +1,76 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Rise & Shine - 5 Items,1,181,0,XS,tops
-Rise & Shine - 5 Items,1,947,0,S,tops
-Rise & Shine - 5 Items,1,1068,0,M,tops
-Rise & Shine - 5 Items,1,674,0,L,tops
-Rise & Shine - 5 Items,1,287,0,XL,tops
-Rise & Shine - 5 Items,1,166,0,XS,leggings
-Rise & Shine - 5 Items,1,924,0,S,leggings
-Rise & Shine - 5 Items,1,1207,0,M,leggings
-Rise & Shine - 5 Items,1,631,0,L,leggings
-Rise & Shine - 5 Items,1,227,0,XL,leggings
-Rise & Shine - 5 Items,1,90,0,XS,sports-bra
-Rise & Shine - 5 Items,1,698,0,S,sports-bra
-Rise & Shine - 5 Items,1,1232,0,M,sports-bra
-Rise & Shine - 5 Items,1,762,0,L,sports-bra
-Rise & Shine - 5 Items,1,341,0,XL,sports-bra
-Adventure Time - 5 Items,2,324,0,XS,tops
-Adventure Time - 5 Items,2,1701,0,S,tops
-Adventure Time - 5 Items,2,1917,0,M,tops
-Adventure Time - 5 Items,2,1210,0,L,tops
-Adventure Time - 5 Items,2,515,0,XL,tops
-Adventure Time - 5 Items,2,302,0,XS,leggings
-Adventure Time - 5 Items,2,1684,0,S,leggings
-Adventure Time - 5 Items,2,2199,0,M,leggings
-Adventure Time - 5 Items,2,1150,0,L,leggings
-Adventure Time - 5 Items,2,413,0,XL,leggings
-Adventure Time - 5 Items,2,166,0,XS,sports-bra
-Adventure Time - 5 Items,2,1291,0,S,sports-bra
-Adventure Time - 5 Items,2,2277,0,M,sports-bra
-Adventure Time - 5 Items,2,1409,0,L,sports-bra
-Adventure Time - 5 Items,2,631,0,XL,sports-bra
-Wildflower - 5 Items,3,331,0,XS,tops
-Wildflower - 5 Items,3,1733,0,S,tops
-Wildflower - 5 Items,3,1953,0,M,tops
-Wildflower - 5 Items,3,1233,0,L,tops
-Wildflower - 5 Items,3,524,0,XL,tops
-Wildflower - 5 Items,3,298,0,XS,leggings
-Wildflower - 5 Items,3,1660,0,S,leggings
-Wildflower - 5 Items,3,2169,0,M,leggings
-Wildflower - 5 Items,3,1134,0,L,leggings
-Wildflower - 5 Items,3,407,0,XL,leggings
-Wildflower - 5 Items,3,165,0,XS,sports-bra
-Wildflower - 5 Items,3,1282,0,S,sports-bra
-Wildflower - 5 Items,3,2262,0,M,sports-bra
-Wildflower - 5 Items,3,1400,0,L,sports-bra
-Wildflower - 5 Items,3,627,0,XL,sports-bra
-Weekend Getaway - 5 Items,4,0,0,XS,tops
-Weekend Getaway - 5 Items,4,464,0,S,tops
-Weekend Getaway - 5 Items,4,519,0,M,tops
-Weekend Getaway - 5 Items,4,302,0,L,tops
-Weekend Getaway - 5 Items,4,128,0,XL,tops
-Weekend Getaway - 5 Items,4,0,0,XS,leggings
-Weekend Getaway - 5 Items,4,412,0,S,leggings
-Weekend Getaway - 5 Items,4,528,0,M,leggings
-Weekend Getaway - 5 Items,4,258,0,L,leggings
-Weekend Getaway - 5 Items,4,93,0,XL,leggings
-Weekend Getaway - 5 Items,4,0,0,XS,sports-bra
-Weekend Getaway - 5 Items,4,329,0,S,sports-bra
-Weekend Getaway - 5 Items,4,566,0,M,sports-bra
-Weekend Getaway - 5 Items,4,338,0,L,sports-bra
-Weekend Getaway - 5 Items,4,151,0,XL,sports-bra
+First Chakra - 5 Items,1,148,0,XS,tops
+First Chakra - 5 Items,1,795,0,S,tops
+First Chakra - 5 Items,1,897,0,M,tops
+First Chakra - 5 Items,1,565,0,L,tops
+First Chakra - 5 Items,1,245,0,XL,tops
+First Chakra - 5 Items,1,134,0,XS,leggings
+First Chakra - 5 Items,1,764,0,S,leggings
+First Chakra - 5 Items,1,1021,0,M,leggings
+First Chakra - 5 Items,1,536,0,L,leggings
+First Chakra - 5 Items,1,194,0,XL,leggings
+First Chakra - 5 Items,1,72,0,XS,sports-bra
+First Chakra - 5 Items,1,590,0,S,sports-bra
+First Chakra - 5 Items,1,1049,0,M,sports-bra
+First Chakra - 5 Items,1,646,0,L,sports-bra
+First Chakra - 5 Items,1,292,0,XL,sports-bra
+Golden Hour - 5 Items,2,311,0,XS,tops
+Golden Hour - 5 Items,2,1676,0,S,tops
+Golden Hour - 5 Items,2,1892,0,M,tops
+Golden Hour - 5 Items,2,1192,0,L,tops
+Golden Hour - 5 Items,2,517,0,XL,tops
+Golden Hour - 5 Items,2,285,0,XS,leggings
+Golden Hour - 5 Items,2,1621,0,S,leggings
+Golden Hour - 5 Items,2,2166,0,M,leggings
+Golden Hour - 5 Items,2,1137,0,L,leggings
+Golden Hour - 5 Items,2,412,0,XL,leggings
+Golden Hour - 5 Items,2,153,0,XS,sports-bra
+Golden Hour - 5 Items,2,1252,0,S,sports-bra
+Golden Hour - 5 Items,2,2224,0,M,sports-bra
+Golden Hour - 5 Items,2,1370,0,L,sports-bra
+Golden Hour - 5 Items,2,620,0,XL,sports-bra
+Lowkey Luxe - 5 Items,3,151,0,XS,tops
+Lowkey Luxe - 5 Items,3,767,0,S,tops
+Lowkey Luxe - 5 Items,3,967,0,M,tops
+Lowkey Luxe - 5 Items,3,610,0,L,tops
+Lowkey Luxe - 5 Items,3,260,0,XL,tops
+Lowkey Luxe - 5 Items,3,116,0,XS,leggings
+Lowkey Luxe - 5 Items,3,662,0,S,leggings
+Lowkey Luxe - 5 Items,3,884,0,M,leggings
+Lowkey Luxe - 5 Items,3,464,0,L,leggings
+Lowkey Luxe - 5 Items,3,168,0,XL,leggings
+Lowkey Luxe - 5 Items,3,75,0,XS,sports-bra
+Lowkey Luxe - 5 Items,3,614,0,S,sports-bra
+Lowkey Luxe - 5 Items,3,1090,0,M,sports-bra
+Lowkey Luxe - 5 Items,3,672,0,L,sports-bra
+Lowkey Luxe - 5 Items,3,304,0,XL,sports-bra
+Wild Heart - 5 Items,4,316,0,XS,tops
+Wild Heart - 5 Items,4,1699,0,S,tops
+Wild Heart - 5 Items,4,1918,0,M,tops
+Wild Heart - 5 Items,4,1209,0,L,tops
+Wild Heart - 5 Items,4,525,0,XL,tops
+Wild Heart - 5 Items,4,287,0,XS,leggings
+Wild Heart - 5 Items,4,1634,0,S,leggings
+Wild Heart - 5 Items,4,2184,0,M,leggings
+Wild Heart - 5 Items,4,1146,0,L,leggings
+Wild Heart - 5 Items,4,415,0,XL,leggings
+Wild Heart - 5 Items,4,154,0,XS,sports-bra
+Wild Heart - 5 Items,4,1262,0,S,sports-bra
+Wild Heart - 5 Items,4,2242,0,M,sports-bra
+Wild Heart - 5 Items,4,1381,0,L,sports-bra
+Wild Heart - 5 Items,4,625,0,XL,sports-bra
+Namaste & Slay - 5 Items,5,0,0,XS,tops
+Namaste & Slay - 5 Items,5,264,0,S,tops
+Namaste & Slay - 5 Items,5,531,0,M,tops
+Namaste & Slay - 5 Items,5,554,0,L,tops
+Namaste & Slay - 5 Items,5,284,0,XL,tops
+Namaste & Slay - 5 Items,5,0,0,XS,leggings
+Namaste & Slay - 5 Items,5,264,0,S,leggings
+Namaste & Slay - 5 Items,5,531,0,M,leggings
+Namaste & Slay - 5 Items,5,554,0,L,leggings
+Namaste & Slay - 5 Items,5,284,0,XL,leggings
+Namaste & Slay - 5 Items,5,0,0,XS,sports-bra
+Namaste & Slay - 5 Items,5,216,0,S,sports-bra
+Namaste & Slay - 5 Items,5,586,0,M,sports-bra
+Namaste & Slay - 5 Items,5,562,0,L,sports-bra
+Namaste & Slay - 5 Items,5,284,0,XL,sports-bra
