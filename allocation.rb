@@ -148,7 +148,7 @@ module Allocation
         puts "End of the month = #{my_end_month_str}"
         
 
-        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and next_charge_scheduled_at is not null and next_charge_scheduled_at > \'#{my_end_month_str}\' "
+        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and (next_charge_scheduled_at is not null and next_charge_scheduled_at > \'#{my_end_month_str}\') or (next_charge_scheduled_at is null and status = 'ACTIVE') "
 
         quick_estimation = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and next_charge_scheduled_at is not null  "
 
@@ -186,7 +186,7 @@ module Allocation
         ActiveRecord::Base.connection.reset_pk_sequence!('allocation_matching_products')
         CSV.foreach('allocation_matching_products_production.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
             puts row.inspect
-            my_matching = AllocationMatchingProduct.create(product_title: row['product_title'], incoming_product_id: row['incoming_product_id'], threepk: row['threepk'], outgoing_product_id: row['outgoing_product_id'])
+            my_matching = AllocationMatchingProduct.create(product_title: row['product_title'], incoming_product_id: row['incoming_product_id'], prod_type: row['prod_type'], outgoing_product_id: row['outgoing_product_id'])
 
         end
         puts "Done with loading allocation_matching_products table"
@@ -234,7 +234,7 @@ module Allocation
         ActiveRecord::Base.connection.reset_pk_sequence!('allocation_switchable_products')
         CSV.foreach('allocation_switchable_products_production.csv', :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
             puts row.inspect
-            myswitchable = AllocationSwitchableProduct.create(product_title: row['product_title'], shopify_product_id: row['shopify_product_id'], threepk: row['threepk'], prepaid: row['prepaid'])
+            myswitchable = AllocationSwitchableProduct.create(product_title: row['product_title'], shopify_product_id: row['shopify_product_id'], prod_type: row['prod_type'], prepaid: row['prepaid'])
 
         end
         puts "all done"

@@ -176,17 +176,17 @@ module BackgroundHelper
         puts "Figuring what collection details to push to Recharge"
         puts my_local_collection.inspect
         puts sub.inspect
-        my_threepk = AllocationSwitchableProduct.find_by_shopify_product_id(sub.shopify_product_id)
-        if my_threepk.nil?
+        my_prod_type = AllocationSwitchableProduct.find_by_shopify_product_id(sub.shopify_product_id)
+        if my_prod_type.nil?
             puts "Can't find the switchable product"
             #Mark the subscription as bad, don't process
             sub.bad_subscription = true
             sub.save!
 
         else
-            puts "Switchable product threepk = #{my_threepk.threepk}"
+            puts "Switchable product prod_type = #{my_prod_type.prod_type}"
             puts my_local_collection.collection_product_id
-            my_matching = AllocationMatchingProduct.where("incoming_product_id = ? and threepk = ?", my_local_collection.collection_product_id.to_s, my_threepk.threepk).first
+            my_matching = AllocationMatchingProduct.where("incoming_product_id = ? and prod_type = ?", my_local_collection.collection_product_id.to_s, my_prod_type.prod_type.to_i).first
             puts "my_matching = #{my_matching.inspect}"
             outgoing_product_id = my_matching.outgoing_product_id
             my_alternate_product = AllocationAlternateProduct.find_by_product_id(outgoing_product_id)
@@ -222,7 +222,7 @@ module BackgroundHelper
                 end
                 puts "sent info to Recharge"
             end
-            puts "Done handling a valid threepk value"
+            puts "Done handling a valid prod_type value"
             
         end
         puts "Done with processing the subscription"
@@ -235,7 +235,7 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-            if (value == "XS")
+            if (value == "XXS")
             #if  (value == "XS") || (value == "XL")
                 contains_outlier_size = true
             end
@@ -403,13 +403,13 @@ module BackgroundHelper
                 my_index = 999
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
-                    puts "must generate only random 1-4"
-                    my_total_length = 4
+                    puts "must generate only random 1-3"
+                    my_total_length = 3
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
-                    puts "can generate random 1-5"
-                    my_total_length = 5
+                    puts "can generate random 1-4"
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end

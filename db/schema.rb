@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_22_182300) do
+ActiveRecord::Schema.define(version: 2019_09_27_021822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,8 +63,8 @@ ActiveRecord::Schema.define(version: 2019_01_22_182300) do
   create_table "allocation_matching_products", force: :cascade do |t|
     t.string "product_title"
     t.string "incoming_product_id"
-    t.boolean "threepk", default: false
     t.string "outgoing_product_id"
+    t.integer "prod_type"
   end
 
   create_table "allocation_size_types", force: :cascade do |t|
@@ -76,8 +76,8 @@ ActiveRecord::Schema.define(version: 2019_01_22_182300) do
   create_table "allocation_switchable_products", force: :cascade do |t|
     t.string "product_title"
     t.string "shopify_product_id"
-    t.boolean "threepk", default: false
     t.boolean "prepaid", default: false
+    t.integer "prod_type"
   end
 
   create_table "alternate_products", force: :cascade do |t|
@@ -87,6 +87,57 @@ ActiveRecord::Schema.define(version: 2019_01_22_182300) do
     t.string "sku"
     t.string "product_collection"
     t.index ["product_id"], name: "index_alternate_products_on_product_id"
+  end
+
+  create_table "backup_1_31_19subscriptions_updated", id: false, force: :cascade do |t|
+    t.bigint "id"
+    t.string "subscription_id"
+    t.string "customer_id"
+    t.datetime "updated_at"
+    t.datetime "next_charge_scheduled_at"
+    t.string "product_title"
+    t.string "status"
+    t.string "sku"
+    t.string "shopify_product_id"
+    t.string "shopify_variant_id"
+    t.boolean "updated"
+    t.datetime "processed_at"
+    t.jsonb "raw_line_items"
+  end
+
+  create_table "bad_five_alternate_products", force: :cascade do |t|
+    t.string "original_product_title"
+    t.string "new_product_title"
+    t.string "new_product_id"
+    t.string "new_variant_id"
+    t.string "new_sku"
+    t.string "new_product_collection"
+  end
+
+  create_table "bad_five_item_subs", force: :cascade do |t|
+    t.string "subscription_id"
+    t.string "address_id"
+    t.string "customer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "next_charge_scheduled_at"
+    t.datetime "cancelled_at"
+    t.string "product_title"
+    t.decimal "price", precision: 10, scale: 2
+    t.integer "quantity"
+    t.string "status"
+    t.string "shopify_product_id"
+    t.string "shopify_variant_id"
+    t.string "sku"
+    t.string "order_interval_unit"
+    t.integer "order_interval_frequency"
+    t.integer "charge_interval_frequency"
+    t.integer "order_day_of_month"
+    t.integer "order_day_of_week"
+    t.jsonb "raw_line_item_properties"
+    t.integer "expire_after_specific_number_charges"
+    t.datetime "sub_adjusted_at"
+    t.boolean "sub_adjusted", default: false
   end
 
   create_table "bad_monthly_box", force: :cascade do |t|
