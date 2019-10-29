@@ -1,61 +1,73 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Power of Pink - 5 Items,1,235,0,XS,tops
-Power of Pink - 5 Items,1,1223,0,S,tops
-Power of Pink - 5 Items,1,1447,0,M,tops
-Power of Pink - 5 Items,1,889,0,L,tops
-Power of Pink - 5 Items,1,442,0,XL,tops
-Power of Pink - 5 Items,1,169,0,XS,leggings
-Power of Pink - 5 Items,1,1108,0,S,leggings
-Power of Pink - 5 Items,1,1638,0,M,leggings
-Power of Pink - 5 Items,1,955,0,L,leggings
-Power of Pink - 5 Items,1,365,0,XL,leggings
-Power of Pink - 5 Items,1,95,0,XS,sports-bra
-Power of Pink - 5 Items,1,925,0,S,sports-bra
-Power of Pink - 5 Items,1,1673,0,M,sports-bra
-Power of Pink - 5 Items,1,1068,0,L,sports-bra
-Power of Pink - 5 Items,1,474,0,XL,sports-bra
-English Fog - 5 Items,2,235,0,XS,tops
-English Fog - 5 Items,2,1223,0,S,tops
-English Fog - 5 Items,2,1447,0,M,tops
-English Fog - 5 Items,2,889,0,L,tops
-English Fog - 5 Items,2,442,0,XL,tops
-English Fog - 5 Items,2,169,0,XS,leggings
-English Fog - 5 Items,2,1108,0,S,leggings
-English Fog - 5 Items,2,1638,0,M,leggings
-English Fog - 5 Items,2,955,0,L,leggings
-English Fog - 5 Items,2,365,0,XL,leggings
-English Fog - 5 Items,2,95,0,XS,sports-bra
-English Fog - 5 Items,2,925,0,S,sports-bra
-English Fog - 5 Items,2,1673,0,M,sports-bra
-English Fog - 5 Items,2,1068,0,L,sports-bra
-English Fog - 5 Items,2,474,0,XL,sports-bra
-Ultraviolet - 5 Items,3,383,0,XS,tops
-Ultraviolet - 5 Items,3,1079,0,S,tops
-Ultraviolet - 5 Items,3,1413,0,M,tops
-Ultraviolet - 5 Items,3,909,0,L,tops
-Ultraviolet - 5 Items,3,450,0,XL,tops
-Ultraviolet - 5 Items,3,169,0,XS,leggings
-Ultraviolet - 5 Items,3,1108,0,S,leggings
-Ultraviolet - 5 Items,3,1638,0,M,leggings
-Ultraviolet - 5 Items,3,955,0,L,leggings
-Ultraviolet - 5 Items,3,365,0,XL,leggings
-Ultraviolet - 5 Items,3,95,0,XS,sports-bra
-Ultraviolet - 5 Items,3,925,0,S,sports-bra
-Ultraviolet - 5 Items,3,1673,0,M,sports-bra
-Ultraviolet - 5 Items,3,1068,0,L,sports-bra
-Ultraviolet - 5 Items,3,474,0,XL,sports-bra
-Sparkling Onyx - 5 Items,4,120,0,XS,tops
-Sparkling Onyx - 5 Items,4,623,0,S,tops
-Sparkling Onyx - 5 Items,4,737,0,M,tops
-Sparkling Onyx - 5 Items,4,453,0,L,tops
-Sparkling Onyx - 5 Items,4,225,0,XL,tops
-Sparkling Onyx - 5 Items,4,86,0,XS,leggings
-Sparkling Onyx - 5 Items,4,564,0,S,leggings
-Sparkling Onyx - 5 Items,4,835,0,M,leggings
-Sparkling Onyx - 5 Items,4,487,0,L,leggings
-Sparkling Onyx - 5 Items,4,186,0,XL,leggings
-Sparkling Onyx - 5 Items,4,48,0,XS,sports-bra
-Sparkling Onyx - 5 Items,4,472,0,S,sports-bra
-Sparkling Onyx - 5 Items,4,853,0,M,sports-bra
-Sparkling Onyx - 5 Items,4,544,0,L,sports-bra
-Sparkling Onyx - 5 Items,4,242,0,XL,sports-bra
+Velvet Crush - 5 Items,1,357,0,XS,tops
+Velvet Crush - 5 Items,1,1679,0,S,tops
+Velvet Crush - 5 Items,1,1679,0,M,tops
+Velvet Crush - 5 Items,1,916,0,L,tops
+Velvet Crush - 5 Items,1,459,0,XL,tops
+Velvet Crush - 5 Items,1,204,0,XS,leggings
+Velvet Crush - 5 Items,1,1425,0,S,leggings
+Velvet Crush - 5 Items,1,2035,0,M,leggings
+Velvet Crush - 5 Items,1,1069,0,L,leggings
+Velvet Crush - 5 Items,1,357,0,XL,leggings
+Velvet Crush - 5 Items,1,204,0,XS,sports-bra
+Velvet Crush - 5 Items,1,1425,0,S,sports-bra
+Velvet Crush - 5 Items,1,1984,0,M,sports-bra
+Velvet Crush - 5 Items,1,1018,0,L,sports-bra
+Velvet Crush - 5 Items,1,459,0,XL,sports-bra
+Boss Babe - 5 Items,2,100,0,XS,tops
+Boss Babe - 5 Items,2,100,0,S,tops
+Boss Babe - 5 Items,2,300,0,M,tops
+Boss Babe - 5 Items,2,500,0,L,tops
+Boss Babe - 5 Items,2,225,0,XL,tops
+Boss Babe - 5 Items,2,100,0,XS,leggings
+Boss Babe - 5 Items,2,100,0,S,leggings
+Boss Babe - 5 Items,2,300,0,M,leggings
+Boss Babe - 5 Items,2,500,0,L,leggings
+Boss Babe - 5 Items,2,225,0,XL,leggings
+Boss Babe - 5 Items,2,100,0,XS,sports-jacket
+Boss Babe - 5 Items,2,100,0,S,sports-jacket
+Boss Babe - 5 Items,2,300,0,M,sports-jacket
+Boss Babe - 5 Items,2,500,0,L,sports-jacket
+Boss Babe - 5 Items,2,225,0,XL,sports-jacket
+Canyon Sunset - 5 Items,3,248,0,XS,sports-jacket
+Canyon Sunset - 5 Items,3,1170,0,S,sports-jacket
+Canyon Sunset - 5 Items,3,1170,0,M,sports-jacket
+Canyon Sunset - 5 Items,3,638,0,L,sports-jacket
+Canyon Sunset - 5 Items,3,319,0,XL,sports-jacket
+Canyon Sunset - 5 Items,3,142,0,XS,leggings
+Canyon Sunset - 5 Items,3,993,0,S,leggings
+Canyon Sunset - 5 Items,3,1418,0,M,leggings
+Canyon Sunset - 5 Items,3,744,0,L,leggings
+Canyon Sunset - 5 Items,3,248,0,XL,leggings
+Canyon Sunset - 5 Items,3,142,0,XS,sports-bra
+Canyon Sunset - 5 Items,3,993,0,S,sports-bra
+Canyon Sunset - 5 Items,3,1383,0,M,sports-bra
+Canyon Sunset - 5 Items,3,709,0,L,sports-bra
+Canyon Sunset - 5 Items,3,319,0,XL,sports-bra
+Second Skin - 5 Items,4,282,0,XS,sports-jacket
+Second Skin - 5 Items,4,1100,0,S,sports-jacket
+Second Skin - 5 Items,4,1655,0,M,sports-jacket
+Second Skin - 5 Items,4,854,0,L,sports-jacket
+Second Skin - 5 Items,4,411,0,XL,sports-jacket
+Second Skin - 5 Items,4,171,0,XS,leggings
+Second Skin - 5 Items,4,1191,0,S,leggings
+Second Skin - 5 Items,4,1577,0,M,leggings
+Second Skin - 5 Items,4,783,0,L,leggings
+Second Skin - 5 Items,4,241,0,XL,leggings
+Second Skin - 5 Items,4,198,0,XS,sports-bra
+Second Skin - 5 Items,4,1250,0,S,sports-bra
+Second Skin - 5 Items,4,1484,0,M,sports-bra
+Second Skin - 5 Items,4,728,0,L,sports-bra
+Second Skin - 5 Items,4,321,0,XL,sports-bra
+Balanced Body - 5 Items,5,100,0,S,leggings
+Balanced Body - 5 Items,5,200,0,M,leggings
+Balanced Body - 5 Items,5,200,0,L,leggings
+Balanced Body - 5 Items,5,100,0,XL,leggings
+Balanced Body - 5 Items,5,100,0,S,tops
+Balanced Body - 5 Items,5,200,0,M,tops
+Balanced Body - 5 Items,5,200,0,L,tops
+Balanced Body - 5 Items,5,100,0,XL,tops
+Balanced Body - 5 Items,5,100,0,S,sports-bra
+Balanced Body - 5 Items,5,200,0,M,sports-bra
+Balanced Body - 5 Items,5,200,0,L,sports-bra
+Balanced Body - 5 Items,5,100,0,XL,sports-bra

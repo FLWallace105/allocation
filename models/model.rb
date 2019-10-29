@@ -32,6 +32,10 @@ class AllocationInventory < ActiveRecord::Base
     self.table_name = "allocation_inventory"
 end
 
+class SubNextMonthDryRun < ActiveRecord::Base
+    self.table_name = "subs_next_month_dry_run"
+end
+
 class AllocationSwitchableProduct < ActiveRecord::Base
     self.table_name = "allocation_switchable_products"
     #prepaid method here

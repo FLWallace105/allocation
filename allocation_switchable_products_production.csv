@@ -1,55 +1,63 @@
-product_title,shopify_product_id,prod_type,prepaid,,,
-Rise Up - 3 Items,2372785340474,3,f,,,
-Adventure Time - 2 Items  Auto renew,2503573962810,2,f,,,
-Starstruck - 3 ITEMS,2294131458106,3,f,,,
-Sangria Splash - 3 Items  Auto renew,2457952845882,3,f,,,
-First Chakra - 5 Items,2494100176954,5,f,,,
-Wild Heart - 5 Items,2494104698938,5,f,,,
-Golden Hour - 2 Items,2496308281402,2,f,,,
-Lowkey Luxe - 3 Items,2494103453754,3,f,,,
-Prism Perfect - 3 Items,2339796320314,3,f,,,
-Wild Heart - 2 Items,2496309329978,2,f,,,
-3 Months - 3 Items  Auto renew,2209786298426,3,t,,,
-First Chakra - 3 Items  Auto renew,2494099554362,3,f,,,
-Flower Bud - 5 Items,2267637678138,5,f,,,
-Weekend Getaway - 3 Items,2477583237178,3,f,,,
-Golden Hour - 3 Items  Auto renew,2494101356602,3,f,,,
-Beach Bash - 2 Items,2503576387642,2,f,,,
-Golden Hour - 5 Items  Auto renew,2494101553210,5,f,,,
-Simple Life - 3 Items,2457952026682,3,f,,,
-First Chakra - 3 Items,2494099554362,3,f,,,
-Basic Training - 3 Items,2340063969338,3,f,,,
-Beach Bash - 3 Items,2457951502394,3,f,,,
-Golden Hour - 5 Items,2494101553210,5,f,,,
-Lowkey Luxe - 2 Items  Auto renew,2496308772922,2,f,,,
-Lowkey Luxe - 2 Items,2496308772922,2,f,,,
-Wildflower - 3 Items,2477581959226,3,f,,,
-First Chakra - 2 Items,2496307560506,2,f,,,
-Golden Hour - 3 Items,2494101356602,3,f,,,
-Lowkey Luxe - 5 Items,2494103683130,5,f,,,
-Adventure Time - 5 Items,2477581795386,5,f,,,
-Steel the Show - 3 Items,2267622539322,3,f,,,
-Namaste & Slay - 3 Items,2494106861626,3,f,,,
-Sangria Splash - 5 Items,2457953173562,5,f,,,
-First Chakra - 5 Items  Auto renew,2494100176954,5,f,,,
-3 MONTHS,23729012754,5,t,,,
-Feels Like Summer - 3 Items,2457953271866,3,f,,,
-Lowkey Luxe - 3 Items  Auto renew,2494103453754,3,f,,,
-Namaste & Slay - 5 Items,2494107156538,5,f,,,
-Beach Bash - 5 Items,2457951633466,5,f,,,
-Wild Heart - 3 Items  Auto renew,2494104535098,3,f,,,
-Think Pink - 5 Items,1918033133626,5,f,,,
-Victory Lap - 3 Items,2372782751802,3,f,,,
-Steel the Show - 5 Items,2267625160762,5,f,,,
-3 Months - 3 Items (ships every 1 Months),2209786298426,3,t,,,
-Lowkey Luxe - 5 Items  Auto renew,2494103683130,5,f,,,
-Wild Heart - 5 Items  Auto renew,2494104698938,5,f,,,
-3 Months - 3 Items,2209786298426,3,t,,,
-Wild Heart - 3 Items,2494104535098,3,f,,,
-3 Months - 5 Items,2209789771834,5,t,,,
-3 Months - 2 Items,2506238492730,2,t,,,
-Wrap Me Up - 5 Items,2076477653050,5,f,,,
-Namaste & Slay - 3 Items  Auto renew,2494106861626,3,f,,,
-Adventure Time - 2 Items,2503573962810,2,f,,,
-Adventure Time - 3 Items,2477581697082,3,f,,,
-Starstruck - 5 ITEMS  Auto renew,2294132539450,5,f,,,
+product_title,shopify_product_id,prod_type,prepaid
+Adventure Time - 2 Items,2503573962810,2,f
+Adventure Time - 3 Items,2477581697082,3,f
+Power of Pink - 2 Items,2514826625082,2,f
+Golden Hour - 3 Items  Auto renew,2494101356602,3,f
+Ultraviolet - 5 Items,2514833866810,5,f
+Sangria Splash - 5 Items  Auto renew,2457953173562,5,f
+English Fog - 5 Items  Auto renew,2514830852154,5,f
+Sangria Splash - 2 Items,2503579500602,2,f
+Sparkling Onyx - 2 Items,2514843631674,2,f
+Victory Lap - 5 Items,2372783145018,5,f
+First Chakra - 2 Items,2496307560506,2,f
+Mauve Muse - 5 ITEMS,2294127558714,5,f
+Sparkling Onyx - 3 Items  Auto renew,2514843762746,3,f
+Wildflower - 2 Items,2520606408762,2,f
+Power of Pink - 5 Items  Auto renew,2514827083834,5,f
+Golden Hour - 2 Items,2496308281402,2,f
+Wrap Me Up - 3 Items,2076469657658,3,f
+Rise & Shine - 3 Items,2477579173946,3,f
+Golden Hour - 3 Items,2494101356602,3,f
+Power of Pink - 3 Items  Auto renew,2514826788922,3,f
+Adventure Time - 5 Items,2477581795386,5,f
+Victory Lap - 2 Items,2520604901434,2,f
+Desert Bloom - 3 Items,2372780752954,3,f
+Brooklyn - 3 Items,2339789013050,3,f
+Beach Bash - 5 Items,2457951633466,5,f
+Mauve Muse - 3 ITEMS  Auto renew,2294123954234,3,f
+Mauve Muse - 5 ITEMS  Auto renew,2294127558714,5,f
+Good Intentions - 3 Items,2405031280698,3,f
+Sparkling Onyx - 3 Items,2514843762746,3,f
+Power of Pink - 3 Items,2514826788922,3,f
+Wildflower - 5 Items,2477583040570,5,f
+Beach Bash - 3 Items,2457951502394,3,f
+Sangria Splash - 5 Items,2457953173562,5,f
+Sangria Splash - 3 Items,2457952845882,3,f
+Power of Pink - 5 Items,2514827083834,5,f
+English Fog - 5 Items,2514830852154,5,f
+Wild Heart - 3 Items,2494104535098,3,f
+English Fog - 2 Items  Auto renew,2514830327866,2,f
+English Fog - 2 Items,2514830327866,2,f
+Wildflower - 3 Items  Auto renew,2477581959226,3,f
+Sparkling Onyx - 5 Items  Auto renew,2514844155962,5,f
+English Fog - 3 Items  Auto renew,2514830491706,3,f
+Prism Perfect - 3 Items,2339796320314,3,f
+Mauve Muse - 2 Items,2520607981626,2,f
+Mauve Muse - 3 ITEMS,2294123954234,3,f
+Victory Lap - 3 Items,2372782751802,3,f
+Adventure Time - 3 Items  Auto renew,2477581697082,3,f
+Wild Heart - 5 Items,2494104698938,5,f
+Ultraviolet - 2 Items,2514832261178,2,f
+Lowkey Luxe - 3 Items,2494103453754,3,f
+English Fog - 3 Items,2514830491706,3,f
+Wild Heart - 2 Items,2496309329978,2,f
+Golden Hour - 5 Items,2494101553210,5,f
+Ultraviolet - 3 Items  Auto renew,2514833440826,3,f
+First Chakra - 3 Items,2494099554362,3,f
+Wildflower - 3 Items,2477581959226,3,f
+Sparkling Onyx - 2 Items  Auto renew,2514843631674,2,f
+Sparkling Onyx - 5 Items,2514844155962,5,f
+Ultraviolet - 3 Items,2514833440826,3,f
+Ultraviolet - 5 Items  Auto renew,2514833866810,5,f
+Mauve Muse - 3 Items,2294123954234,3,f
+Sangria Splash - 3 Items  Auto renew,2457952845882,3,f

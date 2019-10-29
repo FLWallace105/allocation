@@ -103,6 +103,12 @@ module BackgroundHelper
             my_line_items << { "name" => "sports-bra", "value" => leggings_size }
         end
 
+        if found_sports_jacket == false
+            puts "We are adding the sports-jacket size and using the tops size for this sub"
+            my_line_items << {"name" => "sports-jacket", "value" => tops_size }
+
+        end
+
         if found_gloves == false
             puts "We are adding legging size to missing gloves size"
             puts "leggings_size = #{leggings_size}"
@@ -204,17 +210,20 @@ module BackgroundHelper
                 puts body
                 puts "-----"
                 puts "recharge_change_header = #{recharge_change_header}"
+                #Comment out below for dry run
                 my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
                 puts my_update_sub.inspect
                 recharge_limit = my_update_sub.response["x-recharge-limit"]
                 determine_limits(recharge_limit, 0.65)
                 if my_update_sub.code == 200
+                #if 7 > 3
                     sub.updated = true
                     time_updated = DateTime.now
                     time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
                     sub.processed_at = time_updated_str
                     sub.save!
                     puts "processed subscription_id #{sub.subscription_id}"
+                    my_dry_run = SubNextMonthDryRun.create(subscription_id: sub.subscription_id, customer_id: sub.customer_id, updated_at: sub.updated_at, next_charge_scheduled_at: sub.next_charge_scheduled_at, product_title: recharge_data['product_title'], status: sub.status, sku: recharge_data['sku'], shopify_product_id: recharge_data['shopify_product_id'], shopify_variant_id: recharge_data['shopify_variant_id'], raw_line_items: recharge_data['properties'], updated: true, processed_at: sub.processed_at)
                 else
                     sub.bad_subscription = true
                     sub.save!
@@ -235,7 +244,7 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-            if (value == "XXS")
+            if (value == "XS")
             #if  (value == "XS") || (value == "XL")
                 contains_outlier_size = true
             end
@@ -249,6 +258,28 @@ module BackgroundHelper
 
     end
 
+    def generate_exclude(my_index)
+        temp_exclude = ""
+        case my_index
+        when 1
+            temp_exclude = "sports-jacket"
+        when 2
+            temp_exclude = "sports-bra"
+        when 3
+            temp_exclude = "tops"
+        when 4
+            temp_exclude = "tops"
+        when 5
+            temp_exclude = "sports-jacket"
+        else
+
+
+
+        end
+        return temp_exclude
+
+    end
+
     def allocate_single_subscription(my_index, my_size_hash, sub, exclude, recharge_change_header)
         puts "Allocating single subscription"
         puts my_index.inspect
@@ -258,6 +289,27 @@ module BackgroundHelper
         #if my_index == 1
         #    my_size_hash.delete(:tops)
         #end
+
+        #Code Floyd Wallace 10/29
+        #remove unwanted my_size_hash entries for two item subs
+        if sub.product_title =~ /2\sitem/i
+            case my_index
+            when 1
+                my_size_hash.delete("sports-bra")
+            when 2
+                my_size_hash.delete("sports-jacket")
+            when 3
+                my_size_hash.delete("sports-bra")
+            when 4
+                my_size_hash.delete("sports-bra")
+            when 5
+                my_size_hash.delete("sports-bra")
+
+            else
+                puts "Doing nothing for this two item sub"
+            end
+
+        end
 
 
         can_allocate = true
@@ -353,9 +405,11 @@ module BackgroundHelper
             found_legging = false
             found_tops = false
             found_bra = false
+            found_jacket = false
             legging_size = ""
             tops_size = ""
             bra_size = ""
+            jacket_size = ""
 
 
             mysizes = SubLineItem.where("subscription_id = ?", sub.subscription_id)
@@ -363,6 +417,8 @@ module BackgroundHelper
             mysizes.each do |mys|
                 case mys.name
                 when "sports-jacket"
+                    found_jacket = true
+                    jacket_size = mys.value.upcase
                     my_size_hash['sports-jacket'] = mys.value.upcase
                 when "tops", "TOPS", "top"
                     my_size_hash['tops'] = mys.value.upcase
@@ -393,6 +449,11 @@ module BackgroundHelper
                 my_size_hash['sports-bra'] = legging_size
             end
 
+            if found_jacket == false && found_tops == true
+                my_size_hash['sports-jacket'] = tops_size
+            end
+            
+
             puts my_size_hash.inspect
             if my_size_hash.length < 3
                 puts "Can't do anything"
@@ -404,16 +465,19 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-3"
-                    my_total_length = 3
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-4"
-                    my_total_length = 4
+                    my_total_length = 5
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end
-                allocate_single_subscription(my_index, my_size_hash, sub, "sports-jacket",recharge_change_header )
+                my_exclude = generate_exclude(my_index)
+                puts "my_exclude = #{my_exclude}"
+                
+                allocate_single_subscription(my_index, my_size_hash, sub, my_exclude,recharge_change_header )
                 puts "done with a subscription!"
                 #see if running more than eight minutes
                 my_current = Time.now

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_27_021822) do
+ActiveRecord::Schema.define(version: 2019_10_29_181723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -656,6 +656,22 @@ ActiveRecord::Schema.define(version: 2019_09_27_021822) do
     t.string "name"
     t.string "value"
     t.index ["subscription_id"], name: "index_sub_line_items_on_subscription_id"
+  end
+
+  create_table "subs_next_month_dry_run", force: :cascade do |t|
+    t.string "subscription_id"
+    t.string "customer_id"
+    t.datetime "updated_at"
+    t.datetime "next_charge_scheduled_at"
+    t.string "product_title"
+    t.string "status"
+    t.string "sku"
+    t.string "shopify_product_id"
+    t.string "shopify_variant_id"
+    t.jsonb "raw_line_items"
+    t.boolean "updated", default: false
+    t.boolean "bad_subscription", default: false
+    t.datetime "processed_at"
   end
 
   create_table "subscription_update", force: :cascade do |t|

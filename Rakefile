@@ -10,6 +10,19 @@ require_relative 'allocation'
 #require 'pry'
 
 namespace :allocate do
+
+#allocation_switchable_products_helper(myfile)
+desc 'add product type to input file for allocation_switchable_products'
+task :add_product_type, :myfile do |t, args|
+    myfile = args['myfile']
+    Allocation::Setup.new.allocation_switchable_products_helper(myfile)
+end
+
+desc 'reset sub_next_month_dry_run table'
+task :reset_sub_next_month_dry_run do |t|
+    Allocation::Setup.new.reset_sub_dry_run
+end
+
 desc 'figure out total size counts per item ex tops XL = 523'
 task :figure_size_counts do |t|
     Allocation::Setup.new.figure_size_counts
