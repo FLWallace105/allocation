@@ -62,12 +62,12 @@ module Allocation
         RawSizeTotal.delete_all
         # Now reset index
         ActiveRecord::Base.connection.reset_pk_sequence!('raw_size_totals')  
-        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(orders.id), order_line_items_variable.name, order_line_items_variable.value from orders, order_line_items_variable where orders.is_prepaid = 1 and orders.order_id = order_line_items_variable.order_id and orders.scheduled_at > '2019-10-31' and orders.scheduled_at < '2019-12-01' and (order_line_items_variable.name = 'leggings' or order_line_items_variable.name = 'sports-bra' or order_line_items_variable.name = 'tops' or order_line_items_variable.name = 'sports-jacket') group by order_line_items_variable.name, order_line_items_variable.value"
+        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(orders.id), order_line_items_variable.name, order_line_items_variable.value from orders, order_line_items_variable where orders.is_prepaid = 1 and orders.order_id = order_line_items_variable.order_id and orders.scheduled_at > '2019-11-30' and orders.scheduled_at < '2020-01-01' and (order_line_items_variable.name = 'leggings' or order_line_items_variable.name = 'sports-bra' or order_line_items_variable.name = 'tops' or order_line_items_variable.name = 'sports-jacket') group by order_line_items_variable.name, order_line_items_variable.value"
 
         ActiveRecord::Base.connection.execute(new_size_count_sql)
 
         #now get subscriptions that will charge this month or next month, assume charge will be successful
-        new_size_count_prepaid_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and subscriptions.product_title  ilike '3%month%' and subscriptions.next_charge_scheduled_at > '2019-10-21' and subscriptions.next_charge_scheduled_at < '2019-12-01' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
+        new_size_count_prepaid_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and subscriptions.product_title  ilike '3%month%' and subscriptions.next_charge_scheduled_at > '2019-11-30' and subscriptions.next_charge_scheduled_at < '2020-01-01' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
 
         ActiveRecord::Base.connection.execute(new_size_count_prepaid_sql)
 
@@ -86,6 +86,17 @@ module Allocation
 
         ActiveRecord::Base.connection.execute(new_size_count_sql)
 
+
+    end
+
+
+    def figure_prepaid_charging_next_month
+        RawSizeTotal.delete_all
+        # Now reset index
+        ActiveRecord::Base.connection.reset_pk_sequence!('raw_size_totals')
+        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and ( subscriptions.product_title  ilike '3%month%'  or subscriptions.charge_interval_frequency = 3 )and subscriptions.next_charge_scheduled_at > '2019-11-30' and subscriptions.next_charge_scheduled_at < '2020-01-01' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
+
+        ActiveRecord::Base.connection.execute(new_size_count_sql)
 
     end
 
@@ -352,7 +363,75 @@ module Allocation
         end
     end
 
-        
+    #prepaid charging next month
+    figure_prepaid_charging_next_month
+    puts "Getting real size counts Prepaid Subs Charging Next Month"
+    
+    #start with tops
+    tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+    leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+    sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+    sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+
+    my_raw_sizes = RawSizeTotal.all
+    my_raw_sizes.each do |myraw|
+        puts myraw.inspect
+        figure_my_size(tops_sizes, myraw, "tops")
+        figure_my_size(leggings_sizes, myraw, "leggings")
+        figure_my_size(sports_bra_sizes, myraw, "sports-bra")
+        figure_my_size(sports_jacket_sizes, myraw, "sports-jacket")
+    end
+    
+
+
+    puts "All done for Prepaid Charging Next Month Subs!"
+    puts "top sizes"
+    puts tops_sizes.inspect
+    puts "leggings sizes"
+    puts leggings_sizes.inspect
+    puts "sports bra sizes"
+    puts sports_bra_sizes.inspect
+    puts "sports-jacket sizes"
+    puts sports_jacket_sizes.inspect
+
+    size_file.write("Prepaid Charging Next Month Subs SIZES\n")
+    size_file.write("Tops\n")
+    size_file.write("XS,S,M,L,XL\n")
+    size_array = ["XS", "S", "M", "L", "XL"]
+    size_array.each do |mys|
+        if mys != "XL"
+            size_file.write("#{tops_sizes[mys]},")
+        else
+            size_file.write("#{tops_sizes[mys]}\n")
+        end
+    end
+    size_file.write("Leggings\n")
+    size_file.write("XS,S,M,L,XL\n")
+    size_array.each do |mys|
+        if mys != "XL"
+            size_file.write("#{leggings_sizes[mys]},")
+        else
+            size_file.write("#{leggings_sizes[mys]}\n")
+        end
+    end
+    size_file.write("Sports Bra\n")
+    size_file.write("XS,S,M,L,XL\n")
+    size_array.each do |mys|
+        if mys != "XL"
+            size_file.write("#{sports_bra_sizes[mys]},")
+        else
+            size_file.write("#{sports_bra_sizes[mys]}\n")
+        end
+    end
+    size_file.write("Sports Jacket\n")
+    size_file.write("XS,S,M,L,XL\n")
+    size_array.each do |mys|
+        if mys != "XL"
+            size_file.write("#{sports_jacket_sizes[mys]},")
+        else
+            size_file.write("#{sports_jacket_sizes[mys]}\n")
+        end
+    end   
 
 
         size_file.close

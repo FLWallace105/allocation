@@ -5,6 +5,7 @@ require 'active_support/core_ext'
 require 'sinatra/activerecord'
 require 'httparty'
 require_relative 'models/model'
+require_relative 'lib/order_size'
 
 
 Dotenv.load
@@ -62,12 +63,10 @@ module BackgroundHelper
             end
             if mystuff['name'] == "tops"
                 tops_size = mystuff['value']
+                found_tops = true
                 puts "ATTENTION -- Tops SIZE = #{tops_size}"
             end
-            #check missing sizes
-            if mystuff['name'] == "tops"
-                found_tops = true
-            end
+            
             if mystuff['name'] == "sports-bra"
                 found_sports_bra = true
             end
@@ -94,13 +93,13 @@ module BackgroundHelper
         end
 
         if found_tops == false
-            puts "We are adding legging size to missing top size"
-            my_line_items << { "name" => "tops", "value" => leggings_size }
+            puts "We are adding sports_jacket size to missing top size"
+            my_line_items << { "name" => "tops", "value" => sports_jacket_size }
         end
 
         if found_sports_bra == false
-            puts "We are adding legging size to missing sports-bra size"
-            my_line_items << { "name" => "sports-bra", "value" => leggings_size }
+            puts "We are adding sports_jacket size to missing sports-bra size"
+            my_line_items << { "name" => "sports-bra", "value" => sports_jacket_size }
         end
 
         if found_sports_jacket == false
@@ -130,11 +129,7 @@ module BackgroundHelper
 
         end
 
-        #Floyd Wallace 4/25/19 not adding sports-jacket this month
-        if found_sports_jacket == false
-        #    puts "We are adding the sports-bra size for the sports-jacket size"
-        #    my_line_items << { "name" => "sports-jacket", "value" => tops_size}
-        end
+        
 
         if found_collection == false
             # only if I did not find the product_collection property in the line items do I need to add it
@@ -206,10 +201,23 @@ module BackgroundHelper
             else
                 puts "Here is the stuff to send to Recharge"
                 puts recharge_data.inspect
-                body = recharge_data.to_json
-                puts body
+                
                 puts "-----"
                 puts "recharge_change_header = #{recharge_change_header}"
+
+                #fix missing sizes
+                if recharge_data['product_title'] =~ /2\sitem/i
+                    #do nothing, don't add sizes
+                else
+                    new_json = OrderSize.add_missing_sub_size(recharge_data['properties'])
+                    recharge_data['properties'] = new_json
+                end
+                puts "now sizes reflect:"
+                puts recharge_data.inspect
+                body = recharge_data.to_json
+                puts body
+
+                #exit
                 #Comment out below for dry run
                 my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
                 puts my_update_sub.inspect
@@ -244,8 +252,8 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-            if (value == "XS")
-            #if  (value == "XS") || (value == "XL")
+            #if (value == "XS")
+            if  (value == "XS") || (value == "S") || (value == "XL")
                 contains_outlier_size = true
             end
         end
@@ -262,15 +270,15 @@ module BackgroundHelper
         temp_exclude = ""
         case my_index
         when 1
-            temp_exclude = "sports-jacket"
+            temp_exclude = "tops"
         when 2
-            temp_exclude = "sports-bra"
-        when 3
-            temp_exclude = "tops"
-        when 4
-            temp_exclude = "tops"
-        when 5
             temp_exclude = "sports-jacket"
+        when 3
+            temp_exclude = "sports-jacket"
+        when 4
+            temp_exclude = "sports-jacket"
+        #when 5
+        #    temp_exclude = "sports-jacket"
         else
 
 
@@ -398,6 +406,7 @@ module BackgroundHelper
         my_now = Time.now
         my_size_hash = Hash.new
         mysubs = SubscriptionsNextMonthUpdate.where("updated = ? and bad_subscription = ?", false, false)
+        puts "here"
         mysubs.each do |sub|
             my_size_hash = {}
             puts sub.inspect
@@ -437,16 +446,16 @@ module BackgroundHelper
             end
 
             #stuff in missing sizes
-            if found_tops == false && found_legging == true
-                my_size_hash['tops'] =  legging_size
+            if found_tops == false && found_jacket == true
+                my_size_hash['tops'] =  jacket_size
             end
 
             if found_legging == false && found_tops == true
                 my_size_hash['leggings'] =  tops_size
             end
 
-            if found_bra == false && found_legging == true
-                my_size_hash['sports-bra'] = legging_size
+            if found_bra == false && found_jacket == true
+                my_size_hash['sports-bra'] = jacket_size
             end
 
             if found_jacket == false && found_tops == true
@@ -465,12 +474,12 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-3"
-                    my_total_length = 4
+                    my_total_length = 3
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-4"
-                    my_total_length = 5
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end
