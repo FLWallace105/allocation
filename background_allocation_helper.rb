@@ -406,8 +406,13 @@ module BackgroundHelper
         my_now = Time.now
         my_size_hash = Hash.new
         
-        mysubs = SubscriptionsNextMonthUpdate.where("updated = 'f' and bad_subscription = 'f' ")
-        puts "mysubs length = #{mysubs.length}"
+        #mysubs = SubscriptionsNextMonthUpdate.where("updated = 'f' and bad_subscription = 'f' ")
+        mysql = "select * from subscriptions_next_month_updated where updated = 'f' and bad_subscription = 'f' "
+        ActiveRecord::Base.connection.execute(mysql).each do |mystuffa|
+            puts mystuff.inspect
+        end
+
+        #puts "mysubs length = #{mysubs.length}"
         puts "here"
         puts "exiting"
         exit
