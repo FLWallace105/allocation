@@ -406,6 +406,7 @@ module BackgroundHelper
         my_now = Time.now
         my_size_hash = Hash.new
         mysubs = SubscriptionsNextMonthUpdate.where("updated = ? and bad_subscription = ?", false, false)
+        puts "mysubs length = #{mysubs.length}"
         puts "here"
         mysubs.each do |sub|
             my_size_hash = {}
