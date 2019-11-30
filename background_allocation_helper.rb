@@ -253,9 +253,9 @@ module BackgroundHelper
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
             #if (value == "XS")
-            if  (value == "XS") || (value == "S") || (value == "XL")
-                contains_outlier_size = true
-            end
+            #if  (value == "XS") || (value == "S") || (value == "XL")
+            #    contains_outlier_size = true
+            #end
         end
         return contains_outlier_size
     end
@@ -405,6 +405,7 @@ module BackgroundHelper
         puts "Starting allocation"
         my_now = Time.now
         my_size_hash = Hash.new
+        
         mysubs = SubscriptionsNextMonthUpdate.where("updated = ? and bad_subscription = ?", false, false)
         puts "mysubs length = #{mysubs.length}"
         puts "here"
@@ -475,7 +476,7 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-3"
-                    my_total_length = 4
+                    my_total_length = 3
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
