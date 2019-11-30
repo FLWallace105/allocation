@@ -519,7 +519,8 @@ module BackgroundHelper
         puts "Starting allocation"
         my_now = Time.now
         my_size_hash = Hash.new
-        mysubs = SubscriptionsNextMonthUpdate.where("updated = ? and bad_subscription = ?", false, false)
+        mysubs = SubscriptionsNextMonthUpdate.where("updated = \'f\' and bad_subscription = \'f\'")
+        puts "mysubs length = #{mysubs.length}"
         mysubs.each do |sub|
             my_size_hash = {}
             puts sub.inspect
