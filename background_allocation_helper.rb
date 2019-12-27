@@ -219,12 +219,12 @@ module BackgroundHelper
 
                 #exit
                 #Comment out below for dry run
-                my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
-                puts my_update_sub.inspect
-                recharge_limit = my_update_sub.response["x-recharge-limit"]
-                determine_limits(recharge_limit, 0.65)
-                if my_update_sub.code == 200
-                #if 7 > 3
+                #my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
+                #puts my_update_sub.inspect
+                #recharge_limit = my_update_sub.response["x-recharge-limit"]
+                #determine_limits(recharge_limit, 0.65)
+                #if my_update_sub.code == 200
+                if 7 > 3
                     sub.updated = true
                     time_updated = DateTime.now
                     time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
@@ -473,6 +473,10 @@ module BackgroundHelper
 
             if found_jacket == false && found_tops == true
                 my_size_hash['sports-jacket'] = tops_size
+            end
+
+            if my_size_hash['sports-bra'] == ""
+                my_size_hash['sports-bra'] = my_size_hash['tops']
             end
             
 
