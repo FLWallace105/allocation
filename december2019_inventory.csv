@@ -1,0 +1,61 @@
+id,collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
+1,Floral Bliss - 5 Items,1,0,250,XS,sports-jacket
+2,Floral Bliss - 5 Items,1,0,1000,S,sports-jacket
+3,Floral Bliss - 5 Items,1,139,861,M,sports-jacket
+4,Floral Bliss - 5 Items,1,41,459,L,sports-jacket
+5,Floral Bliss - 5 Items,1,0,200,XL,sports-jacket
+6,Floral Bliss - 5 Items,1,68,182,XS,leggings
+7,Floral Bliss - 5 Items,1,19,981,S,leggings
+8,Floral Bliss - 5 Items,1,27,973,M,leggings
+9,Floral Bliss - 5 Items,1,29,471,L,leggings
+10,Floral Bliss - 5 Items,1,37,163,XL,leggings
+11,Floral Bliss - 5 Items,1,147,103,XS,sports-bra
+12,Floral Bliss - 5 Items,1,112,888,S,sports-bra
+13,Floral Bliss - 5 Items,1,0,1000,M,sports-bra
+14,Floral Bliss - 5 Items,1,0,500,L,sports-bra
+15,Floral Bliss - 5 Items,1,0,200,XL,sports-bra
+16,Show Your Stripes - 5 Items,2,20,100,XS,tops
+17,Show Your Stripes - 5 Items,2,20,1900,S,tops
+18,Show Your Stripes - 5 Items,2,520,1500,M,tops
+19,Show Your Stripes - 5 Items,2,206,914,L,tops
+20,Show Your Stripes - 5 Items,2,42,478,XL,tops
+21,Show Your Stripes - 5 Items,2,30,100,XS,leggings
+22,Show Your Stripes - 5 Items,2,350,1555,S,leggings
+23,Show Your Stripes - 5 Items,2,213,1827,M,leggings
+24,Show Your Stripes - 5 Items,2,125,1015,L,leggings
+25,Show Your Stripes - 5 Items,2,105,395,XL,leggings
+26,Show Your Stripes - 5 Items,2,45,85,XS,sports-bra
+27,Show Your Stripes - 5 Items,2,715,1195,S,sports-bra
+28,Show Your Stripes - 5 Items,2,40,2000,M,sports-bra
+29,Show Your Stripes - 5 Items,2,30,1100,L,sports-bra
+30,Show Your Stripes - 5 Items,2,10,500,XL,sports-bra
+31,Gear Up - 5 Items,3,20,40,XS,tops
+32,Gear Up - 5 Items,3,40,400,S,tops
+33,Gear Up - 5 Items,3,42,1173,M,tops
+34,Gear Up - 5 Items,3,10,690,L,tops
+35,Gear Up - 5 Items,3,1,299,XL,tops
+36,Gear Up - 5 Items,3,20,40,XS,leggings
+37,Gear Up - 5 Items,3,40,400,S,leggings
+38,Gear Up - 5 Items,3,20,1200,M,leggings
+39,Gear Up - 5 Items,3,20,700,L,leggings
+40,Gear Up - 5 Items,3,38,262,XL,leggings
+41,Gear Up - 5 Items,3,32,28,XS,sports-bra
+42,Gear Up - 5 Items,3,80,360,S,sports-bra
+43,Gear Up - 5 Items,3,75,1145,M,sports-bra
+44,Gear Up - 5 Items,3,5,700,L,sports-bra
+45,Gear Up - 5 Items,3,0,300,XL,sports-bra
+46,Winter Rose - 5 Items,4,30,0,XS,tops
+47,Winter Rose - 5 Items,4,70,0,S,tops
+48,Winter Rose - 5 Items,4,121,879,M,tops
+49,Winter Rose - 5 Items,4,20,300,L,tops
+50,Winter Rose - 5 Items,4,20,0,XL,tops
+51,Winter Rose - 5 Items,4,0,0,XS,leggings
+52,Winter Rose - 5 Items,4,70,0,S,leggings
+53,Winter Rose - 5 Items,4,131,879,M,leggings
+54,Winter Rose - 5 Items,4,0,300,L,leggings
+55,Winter Rose - 5 Items,4,0,0,XL,leggings
+56,Winter Rose - 5 Items,4,30,0,XS,sports-bra
+57,Winter Rose - 5 Items,4,70,0,S,sports-bra
+58,Winter Rose - 5 Items,4,153,847,M,sports-bra
+59,Winter Rose - 5 Items,4,20,300,L,sports-bra
+60,Winter Rose - 5 Items,4,20,0,XL,sports-bra

@@ -1,61 +1,91 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Floral Bliss - 5 Items,1,250,0,XS,sports-jacket
-Floral Bliss - 5 Items,1,1000,0,S,sports-jacket
-Floral Bliss - 5 Items,1,1000,0,M,sports-jacket
-Floral Bliss - 5 Items,1,500,0,L,sports-jacket
-Floral Bliss - 5 Items,1,200,0,XL,sports-jacket
-Floral Bliss - 5 Items,1,250,0,XS,leggings
-Floral Bliss - 5 Items,1,1000,0,S,leggings
-Floral Bliss - 5 Items,1,1000,0,M,leggings
-Floral Bliss - 5 Items,1,500,0,L,leggings
-Floral Bliss - 5 Items,1,200,0,XL,leggings
-Floral Bliss - 5 Items,1,250,0,XS,sports-bra
-Floral Bliss - 5 Items,1,1000,0,S,sports-bra
-Floral Bliss - 5 Items,1,1000,0,M,sports-bra
-Floral Bliss - 5 Items,1,500,0,L,sports-bra
-Floral Bliss - 5 Items,1,200,0,XL,sports-bra
-Show Your Stripes - 5 Items,2,100,0,XS,tops
-Show Your Stripes - 5 Items,2,1900,0,S,tops
-Show Your Stripes - 5 Items,2,2000,0,M,tops
-Show Your Stripes - 5 Items,2,1100,0,L,tops
-Show Your Stripes - 5 Items,2,500,0,XL,tops
-Show Your Stripes - 5 Items,2,100,0,XS,leggings
-Show Your Stripes - 5 Items,2,1900,0,S,leggings
-Show Your Stripes - 5 Items,2,2000,0,M,leggings
-Show Your Stripes - 5 Items,2,1100,0,L,leggings
-Show Your Stripes - 5 Items,2,500,0,XL,leggings
-Show Your Stripes - 5 Items,2,100,0,XS,sports-bra
-Show Your Stripes - 5 Items,2,1900,0,S,sports-bra
-Show Your Stripes - 5 Items,2,2000,0,M,sports-bra
-Show Your Stripes - 5 Items,2,1100,0,L,sports-bra
-Show Your Stripes - 5 Items,2,500,0,XL,sports-bra
-Gear Up - 5 Items,3,40,0,XS,tops
-Gear Up - 5 Items,3,400,0,S,tops
-Gear Up - 5 Items,3,1200,0,M,tops
-Gear Up - 5 Items,3,700,0,L,tops
-Gear Up - 5 Items,3,300,0,XL,tops
-Gear Up - 5 Items,3,40,0,XS,leggings
-Gear Up - 5 Items,3,400,0,S,leggings
-Gear Up - 5 Items,3,1200,0,M,leggings
-Gear Up - 5 Items,3,700,0,L,leggings
-Gear Up - 5 Items,3,300,0,XL,leggings
-Gear Up - 5 Items,3,40,0,XS,sports-bra
-Gear Up - 5 Items,3,400,0,S,sports-bra
-Gear Up - 5 Items,3,1200,0,M,sports-bra
-Gear Up - 5 Items,3,700,0,L,sports-bra
-Gear Up - 5 Items,3,300,0,XL,sports-bra
-Winter Rose - 5 Items,4,0,0,XS,tops
-Winter Rose - 5 Items,4,0,0,S,tops
-Winter Rose - 5 Items,4,1000,0,M,tops
-Winter Rose - 5 Items,4,300,0,L,tops
-Winter Rose - 5 Items,4,0,0,XL,tops
-Winter Rose - 5 Items,4,0,0,XS,leggings
-Winter Rose - 5 Items,4,0,0,S,leggings
-Winter Rose - 5 Items,4,1000,0,M,leggings
-Winter Rose - 5 Items,4,300,0,L,leggings
-Winter Rose - 5 Items,4,0,0,XL,leggings
-Winter Rose - 5 Items,4,0,0,XS,sports-bra
-Winter Rose - 5 Items,4,0,0,S,sports-bra
-Winter Rose - 5 Items,4,1000,0,M,sports-bra
-Winter Rose - 5 Items,4,300,0,L,sports-bra
-Winter Rose - 5 Items,4,0,0,XL,sports-bra
+Berry Crush - 5 Items,1,227,0,XS,tops
+Berry Crush - 5 Items,1,1200,0,S,tops
+Berry Crush - 5 Items,1,1151,0,M,tops
+Berry Crush - 5 Items,1,592,0,L,tops
+Berry Crush - 5 Items,1,266,0,XL,tops
+Berry Crush - 5 Items,1,100,0,XS,leggings
+Berry Crush - 5 Items,1,1000,0,S,leggings
+Berry Crush - 5 Items,1,1449,0,M,leggings
+Berry Crush - 5 Items,1,718,0,L,leggings
+Berry Crush - 5 Items,1,188,0,XL,leggings
+Berry Crush - 5 Items,1,100,0,XS,sports-bra
+Berry Crush - 5 Items,1,1000,0,S,sports-bra
+Berry Crush - 5 Items,1,1379,0,M,sports-bra
+Berry Crush - 5 Items,1,666,0,L,sports-bra
+Berry Crush - 5 Items,1,258,0,XL,sports-bra
+Paradise Cove - 5 Items,2,278,0,XS,tops
+Paradise Cove - 5 Items,2,1120,0,S,tops
+Paradise Cove - 5 Items,2,1092,0,M,tops
+Paradise Cove - 5 Items,2,600,0,L,tops
+Paradise Cove - 5 Items,2,300,0,XL,tops
+Paradise Cove - 5 Items,2,180,0,XS,leggings
+Paradise Cove - 5 Items,2,940,0,S,leggings
+Paradise Cove - 5 Items,2,1340,0,M,leggings
+Paradise Cove - 5 Items,2,700,0,L,leggings
+Paradise Cove - 5 Items,2,225,0,XL,leggings
+Paradise Cove - 5 Items,2,180,0,XS,sports-bra
+Paradise Cove - 5 Items,2,940,0,S,sports-bra
+Paradise Cove - 5 Items,2,1308,0,M,sports-bra
+Paradise Cove - 5 Items,2,680,0,L,sports-bra
+Paradise Cove - 5 Items,2,300,0,XL,sports-bra
+City Limits - 5 Items,3,250,0,XS,tops
+City Limits - 5 Items,3,1400,0,S,tops
+City Limits - 5 Items,3,1900,0,M,tops
+City Limits - 5 Items,3,1000,0,L,tops
+City Limits - 5 Items,3,450,0,XL,tops
+City Limits - 5 Items,3,250,0,XS,leggings
+City Limits - 5 Items,3,1266,0,S,leggings
+City Limits - 5 Items,3,1950,0,M,leggings
+City Limits - 5 Items,3,1050,0,L,leggings
+City Limits - 5 Items,3,350,0,XL,leggings
+City Limits - 5 Items,3,400,0,XS,sports-jacket
+City Limits - 5 Items,3,1400,0,S,sports-jacket
+City Limits - 5 Items,3,1600,0,M,sports-jacket
+City Limits - 5 Items,3,900,0,L,sports-jacket
+City Limits - 5 Items,3,450,0,XL,sports-jacket
+Clean Slate - 5 Items,4,320,0,XS,sports-jacket
+Clean Slate - 5 Items,4,1100,0,S,sports-jacket
+Clean Slate - 5 Items,4,1280,0,M,sports-jacket
+Clean Slate - 5 Items,4,720,0,L,sports-jacket
+Clean Slate - 5 Items,4,360,0,XL,sports-jacket
+Clean Slate - 5 Items,4,200,0,XS,leggings
+Clean Slate - 5 Items,4,1100,0,S,leggings
+Clean Slate - 5 Items,4,1560,0,M,leggings
+Clean Slate - 5 Items,4,840,0,L,leggings
+Clean Slate - 5 Items,4,280,0,XL,leggings
+Clean Slate - 5 Items,4,200,0,XS,sports-bra
+Clean Slate - 5 Items,4,1100,0,S,sports-bra
+Clean Slate - 5 Items,4,1520,0,M,sports-bra
+Clean Slate - 5 Items,4,800,0,L,sports-bra
+Clean Slate - 5 Items,4,360,0,XL,sports-bra
+Ivy League - 5 Items,5,0,0,XS,tops
+Ivy League - 5 Items,5,400,0,S,tops
+Ivy League - 5 Items,5,500,0,M,tops
+Ivy League - 5 Items,5,470,0,L,tops
+Ivy League - 5 Items,5,0,0,XL,tops
+Ivy League - 5 Items,5,0,0,XS,leggings
+Ivy League - 5 Items,5,400,0,S,leggings
+Ivy League - 5 Items,5,2400,0,M,leggings
+Ivy League - 5 Items,5,831,0,L,leggings
+Ivy League - 5 Items,5,0,0,XL,leggings
+Ivy League - 5 Items,5,0,0,XS,sports-bra
+Ivy League - 5 Items,5,400,0,S,sports-bra
+Ivy League - 5 Items,5,600,0,M,sports-bra
+Ivy League - 5 Items,5,40,0,L,sports-bra
+Ivy League - 5 Items,5,0,0,XL,sports-bra
+Crunch Time - 5 Items,6,0,0,XS,tops
+Crunch Time - 5 Items,6,500,0,S,tops
+Crunch Time - 5 Items,6,500,0,M,tops
+Crunch Time - 5 Items,6,300,0,L,tops
+Crunch Time - 5 Items,6,0,0,XL,tops
+Crunch Time - 5 Items,6,0,0,XS,leggings
+Crunch Time - 5 Items,6,500,0,S,leggings
+Crunch Time - 5 Items,6,740,0,M,leggings
+Crunch Time - 5 Items,6,300,0,L,leggings
+Crunch Time - 5 Items,6,0,0,XL,leggings
+Crunch Time - 5 Items,6,0,0,XS,sports-bra
+Crunch Time - 5 Items,6,500,0,S,sports-bra
+Crunch Time - 5 Items,6,800,0,M,sports-bra
+Crunch Time - 5 Items,6,300,0,L,sports-bra
+Crunch Time - 5 Items,6,0,0,XL,sports-bra

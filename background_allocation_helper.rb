@@ -253,9 +253,9 @@ module BackgroundHelper
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
             #if (value == "XS")
-            #if  (value == "XS") || (value == "S") || (value == "XL")
-            #    contains_outlier_size = true
-            #end
+            if  (value == "XS") ||  (value == "XL")
+                contains_outlier_size = true
+            end
         end
         return contains_outlier_size
     end
@@ -270,15 +270,18 @@ module BackgroundHelper
         temp_exclude = ""
         case my_index
         when 1
-            temp_exclude = "tops"
+            temp_exclude = "sports-jacket"
         when 2
             temp_exclude = "sports-jacket"
         when 3
-            temp_exclude = "sports-jacket"
+            temp_exclude = "sports-bra"
         when 4
+            temp_exclude = "tops"
+        when 5
             temp_exclude = "sports-jacket"
-        #when 5
-        #    temp_exclude = "sports-jacket"
+        when 6
+            temp_exclude = "sports-jacket"
+
         else
 
 
@@ -305,12 +308,14 @@ module BackgroundHelper
             when 1
                 my_size_hash.delete("sports-bra")
             when 2
-                my_size_hash.delete("sports-jacket")
-            when 3
                 my_size_hash.delete("sports-bra")
+            when 3
+                my_size_hash.delete("sports-jacket")
             when 4
                 my_size_hash.delete("sports-bra")
             when 5
+                my_size_hash.delete("sports-bra")
+            when 6
                 my_size_hash.delete("sports-bra")
 
             else
@@ -406,16 +411,15 @@ module BackgroundHelper
         my_now = Time.now
         my_size_hash = Hash.new
         
-        #mysubs = SubscriptionsNextMonthUpdate.where("updated = 'f' and bad_subscription = 'f' ")
-        mysql = "select * from subscriptions_next_month_updated where updated = 'f' and bad_subscription = 'f' "
-        ActiveRecord::Base.connection.execute(mysql).each do |mystuffa|
-            puts mystuff.inspect
-        end
+        mysubs = SubscriptionsNextMonthUpdate.where("updated = 'f' and bad_subscription = 'f' ")
+        #mysql = "select * from subscriptions_next_month_updated where updated = 'f' and bad_subscription = 'f' "
+        #ActiveRecord::Base.connection.execute(mysql).each do |mystuffa|
+        #    puts mystuff.inspect
+        #end
 
-        #puts "mysubs length = #{mysubs.length}"
+        puts "mysubs length = #{mysubs.length}"
         puts "here"
-        puts "exiting"
-        exit
+        
         mysubs.each do |sub|
             my_size_hash = {}
             puts sub.inspect
@@ -482,13 +486,13 @@ module BackgroundHelper
                 my_index = 999
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
-                    puts "must generate only random 1-3"
-                    my_total_length = 3
+                    puts "must generate only random 1-4"
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
-                    puts "can generate random 1-4"
-                    my_total_length = 4
+                    puts "can generate random 1-6"
+                    my_total_length = 6
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end
