@@ -14,3 +14,4 @@ gem 'resque'
 gem 'shopify_api'
 gem 'sinatra', '~>2.0.2', require: 'sinatra/base'
 gem 'sinatra-activerecord'
+gem "rack", ">= 2.0.8"
