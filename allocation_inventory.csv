@@ -1,91 +1,106 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Berry Crush - 5 Items,1,227,0,XS,tops
-Berry Crush - 5 Items,1,1200,0,S,tops
-Berry Crush - 5 Items,1,1151,0,M,tops
-Berry Crush - 5 Items,1,592,0,L,tops
-Berry Crush - 5 Items,1,266,0,XL,tops
-Berry Crush - 5 Items,1,100,0,XS,leggings
-Berry Crush - 5 Items,1,1000,0,S,leggings
-Berry Crush - 5 Items,1,1449,0,M,leggings
-Berry Crush - 5 Items,1,718,0,L,leggings
-Berry Crush - 5 Items,1,188,0,XL,leggings
-Berry Crush - 5 Items,1,100,0,XS,sports-bra
-Berry Crush - 5 Items,1,1000,0,S,sports-bra
-Berry Crush - 5 Items,1,1379,0,M,sports-bra
-Berry Crush - 5 Items,1,666,0,L,sports-bra
-Berry Crush - 5 Items,1,258,0,XL,sports-bra
-Paradise Cove - 5 Items,2,278,0,XS,tops
-Paradise Cove - 5 Items,2,1120,0,S,tops
-Paradise Cove - 5 Items,2,1092,0,M,tops
-Paradise Cove - 5 Items,2,600,0,L,tops
-Paradise Cove - 5 Items,2,300,0,XL,tops
-Paradise Cove - 5 Items,2,180,0,XS,leggings
-Paradise Cove - 5 Items,2,940,0,S,leggings
-Paradise Cove - 5 Items,2,1340,0,M,leggings
-Paradise Cove - 5 Items,2,700,0,L,leggings
-Paradise Cove - 5 Items,2,225,0,XL,leggings
-Paradise Cove - 5 Items,2,180,0,XS,sports-bra
-Paradise Cove - 5 Items,2,940,0,S,sports-bra
-Paradise Cove - 5 Items,2,1308,0,M,sports-bra
-Paradise Cove - 5 Items,2,680,0,L,sports-bra
-Paradise Cove - 5 Items,2,300,0,XL,sports-bra
-City Limits - 5 Items,3,250,0,XS,tops
-City Limits - 5 Items,3,1400,0,S,tops
-City Limits - 5 Items,3,1900,0,M,tops
-City Limits - 5 Items,3,1000,0,L,tops
-City Limits - 5 Items,3,450,0,XL,tops
-City Limits - 5 Items,3,250,0,XS,leggings
-City Limits - 5 Items,3,1266,0,S,leggings
-City Limits - 5 Items,3,1950,0,M,leggings
-City Limits - 5 Items,3,1050,0,L,leggings
-City Limits - 5 Items,3,350,0,XL,leggings
-City Limits - 5 Items,3,400,0,XS,sports-jacket
-City Limits - 5 Items,3,1400,0,S,sports-jacket
-City Limits - 5 Items,3,1600,0,M,sports-jacket
-City Limits - 5 Items,3,900,0,L,sports-jacket
-City Limits - 5 Items,3,450,0,XL,sports-jacket
-Clean Slate - 5 Items,4,320,0,XS,sports-jacket
-Clean Slate - 5 Items,4,1100,0,S,sports-jacket
-Clean Slate - 5 Items,4,1280,0,M,sports-jacket
-Clean Slate - 5 Items,4,720,0,L,sports-jacket
-Clean Slate - 5 Items,4,360,0,XL,sports-jacket
-Clean Slate - 5 Items,4,200,0,XS,leggings
-Clean Slate - 5 Items,4,1100,0,S,leggings
-Clean Slate - 5 Items,4,1560,0,M,leggings
-Clean Slate - 5 Items,4,840,0,L,leggings
-Clean Slate - 5 Items,4,280,0,XL,leggings
-Clean Slate - 5 Items,4,200,0,XS,sports-bra
-Clean Slate - 5 Items,4,1100,0,S,sports-bra
-Clean Slate - 5 Items,4,1520,0,M,sports-bra
-Clean Slate - 5 Items,4,800,0,L,sports-bra
-Clean Slate - 5 Items,4,360,0,XL,sports-bra
-Ivy League - 5 Items,5,0,0,XS,tops
-Ivy League - 5 Items,5,400,0,S,tops
-Ivy League - 5 Items,5,500,0,M,tops
-Ivy League - 5 Items,5,470,0,L,tops
-Ivy League - 5 Items,5,0,0,XL,tops
-Ivy League - 5 Items,5,0,0,XS,leggings
-Ivy League - 5 Items,5,400,0,S,leggings
-Ivy League - 5 Items,5,2400,0,M,leggings
-Ivy League - 5 Items,5,831,0,L,leggings
-Ivy League - 5 Items,5,0,0,XL,leggings
-Ivy League - 5 Items,5,0,0,XS,sports-bra
-Ivy League - 5 Items,5,400,0,S,sports-bra
-Ivy League - 5 Items,5,600,0,M,sports-bra
-Ivy League - 5 Items,5,40,0,L,sports-bra
-Ivy League - 5 Items,5,0,0,XL,sports-bra
-Crunch Time - 5 Items,6,0,0,XS,tops
-Crunch Time - 5 Items,6,500,0,S,tops
-Crunch Time - 5 Items,6,500,0,M,tops
-Crunch Time - 5 Items,6,300,0,L,tops
-Crunch Time - 5 Items,6,0,0,XL,tops
-Crunch Time - 5 Items,6,0,0,XS,leggings
-Crunch Time - 5 Items,6,500,0,S,leggings
-Crunch Time - 5 Items,6,740,0,M,leggings
-Crunch Time - 5 Items,6,300,0,L,leggings
-Crunch Time - 5 Items,6,0,0,XL,leggings
-Crunch Time - 5 Items,6,0,0,XS,sports-bra
-Crunch Time - 5 Items,6,500,0,S,sports-bra
-Crunch Time - 5 Items,6,800,0,M,sports-bra
-Crunch Time - 5 Items,6,300,0,L,sports-bra
-Crunch Time - 5 Items,6,0,0,XL,sports-bra
+Supernova - 5 Items,1,82,0,XS,tops
+Supernova - 5 Items,1,541,0,S,tops
+Supernova - 5 Items,1,823,0,M,tops
+Supernova - 5 Items,1,380,0,L,tops
+Supernova - 5 Items,1,203,0,XL,tops
+Supernova - 5 Items,1,86,0,XS,leggings
+Supernova - 5 Items,1,559,0,S,leggings
+Supernova - 5 Items,1,737,0,M,leggings
+Supernova - 5 Items,1,412,0,L,leggings
+Supernova - 5 Items,1,136,0,XL,leggings
+Supernova - 5 Items,1,32,0,XS,sports-bra
+Supernova - 5 Items,1,229,0,S,sports-bra
+Supernova - 5 Items,1,401,0,M,sports-bra
+Supernova - 5 Items,1,233,0,L,sports-bra
+Supernova - 5 Items,1,99,0,XL,sports-bra
+Hidden Gem - 5 Items,2,90,0,XS,tops
+Hidden Gem - 5 Items,2,839,0,S,tops
+Hidden Gem - 5 Items,2,1393,0,M,tops
+Hidden Gem - 5 Items,2,585,0,L,tops
+Hidden Gem - 5 Items,2,336,0,XL,tops
+Hidden Gem - 5 Items,2,142,0,XS,leggings
+Hidden Gem - 5 Items,2,324,0,S,leggings
+Hidden Gem - 5 Items,2,1134,0,M,leggings
+Hidden Gem - 5 Items,2,650,0,L,leggings
+Hidden Gem - 5 Items,2,202,0,XL,leggings
+Hidden Gem - 5 Items,2,85,0,XS,sports-bra
+Hidden Gem - 5 Items,2,480,0,S,sports-bra
+Hidden Gem - 5 Items,2,695,0,M,sports-bra
+Hidden Gem - 5 Items,2,447,0,L,sports-bra
+Hidden Gem - 5 Items,2,180,0,XL,sports-bra
+Bayside Breeze - 5 Items,3,160,0,XS,tops
+Bayside Breeze - 5 Items,3,1226,0,S,tops
+Bayside Breeze - 5 Items,3,1133,0,M,tops
+Bayside Breeze - 5 Items,3,657,0,L,tops
+Bayside Breeze - 5 Items,3,95,0,XL,tops
+Bayside Breeze - 5 Items,3,70,0,XS,leggings
+Bayside Breeze - 5 Items,3,406,0,S,leggings
+Bayside Breeze - 5 Items,3,531,0,M,leggings
+Bayside Breeze - 5 Items,3,300,0,L,leggings
+Bayside Breeze - 5 Items,3,98,0,XL,leggings
+Bayside Breeze - 5 Items,3,40,0,XS,sports-bra
+Bayside Breeze - 5 Items,3,234,0,S,sports-bra
+Bayside Breeze - 5 Items,3,383,0,M,sports-bra
+Bayside Breeze - 5 Items,3,218,0,L,sports-bra
+Bayside Breeze - 5 Items,3,91,0,XL,sports-bra
+Cupids Kiss - 5 Items,4,163,0,XS,sports-jacket
+Cupids Kiss - 5 Items,4,1143,0,S,sports-jacket
+Cupids Kiss - 5 Items,4,1790,0,M,sports-jacket
+Cupids Kiss - 5 Items,4,830,0,L,sports-jacket
+Cupids Kiss - 5 Items,4,411,0,XL,sports-jacket
+Cupids Kiss - 5 Items,4,195,0,XS,leggings
+Cupids Kiss - 5 Items,4,1247,0,S,leggings
+Cupids Kiss - 5 Items,4,1664,0,M,leggings
+Cupids Kiss - 5 Items,4,921,0,L,leggings
+Cupids Kiss - 5 Items,4,307,0,XL,leggings
+Cupids Kiss - 5 Items,4,67,0,XS,sports-bra
+Cupids Kiss - 5 Items,4,504,0,S,sports-bra
+Cupids Kiss - 5 Items,4,677,0,M,sports-bra
+Cupids Kiss - 5 Items,4,339,0,L,sports-bra
+Cupids Kiss - 5 Items,4,177,0,XL,sports-bra
+Knockout - 5 Items,5,119,0,XS,tops
+Knockout - 5 Items,5,604,0,S,tops
+Knockout - 5 Items,5,522,0,M,tops
+Knockout - 5 Items,5,250,0,L,tops
+Knockout - 5 Items,5,183,0,XL,tops
+Knockout - 5 Items,5,0,0,XS,leggings
+Knockout - 5 Items,5,486,0,S,leggings
+Knockout - 5 Items,5,1133,0,M,leggings
+Knockout - 5 Items,5,1178,0,L,leggings
+Knockout - 5 Items,5,510,0,XL,leggings
+Knockout - 5 Items,5,0,0,XS,sports-bra
+Knockout - 5 Items,5,270,0,S,sports-bra
+Knockout - 5 Items,5,685,0,M,sports-bra
+Knockout - 5 Items,5,391,0,L,sports-bra
+Knockout - 5 Items,5,141,0,XL,sports-bra
+Ready Set Go - 5 Items,6,202,0,XS,tops
+Ready Set Go - 5 Items,6,1045,0,S,tops
+Ready Set Go - 5 Items,6,1035,0,M,tops
+Ready Set Go - 5 Items,6,502,0,L,tops
+Ready Set Go - 5 Items,6,227,0,XL,tops
+Ready Set Go - 5 Items,6,0,0,XS,leggings
+Ready Set Go - 5 Items,6,155,0,S,leggings
+Ready Set Go - 5 Items,6,435,0,M,leggings
+Ready Set Go - 5 Items,6,460,0,L,leggings
+Ready Set Go - 5 Items,6,246,0,XL,leggings
+Ready Set Go - 5 Items,6,163,0,XS,sports-bra
+Ready Set Go - 5 Items,6,755,0,S,sports-bra
+Ready Set Go - 5 Items,6,510,0,M,sports-bra
+Ready Set Go - 5 Items,6,122,0,L,sports-bra
+Ready Set Go - 5 Items,6,102,0,XL,sports-bra
+Out Of The Blue - 5 Items,7,0,0,XS,tops
+Out Of The Blue - 5 Items,7,175,0,S,tops
+Out Of The Blue - 5 Items,7,441,0,M,tops
+Out Of The Blue - 5 Items,7,328,0,L,tops
+Out Of The Blue - 5 Items,7,414,0,XL,tops
+Out Of The Blue - 5 Items,7,0,0,XS,leggings
+Out Of The Blue - 5 Items,7,509,0,S,leggings
+Out Of The Blue - 5 Items,7,749,0,M,leggings
+Out Of The Blue - 5 Items,7,451,0,L,leggings
+Out Of The Blue - 5 Items,7,0,0,XL,leggings
+Out Of The Blue - 5 Items,7,0,0,XS,sports-bra
+Out Of The Blue - 5 Items,7,308,0,S,sports-bra
+Out Of The Blue - 5 Items,7,462,0,M,sports-bra
+Out Of The Blue - 5 Items,7,460,0,L,sports-bra
+Out Of The Blue - 5 Items,7,242,0,XL,sports-bra

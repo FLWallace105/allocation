@@ -219,12 +219,12 @@ module BackgroundHelper
 
                 #exit
                 #Comment out below for dry run
-                my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
-                puts my_update_sub.inspect
-                recharge_limit = my_update_sub.response["x-recharge-limit"]
-                determine_limits(recharge_limit, 0.65)
-                if my_update_sub.code == 200
-                #if 7 > 3
+                #my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
+                #puts my_update_sub.inspect
+                #recharge_limit = my_update_sub.response["x-recharge-limit"]
+                #determine_limits(recharge_limit, 0.65)
+                #if my_update_sub.code == 200
+                if 7 > 3
                     sub.updated = true
                     time_updated = DateTime.now
                     time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
@@ -253,7 +253,7 @@ module BackgroundHelper
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
             #if (value == "XS")
-            if  (value == "XS") ||  (value == "XL")
+            if  (value == "XS") 
                 contains_outlier_size = true
             end
         end
@@ -274,12 +274,14 @@ module BackgroundHelper
         when 2
             temp_exclude = "sports-jacket"
         when 3
-            temp_exclude = "sports-bra"
+            temp_exclude = "sports-jacket"
         when 4
             temp_exclude = "tops"
         when 5
             temp_exclude = "sports-jacket"
         when 6
+            temp_exclude = "sports-jacket"
+        when 7
             temp_exclude = "sports-jacket"
 
         else
@@ -490,13 +492,13 @@ module BackgroundHelper
                 my_index = 999
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
-                    puts "must generate only random 1-4"
-                    my_total_length = 4
+                    puts "must generate only random 1-6"
+                    my_total_length = 6
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 else
-                    puts "can generate random 1-6"
-                    my_total_length = 6
+                    puts "can generate random 1-7"
+                    my_total_length = 7
                     my_index = generate_random_index(my_total_length)
                     puts "my_index = #{my_index}"
                 end
