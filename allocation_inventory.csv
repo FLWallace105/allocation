@@ -1,106 +1,91 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Supernova - 5 Items,1,82,0,XS,tops
-Supernova - 5 Items,1,541,0,S,tops
-Supernova - 5 Items,1,823,0,M,tops
-Supernova - 5 Items,1,380,0,L,tops
-Supernova - 5 Items,1,203,0,XL,tops
-Supernova - 5 Items,1,86,0,XS,leggings
-Supernova - 5 Items,1,559,0,S,leggings
-Supernova - 5 Items,1,737,0,M,leggings
-Supernova - 5 Items,1,412,0,L,leggings
-Supernova - 5 Items,1,136,0,XL,leggings
-Supernova - 5 Items,1,32,0,XS,sports-bra
-Supernova - 5 Items,1,229,0,S,sports-bra
-Supernova - 5 Items,1,401,0,M,sports-bra
-Supernova - 5 Items,1,233,0,L,sports-bra
-Supernova - 5 Items,1,99,0,XL,sports-bra
-Hidden Gem - 5 Items,2,90,0,XS,tops
-Hidden Gem - 5 Items,2,839,0,S,tops
-Hidden Gem - 5 Items,2,1393,0,M,tops
-Hidden Gem - 5 Items,2,585,0,L,tops
-Hidden Gem - 5 Items,2,336,0,XL,tops
-Hidden Gem - 5 Items,2,142,0,XS,leggings
-Hidden Gem - 5 Items,2,324,0,S,leggings
-Hidden Gem - 5 Items,2,1134,0,M,leggings
-Hidden Gem - 5 Items,2,650,0,L,leggings
-Hidden Gem - 5 Items,2,202,0,XL,leggings
-Hidden Gem - 5 Items,2,85,0,XS,sports-bra
-Hidden Gem - 5 Items,2,480,0,S,sports-bra
-Hidden Gem - 5 Items,2,695,0,M,sports-bra
-Hidden Gem - 5 Items,2,447,0,L,sports-bra
-Hidden Gem - 5 Items,2,180,0,XL,sports-bra
-Bayside Breeze - 5 Items,3,160,0,XS,tops
-Bayside Breeze - 5 Items,3,1226,0,S,tops
-Bayside Breeze - 5 Items,3,1133,0,M,tops
-Bayside Breeze - 5 Items,3,657,0,L,tops
-Bayside Breeze - 5 Items,3,95,0,XL,tops
-Bayside Breeze - 5 Items,3,70,0,XS,leggings
-Bayside Breeze - 5 Items,3,406,0,S,leggings
-Bayside Breeze - 5 Items,3,531,0,M,leggings
-Bayside Breeze - 5 Items,3,300,0,L,leggings
-Bayside Breeze - 5 Items,3,98,0,XL,leggings
-Bayside Breeze - 5 Items,3,40,0,XS,sports-bra
-Bayside Breeze - 5 Items,3,234,0,S,sports-bra
-Bayside Breeze - 5 Items,3,383,0,M,sports-bra
-Bayside Breeze - 5 Items,3,218,0,L,sports-bra
-Bayside Breeze - 5 Items,3,91,0,XL,sports-bra
-Cupids Kiss - 5 Items,4,163,0,XS,sports-jacket
-Cupids Kiss - 5 Items,4,1143,0,S,sports-jacket
-Cupids Kiss - 5 Items,4,1790,0,M,sports-jacket
-Cupids Kiss - 5 Items,4,830,0,L,sports-jacket
-Cupids Kiss - 5 Items,4,411,0,XL,sports-jacket
-Cupids Kiss - 5 Items,4,195,0,XS,leggings
-Cupids Kiss - 5 Items,4,1247,0,S,leggings
-Cupids Kiss - 5 Items,4,1664,0,M,leggings
-Cupids Kiss - 5 Items,4,921,0,L,leggings
-Cupids Kiss - 5 Items,4,307,0,XL,leggings
-Cupids Kiss - 5 Items,4,67,0,XS,sports-bra
-Cupids Kiss - 5 Items,4,504,0,S,sports-bra
-Cupids Kiss - 5 Items,4,677,0,M,sports-bra
-Cupids Kiss - 5 Items,4,339,0,L,sports-bra
-Cupids Kiss - 5 Items,4,177,0,XL,sports-bra
-Knockout - 5 Items,5,119,0,XS,tops
-Knockout - 5 Items,5,604,0,S,tops
-Knockout - 5 Items,5,522,0,M,tops
-Knockout - 5 Items,5,250,0,L,tops
-Knockout - 5 Items,5,183,0,XL,tops
-Knockout - 5 Items,5,0,0,XS,leggings
-Knockout - 5 Items,5,486,0,S,leggings
-Knockout - 5 Items,5,1133,0,M,leggings
-Knockout - 5 Items,5,1178,0,L,leggings
-Knockout - 5 Items,5,510,0,XL,leggings
-Knockout - 5 Items,5,0,0,XS,sports-bra
-Knockout - 5 Items,5,270,0,S,sports-bra
-Knockout - 5 Items,5,685,0,M,sports-bra
-Knockout - 5 Items,5,391,0,L,sports-bra
-Knockout - 5 Items,5,141,0,XL,sports-bra
-Ready Set Go - 5 Items,6,202,0,XS,tops
-Ready Set Go - 5 Items,6,1045,0,S,tops
-Ready Set Go - 5 Items,6,1035,0,M,tops
-Ready Set Go - 5 Items,6,502,0,L,tops
-Ready Set Go - 5 Items,6,227,0,XL,tops
-Ready Set Go - 5 Items,6,0,0,XS,leggings
-Ready Set Go - 5 Items,6,155,0,S,leggings
-Ready Set Go - 5 Items,6,435,0,M,leggings
-Ready Set Go - 5 Items,6,460,0,L,leggings
-Ready Set Go - 5 Items,6,246,0,XL,leggings
-Ready Set Go - 5 Items,6,163,0,XS,sports-bra
-Ready Set Go - 5 Items,6,755,0,S,sports-bra
-Ready Set Go - 5 Items,6,510,0,M,sports-bra
-Ready Set Go - 5 Items,6,122,0,L,sports-bra
-Ready Set Go - 5 Items,6,102,0,XL,sports-bra
-Out Of The Blue - 5 Items,7,0,0,XS,tops
-Out Of The Blue - 5 Items,7,175,0,S,tops
-Out Of The Blue - 5 Items,7,441,0,M,tops
-Out Of The Blue - 5 Items,7,328,0,L,tops
-Out Of The Blue - 5 Items,7,414,0,XL,tops
-Out Of The Blue - 5 Items,7,0,0,XS,leggings
-Out Of The Blue - 5 Items,7,509,0,S,leggings
-Out Of The Blue - 5 Items,7,749,0,M,leggings
-Out Of The Blue - 5 Items,7,451,0,L,leggings
-Out Of The Blue - 5 Items,7,0,0,XL,leggings
-Out Of The Blue - 5 Items,7,0,0,XS,sports-bra
-Out Of The Blue - 5 Items,7,308,0,S,sports-bra
-Out Of The Blue - 5 Items,7,462,0,M,sports-bra
-Out Of The Blue - 5 Items,7,460,0,L,sports-bra
-Out Of The Blue - 5 Items,7,242,0,XL,sports-bra
+Blue Skies - 5 Items,1,283,0,XS,tops
+Blue Skies - 5 Items,1,1297,0,S,tops
+Blue Skies - 5 Items,1,1274,0,M,tops
+Blue Skies - 5 Items,1,690,0,L,tops
+Blue Skies - 5 Items,1,358,0,XL,tops
+Blue Skies - 5 Items,1,166,0,XS,leggings
+Blue Skies - 5 Items,1,1096,0,S,leggings
+Blue Skies - 5 Items,1,1533,0,M,leggings
+Blue Skies - 5 Items,1,801,0,L,leggings
+Blue Skies - 5 Items,1,270,0,XL,leggings
+Blue Skies - 5 Items,1,130,0,XS,sports-bra
+Blue Skies - 5 Items,1,913,0,S,sports-bra
+Blue Skies - 5 Items,1,1243,0,M,sports-bra
+Blue Skies - 5 Items,1,634,0,L,sports-bra
+Blue Skies - 5 Items,1,292,0,XL,sports-bra
+Making Moves - 5 Items,2,274,0,XS,tops
+Making Moves - 5 Items,2,1225,0,S,tops
+Making Moves - 5 Items,2,1211,0,M,tops
+Making Moves - 5 Items,2,653,0,L,tops
+Making Moves - 5 Items,2,327,0,XL,tops
+Making Moves - 5 Items,2,171,0,XS,leggings
+Making Moves - 5 Items,2,1123,0,S,leggings
+Making Moves - 5 Items,2,1570,0,M,leggings
+Making Moves - 5 Items,2,806,0,L,leggings
+Making Moves - 5 Items,2,281,0,XL,leggings
+Making Moves - 5 Items,2,137,0,XS,sports-bra
+Making Moves - 5 Items,2,956,0,S,sports-bra
+Making Moves - 5 Items,2,503,0,M,sports-bra
+Making Moves - 5 Items,2,681,0,L,sports-bra
+Making Moves - 5 Items,2,309,0,XL,sports-bra
+Under The Radar - 5 Items,3,133,0,XS,tops
+Under The Radar - 5 Items,3,628,0,S,tops
+Under The Radar - 5 Items,3,627,0,M,tops
+Under The Radar - 5 Items,3,343,0,L,tops
+Under The Radar - 5 Items,3,142,0,XL,tops
+Under The Radar - 5 Items,3,151,0,XS,leggings
+Under The Radar - 5 Items,3,976,0,S,leggings
+Under The Radar - 5 Items,3,1340,0,M,leggings
+Under The Radar - 5 Items,3,714,0,L,leggings
+Under The Radar - 5 Items,3,238,0,XL,leggings
+Under The Radar - 5 Items,3,132,0,XS,sports-bra
+Under The Radar - 5 Items,3,853,0,S,sports-bra
+Under The Radar - 5 Items,3,1167,0,M,sports-bra
+Under The Radar - 5 Items,3,595,0,L,sports-bra
+Under The Radar - 5 Items,3,267,0,XL,sports-bra
+Bahama Babe - 5 Items,4,175,0,XS,tops
+Bahama Babe - 5 Items,4,970,0,S,tops
+Bahama Babe - 5 Items,4,942,0,M,tops
+Bahama Babe - 5 Items,4,523,0,L,tops
+Bahama Babe - 5 Items,4,255,0,XL,tops
+Bahama Babe - 5 Items,4,114,0,XS,leggings
+Bahama Babe - 5 Items,4,798,0,S,leggings
+Bahama Babe - 5 Items,4,1140,0,M,leggings
+Bahama Babe - 5 Items,4,599,0,L,leggings
+Bahama Babe - 5 Items,4,200,0,XL,leggings
+Bahama Babe - 5 Items,4,127,0,XS,sports-bra
+Bahama Babe - 5 Items,4,636,0,S,sports-bra
+Bahama Babe - 5 Items,4,1019,0,M,sports-bra
+Bahama Babe - 5 Items,4,510,0,L,sports-bra
+Bahama Babe - 5 Items,4,255,0,XL,sports-bra
+Wave Runner - 5 Items,5,3,0,XS,tops
+Wave Runner - 5 Items,5,368,0,S,tops
+Wave Runner - 5 Items,5,515,0,M,tops
+Wave Runner - 5 Items,5,500,0,L,tops
+Wave Runner - 5 Items,5,307,0,XL,tops
+Wave Runner - 5 Items,5,29,0,XS,leggings
+Wave Runner - 5 Items,5,341,0,S,leggings
+Wave Runner - 5 Items,5,484,0,M,leggings
+Wave Runner - 5 Items,5,299,0,L,leggings
+Wave Runner - 5 Items,5,0,0,XL,leggings
+Wave Runner - 5 Items,5,0,0,XS,sports-bra
+Wave Runner - 5 Items,5,236,0,S,sports-bra
+Wave Runner - 5 Items,5,475,0,M,sports-bra
+Wave Runner - 5 Items,5,475,0,L,sports-bra
+Wave Runner - 5 Items,5,236,0,XL,sports-bra
+Queen Vibes - 5 Items,6,63,0,XS,tops
+Queen Vibes - 5 Items,6,702,0,S,tops
+Queen Vibes - 5 Items,6,549,0,M,tops
+Queen Vibes - 5 Items,6,314,0,L,tops
+Queen Vibes - 5 Items,6,0,0,XL,tops
+Queen Vibes - 5 Items,6,0,0,XS,leggings
+Queen Vibes - 5 Items,6,207,0,S,leggings
+Queen Vibes - 5 Items,6,378,0,M,leggings
+Queen Vibes - 5 Items,6,396,0,L,leggings
+Queen Vibes - 5 Items,6,213,0,XL,leggings
+Queen Vibes - 5 Items,6,147,0,XS,sports-bra
+Queen Vibes - 5 Items,6,81,0,S,sports-bra
+Queen Vibes - 5 Items,6,459,0,M,sports-bra
+Queen Vibes - 5 Items,6,431,0,L,sports-bra
+Queen Vibes - 5 Items,6,225,0,XL,sports-bra
