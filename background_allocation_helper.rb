@@ -219,12 +219,12 @@ module BackgroundHelper
 
                 #exit
                 #Comment out below for dry run
-                my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
-                puts my_update_sub.inspect
-                recharge_limit = my_update_sub.response["x-recharge-limit"]
-                determine_limits(recharge_limit, 0.65)
-                if my_update_sub.code == 200
-                #if 7 > 3
+                #my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
+                #puts my_update_sub.inspect
+                #recharge_limit = my_update_sub.response["x-recharge-limit"]
+                #determine_limits(recharge_limit, 0.65)
+                #if my_update_sub.code == 200
+                if 7 > 3
                     sub.updated = true
                     time_updated = DateTime.now
                     time_updated_str = time_updated.strftime("%Y-%m-%d %H:%M:%S")
@@ -263,6 +263,7 @@ module BackgroundHelper
     def generate_random_index(mylength)
         return_length = rand(1..mylength)
         return return_length
+        
 
     end
 
@@ -318,6 +319,8 @@ module BackgroundHelper
             when 5
                 my_size_hash.delete("sports-bra")
             when 6
+                my_size_hash.delete("sports-bra")
+            when 7
                 my_size_hash.delete("sports-bra")
 
             else
@@ -495,13 +498,24 @@ module BackgroundHelper
                     puts "must generate only random 1-6"
                     my_total_length = 6
                     my_index = generate_random_index(my_total_length)
+                    #temp fix to make namaste & Slay work only add in March allocation 2020
+                    #my_index = 7
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-6"
                     my_total_length = 6
                     my_index = generate_random_index(my_total_length)
+                    #my_index = 7
                     puts "my_index = #{my_index}"
                 end
+
+                #temp fix for April 2020
+                #next if matcha cha cha index 6 has next_charge_scheduled_at < '2020-04-10'
+                if my_index == 6 && ( sub.next_charge_scheduled_at < Date.parse('2020-04-10') )
+                    next
+                end
+
+
                 my_exclude = generate_exclude(my_index)
                 puts "my_exclude = #{my_exclude}"
                 
