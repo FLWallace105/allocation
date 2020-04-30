@@ -59,15 +59,25 @@ module Allocation
         puts "Howdy figuring size counts ORDERS"
         #Generate Initial Raw Size Totals
 
+        my_end_month = Date.today.end_of_month
+        my_end_month_str = my_end_month.strftime("%Y-%m-%d")
+        puts "End of the month = #{my_end_month_str}"
+        my_start_month_plus = Date.today 
+        my_start_month_plus = my_start_month_plus >> 1
+        my_start_month_plus = my_start_month_plus.end_of_month + 1
+        my_start_month_plus_str = my_start_month_plus.strftime("%Y-%m-%d")
+        puts "my start_month_plus_str = #{my_start_month_plus_str}"
+
+
         RawSizeTotal.delete_all
         # Now reset index
         ActiveRecord::Base.connection.reset_pk_sequence!('raw_size_totals')  
-        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(orders.id), order_line_items_variable.name, order_line_items_variable.value from orders, order_line_items_variable where orders.is_prepaid = 1 and orders.order_id = order_line_items_variable.order_id and orders.scheduled_at > '2020-02-29' and orders.scheduled_at < '2020-04-01' and (order_line_items_variable.name = 'leggings' or order_line_items_variable.name = 'sports-bra' or order_line_items_variable.name = 'tops' or order_line_items_variable.name = 'sports-jacket') group by order_line_items_variable.name, order_line_items_variable.value"
+        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(orders.id), order_line_items_variable.name, order_line_items_variable.value from orders, order_line_items_variable where orders.is_prepaid = 1 and orders.order_id = order_line_items_variable.order_id and orders.scheduled_at > \'#{my_end_month_str}\' and orders.scheduled_at < \'#{my_start_month_plus_str}\' and (order_line_items_variable.name = 'leggings' or order_line_items_variable.name = 'sports-bra' or order_line_items_variable.name = 'tops' or order_line_items_variable.name = 'sports-jacket') group by order_line_items_variable.name, order_line_items_variable.value"
 
         ActiveRecord::Base.connection.execute(new_size_count_sql)
 
         #now get subscriptions that will charge this month or next month, assume charge will be successful
-        new_size_count_prepaid_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and subscriptions.product_title  ilike '3%month%' and subscriptions.next_charge_scheduled_at > '2020-02-13' and subscriptions.next_charge_scheduled_at < '2020-03-01' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
+        new_size_count_prepaid_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and subscriptions.product_title  ilike '3%month%' and subscriptions.next_charge_scheduled_at > \'#{my_end_month_str}\' and subscriptions.next_charge_scheduled_at < \'#{my_start_month_plus_str}\' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
 
         ActiveRecord::Base.connection.execute(new_size_count_prepaid_sql)
 
@@ -91,10 +101,23 @@ module Allocation
 
 
     def figure_prepaid_charging_next_month
+
+        my_end_month = Date.today.end_of_month
+        my_end_month_str = my_end_month.strftime("%Y-%m-%d")
+        puts "End of the month = #{my_end_month_str}"
+        my_start_month_plus = Date.today 
+        my_start_month_plus = my_start_month_plus >> 1
+        my_start_month_plus = my_start_month_plus.end_of_month + 1
+        my_start_month_plus_str = my_start_month_plus.strftime("%Y-%m-%d")
+        puts "my start_month_plus_str = #{my_start_month_plus_str}"
+
+
         RawSizeTotal.delete_all
         # Now reset index
         ActiveRecord::Base.connection.reset_pk_sequence!('raw_size_totals')
-        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and ( subscriptions.product_title  ilike '3%month%'  or subscriptions.charge_interval_frequency = 3 )and subscriptions.next_charge_scheduled_at > '2020-02-29' and subscriptions.next_charge_scheduled_at < '2020-04-01' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
+        new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and ( subscriptions.product_title  ilike '3%month%'  or subscriptions.charge_interval_frequency = 3 )and subscriptions.next_charge_scheduled_at > \'#{my_end_month_str}\' and subscriptions.next_charge_scheduled_at < \'#{my_start_month_plus_str}\' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
+
+        
 
         ActiveRecord::Base.connection.execute(new_size_count_sql)
 
@@ -455,7 +478,7 @@ module Allocation
         puts "my start_month_plus_str = #{my_start_month_plus_str}"
         
         #Allocate only month to month, no nulls
-        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and (next_charge_scheduled_at is not null and next_charge_scheduled_at > \'#{my_end_month_str}\' and next_charge_scheduled_at < \'#{my_start_month_plus_str}\')  and product_title not ilike \'3%month%\' and  product_title not ilike \'%2%item%\' "
+        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and (next_charge_scheduled_at is not null and next_charge_scheduled_at > \'#{my_end_month_str}\' and next_charge_scheduled_at < \'#{my_start_month_plus_str}\')  and product_title not ilike \'3%month%\' and  product_title not ilike \'%2%item%\' and product_title not ilike \'paradise%cove%\' "
 
         delete_prepaid = "delete from subscriptions_next_month_updated where product_title ilike \'3 %month%\' "
 

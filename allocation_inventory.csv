@@ -1,91 +1,106 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Back To Basics - 5 Items,1,250,0,XS,tops
-Back To Basics - 5 Items,1,1500,0,S,tops
-Back To Basics - 5 Items,1,1500,0,M,tops
-Back To Basics - 5 Items,1,840,0,L,tops
-Back To Basics - 5 Items,1,389,0,XL,tops
-Back To Basics - 5 Items,1,163,0,XS,leggings
-Back To Basics - 5 Items,1,1200,0,S,leggings
-Back To Basics - 5 Items,1,1600,0,M,leggings
-Back To Basics - 5 Items,1,916,0,L,leggings
-Back To Basics - 5 Items,1,297,0,XL,leggings
-Back To Basics - 5 Items,1,161,0,XS,sports-bra
-Back To Basics - 5 Items,1,230,0,S,sports-bra
-Back To Basics - 5 Items,1,820,0,M,sports-bra
-Back To Basics - 5 Items,1,400,0,L,sports-bra
-Back To Basics - 5 Items,1,310,0,XL,sports-bra
-Dream On - 5 Items,2,5,0,XS,tops
-Dream On - 5 Items,2,150,0,S,tops
-Dream On - 5 Items,2,100,0,M,tops
-Dream On - 5 Items,2,50,0,L,tops
-Dream On - 5 Items,2,0,0,XL,tops
-Dream On - 5 Items,2,5,0,XS,leggings
-Dream On - 5 Items,2,175,0,S,leggings
-Dream On - 5 Items,2,220,0,M,leggings
-Dream On - 5 Items,2,100,0,L,leggings
-Dream On - 5 Items,2,0,0,XL,leggings
-Dream On - 5 Items,2,0,0,XS,sports-bra
-Dream On - 5 Items,2,125,0,S,sports-bra
-Dream On - 5 Items,2,30,0,M,sports-bra
-Dream On - 5 Items,2,5,0,L,sports-bra
-Dream On - 5 Items,2,0,0,XL,sports-bra
-Kaleidoscope - 5 Items,3,175,0,XS,tops
-Kaleidoscope - 5 Items,3,900,0,S,tops
-Kaleidoscope - 5 Items,3,960,0,M,tops
-Kaleidoscope - 5 Items,3,525,0,L,tops
-Kaleidoscope - 5 Items,3,240,0,XL,tops
-Kaleidoscope - 5 Items,3,88,0,XS,leggings
-Kaleidoscope - 5 Items,3,800,0,S,leggings
-Kaleidoscope - 5 Items,3,1100,0,M,leggings
-Kaleidoscope - 5 Items,3,635,0,L,leggings
-Kaleidoscope - 5 Items,3,185,0,XL,leggings
-Kaleidoscope - 5 Items,3,79,0,XS,sports-bra
-Kaleidoscope - 5 Items,3,666,0,S,sports-bra
-Kaleidoscope - 5 Items,3,935,0,M,sports-bra
-Kaleidoscope - 5 Items,3,475,0,L,sports-bra
-Kaleidoscope - 5 Items,3,200,0,XL,sports-bra
-Violet Rhapsody - 5 Items,4,0,0,XS,tops
-Violet Rhapsody - 5 Items,4,210,0,S,tops
-Violet Rhapsody - 5 Items,4,455,0,M,tops
-Violet Rhapsody - 5 Items,4,460,0,L,tops
-Violet Rhapsody - 5 Items,4,214,0,XL,tops
-Violet Rhapsody - 5 Items,4,0,0,XS,leggings
-Violet Rhapsody - 5 Items,4,225,0,S,leggings
-Violet Rhapsody - 5 Items,4,475,0,M,leggings
-Violet Rhapsody - 5 Items,4,460,0,L,leggings
-Violet Rhapsody - 5 Items,4,225,0,XL,leggings
-Violet Rhapsody - 5 Items,4,80,0,XS,sports-bra
-Violet Rhapsody - 5 Items,4,280,0,S,sports-bra
-Violet Rhapsody - 5 Items,4,375,0,M,sports-bra
-Violet Rhapsody - 5 Items,4,375,0,L,sports-bra
-Violet Rhapsody - 5 Items,4,175,0,XL,sports-bra
-Glow Getter - 5 Items,5,200,0,XS,tops
-Glow Getter - 5 Items,5,1100,0,S,tops
-Glow Getter - 5 Items,5,950,0,M,tops
-Glow Getter - 5 Items,5,515,0,L,tops
-Glow Getter - 5 Items,5,220,0,XL,tops
-Glow Getter - 5 Items,5,0,0,XS,leggings
-Glow Getter - 5 Items,5,260,0,S,leggings
-Glow Getter - 5 Items,5,470,0,M,leggings
-Glow Getter - 5 Items,5,475,0,L,leggings
-Glow Getter - 5 Items,5,280,0,XL,leggings
-Glow Getter - 5 Items,5,0,0,XS,sports-bra
-Glow Getter - 5 Items,5,245,0,S,sports-bra
-Glow Getter - 5 Items,5,525,0,M,sports-bra
-Glow Getter - 5 Items,5,525,0,L,sports-bra
-Glow Getter - 5 Items,5,250,0,XL,sports-bra
-Matcha Cha Cha - 5 Items,6,150,0,XS,tops
-Matcha Cha Cha - 5 Items,6,900,0,S,tops
-Matcha Cha Cha - 5 Items,6,1000,0,M,tops
-Matcha Cha Cha - 5 Items,6,500,0,L,tops
-Matcha Cha Cha - 5 Items,6,250,0,XL,tops
-Matcha Cha Cha - 5 Items,6,90,0,XS,leggings
-Matcha Cha Cha - 5 Items,6,900,0,S,leggings
-Matcha Cha Cha - 5 Items,6,1200,0,M,leggings
-Matcha Cha Cha - 5 Items,6,500,0,L,leggings
-Matcha Cha Cha - 5 Items,6,200,0,XL,leggings
-Matcha Cha Cha - 5 Items,6,70,0,XS,sports-bra
-Matcha Cha Cha - 5 Items,6,640,0,S,sports-bra
-Matcha Cha Cha - 5 Items,6,900,0,M,sports-bra
-Matcha Cha Cha - 5 Items,6,425,0,L,sports-bra
-Matcha Cha Cha - 5 Items,6,170,0,XL,sports-bra
+Pacific Mist - 5 Items,1,70,0,XS,tops
+Pacific Mist - 5 Items,1,219,0,S,tops
+Pacific Mist - 5 Items,1,444,0,M,tops
+Pacific Mist - 5 Items,1,410,0,L,tops
+Pacific Mist - 5 Items,1,276,0,XL,tops
+Pacific Mist - 5 Items,1,54,0,XS,leggings
+Pacific Mist - 5 Items,1,81,0,S,leggings
+Pacific Mist - 5 Items,1,517,0,M,leggings
+Pacific Mist - 5 Items,1,438,0,L,leggings
+Pacific Mist - 5 Items,1,278,0,XL,leggings
+Pacific Mist - 5 Items,1,0,0,XS,sports-bra
+Pacific Mist - 5 Items,1,296,0,S,sports-bra
+Pacific Mist - 5 Items,1,194,0,M,sports-bra
+Pacific Mist - 5 Items,1,98,0,L,sports-bra
+Pacific Mist - 5 Items,1,61,0,XL,sports-bra
+Citrus Kick - 5 Items,2,45,0,XS,tops
+Citrus Kick - 5 Items,2,200,0,S,tops
+Citrus Kick - 5 Items,2,300,0,M,tops
+Citrus Kick - 5 Items,2,275,0,L,tops
+Citrus Kick - 5 Items,2,150,0,XL,tops
+Citrus Kick - 5 Items,2,0,0,XS,leggings
+Citrus Kick - 5 Items,2,120,0,S,leggings
+Citrus Kick - 5 Items,2,375,0,M,leggings
+Citrus Kick - 5 Items,2,300,0,L,leggings
+Citrus Kick - 5 Items,2,150,0,XL,leggings
+Citrus Kick - 5 Items,2,50,0,XS,sports-bra
+Citrus Kick - 5 Items,2,90,0,S,sports-bra
+Citrus Kick - 5 Items,2,175,0,M,sports-bra
+Citrus Kick - 5 Items,2,90,0,L,sports-bra
+Citrus Kick - 5 Items,2,5,0,XL,sports-bra
+Natural Fit - 5 Items,3,49,0,XS,tops
+Natural Fit - 5 Items,3,696,0,S,tops
+Natural Fit - 5 Items,3,708,0,M,tops
+Natural Fit - 5 Items,3,384,0,L,tops
+Natural Fit - 5 Items,3,59,0,XL,tops
+Natural Fit - 5 Items,3,40,0,XS,leggings
+Natural Fit - 5 Items,3,413,0,S,leggings
+Natural Fit - 5 Items,3,440,0,M,leggings
+Natural Fit - 5 Items,3,293,0,L,leggings
+Natural Fit - 5 Items,3,79,0,XL,leggings
+Natural Fit - 5 Items,3,54,0,XS,sports-bra
+Natural Fit - 5 Items,3,477,0,S,sports-bra
+Natural Fit - 5 Items,3,817,0,M,sports-bra
+Natural Fit - 5 Items,3,383,0,L,sports-bra
+Natural Fit - 5 Items,3,170,0,XL,sports-bra
+Pinky Swear - 5 Items,4,120,0,XS,tops
+Pinky Swear - 5 Items,4,900,0,S,tops
+Pinky Swear - 5 Items,4,670,0,M,tops
+Pinky Swear - 5 Items,4,300,0,L,tops
+Pinky Swear - 5 Items,4,150,0,XL,tops
+Pinky Swear - 5 Items,4,0,0,XS,leggings
+Pinky Swear - 5 Items,4,235,0,S,leggings
+Pinky Swear - 5 Items,4,838,0,M,leggings
+Pinky Swear - 5 Items,4,1015,0,L,leggings
+Pinky Swear - 5 Items,4,406,0,XL,leggings
+Pinky Swear - 5 Items,4,75,0,XS,sports-bra
+Pinky Swear - 5 Items,4,625,0,S,sports-bra
+Pinky Swear - 5 Items,4,320,0,M,sports-bra
+Pinky Swear - 5 Items,4,20,0,L,sports-bra
+Pinky Swear - 5 Items,4,10,0,XL,sports-bra
+Tie Game - 5 Items,5,20,0,XS,tops
+Tie Game - 5 Items,5,325,0,S,tops
+Tie Game - 5 Items,5,575,0,M,tops
+Tie Game - 5 Items,5,175,0,L,tops
+Tie Game - 5 Items,5,100,0,XL,tops
+Tie Game - 5 Items,5,0,0,XS,leggings
+Tie Game - 5 Items,5,235,0,S,leggings
+Tie Game - 5 Items,5,838,0,M,leggings
+Tie Game - 5 Items,5,1015,0,L,leggings
+Tie Game - 5 Items,5,406,0,XL,leggings
+Tie Game - 5 Items,5,90,0,XS,sports-bra
+Tie Game - 5 Items,5,515,0,S,sports-bra
+Tie Game - 5 Items,5,685,0,M,sports-bra
+Tie Game - 5 Items,5,150,0,L,sports-bra
+Tie Game - 5 Items,5,100,0,XL,sports-bra
+Golden Girl - 5 Items,6,0,0,XS,tops
+Golden Girl - 5 Items,6,215,0,S,tops
+Golden Girl - 5 Items,6,360,0,M,tops
+Golden Girl - 5 Items,6,65,0,L,tops
+Golden Girl - 5 Items,6,0,0,XL,tops
+Golden Girl - 5 Items,6,0,0,XS,leggings
+Golden Girl - 5 Items,6,215,0,S,leggings
+Golden Girl - 5 Items,6,360,0,M,leggings
+Golden Girl - 5 Items,6,60,0,L,leggings
+Golden Girl - 5 Items,6,0,0,XL,leggings
+Golden Girl - 5 Items,6,0,0,XS,sports-bra
+Golden Girl - 5 Items,6,215,0,S,sports-bra
+Golden Girl - 5 Items,6,210,0,M,sports-bra
+Golden Girl - 5 Items,6,210,0,L,sports-bra
+Golden Girl - 5 Items,6,0,0,XL,sports-bra
+Spring Into Action - 5 Items,7,0,0,XS,tops
+Spring Into Action - 5 Items,7,530,0,S,tops
+Spring Into Action - 5 Items,7,815,0,M,tops
+Spring Into Action - 5 Items,7,215,0,L,tops
+Spring Into Action - 5 Items,7,0,0,XL,tops
+Spring Into Action - 5 Items,7,0,0,XS,leggings
+Spring Into Action - 5 Items,7,525,0,S,leggings
+Spring Into Action - 5 Items,7,925,0,M,leggings
+Spring Into Action - 5 Items,7,300,0,L,leggings
+Spring Into Action - 5 Items,7,0,0,XL,leggings
+Spring Into Action - 5 Items,7,0,0,XS,sports-bra
+Spring Into Action - 5 Items,7,600,0,S,sports-bra
+Spring Into Action - 5 Items,7,925,0,M,sports-bra
+Spring Into Action - 5 Items,7,250,0,L,sports-bra
+Spring Into Action - 5 Items,7,0,0,XL,sports-bra
