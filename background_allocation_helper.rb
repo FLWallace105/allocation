@@ -486,7 +486,7 @@ module BackgroundHelper
                 my_size_hash['sports-bra'] = my_size_hash['tops']
             end
             
-
+            #test?
             puts my_size_hash.inspect
             if my_size_hash.length < 3
                 puts "Can't do anything"
