@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_29_181723) do
+ActiveRecord::Schema.define(version: 2020_05_28_181243) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -390,6 +390,14 @@ ActiveRecord::Schema.define(version: 2019_10_29_181723) do
     t.datetime "order_date"
   end
 
+  create_table "ellie_picks_subs_config", force: :cascade do |t|
+    t.string "product_collection"
+    t.string "product_title"
+    t.string "shopify_product_id"
+    t.string "shopify_variant_id"
+    t.string "sku"
+  end
+
   create_table "fix_bad_sub_properties", force: :cascade do |t|
     t.string "subscription_id"
     t.jsonb "raw_line_item_properties"
@@ -443,6 +451,20 @@ ActiveRecord::Schema.define(version: 2019_10_29_181723) do
     t.string "phone"
     t.index ["order_id"], name: "index_order_billing_address_on_order_id"
     t.index ["order_id"], name: "ord_bill", unique: true
+  end
+
+  create_table "order_collection_sizes", force: :cascade do |t|
+    t.string "order_id"
+    t.string "product_collection"
+    t.string "leggings"
+    t.string "tops"
+    t.string "sports_bra"
+    t.string "sports_jacket"
+    t.string "gloves"
+    t.boolean "prepaid", default: false
+    t.datetime "scheduled_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "order_line_items_fixed", force: :cascade do |t|
@@ -563,6 +585,14 @@ ActiveRecord::Schema.define(version: 2019_10_29_181723) do
     t.string "email", limit: 125
   end
 
+  create_table "prepaid_late", force: :cascade do |t|
+    t.string "order_id"
+    t.datetime "scheduled_at"
+    t.string "product_collection"
+    t.string "title"
+    t.string "product_title"
+  end
+
   create_table "product_tags", force: :cascade do |t|
     t.string "product_id", null: false
     t.string "tag", null: false
@@ -651,6 +681,20 @@ ActiveRecord::Schema.define(version: 2019_10_29_181723) do
     t.string "staging_sku"
   end
 
+  create_table "sub_collection_sizes", force: :cascade do |t|
+    t.string "subscription_id"
+    t.string "product_collection"
+    t.string "leggings"
+    t.string "tops"
+    t.string "sports_bra"
+    t.string "sports_jacket"
+    t.string "gloves"
+    t.boolean "prepaid", default: false
+    t.datetime "next_charge_scheduled_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "sub_line_items", force: :cascade do |t|
     t.string "subscription_id"
     t.string "name"
@@ -672,6 +716,13 @@ ActiveRecord::Schema.define(version: 2019_10_29_181723) do
     t.boolean "updated", default: false
     t.boolean "bad_subscription", default: false
     t.datetime "processed_at"
+  end
+
+  create_table "subs_updated_inventory_sizes", force: :cascade do |t|
+    t.string "product_type"
+    t.string "product_size"
+    t.integer "inventory_avail"
+    t.integer "inventory_assigned"
   end
 
   create_table "subscription_update", force: :cascade do |t|
@@ -761,6 +812,7 @@ ActiveRecord::Schema.define(version: 2019_10_29_181723) do
     t.boolean "updated", default: false
     t.boolean "bad_subscription", default: false
     t.datetime "processed_at"
+    t.datetime "created_at"
     t.index ["subscription_id"], name: "index_subscriptions_next_month_updated_on_subscription_id"
   end
 
@@ -777,6 +829,8 @@ ActiveRecord::Schema.define(version: 2019_10_29_181723) do
     t.boolean "updated", default: false
     t.datetime "processed_at"
     t.jsonb "raw_line_items"
+    t.datetime "created_at"
+    t.string "product_collection"
     t.index ["customer_id"], name: "index_subscriptions_updated_on_customer_id"
     t.index ["subscription_id"], name: "index_subscriptions_updated_on_subscription_id"
   end

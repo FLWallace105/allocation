@@ -478,7 +478,7 @@ module Allocation
         puts "my start_month_plus_str = #{my_start_month_plus_str}"
         
         #Allocate only month to month, no nulls
-        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and (next_charge_scheduled_at is not null and next_charge_scheduled_at > \'#{my_end_month_str}\' and next_charge_scheduled_at < \'#{my_start_month_plus_str}\')  and product_title not ilike \'3%month%\' and  product_title not ilike \'%2%item%\' and product_title not ilike \'paradise%cove%\' "
+        subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, created_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, created_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and (next_charge_scheduled_at is not null and next_charge_scheduled_at > \'#{my_end_month_str}\' and next_charge_scheduled_at < \'#{my_start_month_plus_str}\')  and product_title not ilike \'3%month%\' and  created_at > \'2020-04-30\' "
 
         delete_prepaid = "delete from subscriptions_next_month_updated where product_title ilike \'3 %month%\' "
 
