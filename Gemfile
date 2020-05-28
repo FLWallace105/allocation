@@ -4,7 +4,8 @@ ruby "2.6.5"
 gem 'sinatra-cross_origin'
 
 gem 'activerecord'
-gem 'activesupport'
+gem "activesupport", ">= 5.2.4.3"
+gem "activeresource", ">= 5.1.1"
 gem 'dotenv'
 gem 'httparty'
 gem 'pg' 
