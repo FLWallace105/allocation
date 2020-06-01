@@ -1,151 +1,76 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Coastal Cool - 5 Items,1,135,0,XS,tops
-Coastal Cool - 5 Items,1,700,0,S,tops
-Coastal Cool - 5 Items,1,1000,0,M,tops
-Coastal Cool - 5 Items,1,700,0,L,tops
-Coastal Cool - 5 Items,1,400,0,XL,tops
-Coastal Cool - 5 Items,1,90,0,XS,leggings
-Coastal Cool - 5 Items,1,600,0,S,leggings
-Coastal Cool - 5 Items,1,1000,0,M,leggings
-Coastal Cool - 5 Items,1,750,0,L,leggings
-Coastal Cool - 5 Items,1,400,0,XL,leggings
-Coastal Cool - 5 Items,1,150,0,XS,sports-bra
-Coastal Cool - 5 Items,1,200,0,S,sports-bra
-Coastal Cool - 5 Items,1,400,0,M,sports-bra
-Coastal Cool - 5 Items,1,500,0,L,sports-bra
-Coastal Cool - 5 Items,1,500,0,XL,sports-bra
-Off The Grid - 5 Items,2,90,0,XS,tops
-Off The Grid - 5 Items,2,500,0,S,tops
-Off The Grid - 5 Items,2,700,0,M,tops
-Off The Grid - 5 Items,2,500,0,L,tops
-Off The Grid - 5 Items,2,300,0,XL,tops
-Off The Grid - 5 Items,2,85,0,XS,leggings
-Off The Grid - 5 Items,2,400,0,S,leggings
-Off The Grid - 5 Items,2,750,0,M,leggings
-Off The Grid - 5 Items,2,500,0,L,leggings
-Off The Grid - 5 Items,2,250,0,XL,leggings
-Off The Grid - 5 Items,2,35,0,XS,sports-bra
-Off The Grid - 5 Items,2,500,0,S,sports-bra
-Off The Grid - 5 Items,2,750,0,M,sports-bra
-Off The Grid - 5 Items,2,400,0,L,sports-bra
-Off The Grid - 5 Items,2,200,0,XL,sports-bra
-Papaya Summer - 5 Items,3,0,0,XS,tops
-Papaya Summer - 5 Items,3,70,0,S,tops
-Papaya Summer - 5 Items,3,195,0,M,tops
-Papaya Summer - 5 Items,3,186,0,L,tops
-Papaya Summer - 5 Items,3,0,0,XL,tops
-Papaya Summer - 5 Items,3,0,0,XS,leggings
-Papaya Summer - 5 Items,3,70,0,S,leggings
-Papaya Summer - 5 Items,3,178,0,M,leggings
-Papaya Summer - 5 Items,3,801,0,L,leggings
-Papaya Summer - 5 Items,3,0,0,XL,leggings
-Papaya Summer - 5 Items,3,0,0,XS,sports-bra
-Papaya Summer - 5 Items,3,75,0,S,sports-bra
-Papaya Summer - 5 Items,3,150,0,M,sports-bra
-Papaya Summer - 5 Items,3,217,0,L,sports-bra
-Papaya Summer - 5 Items,3,0,0,XL,sports-bra
-Cloud Nine - 5 Items,4,0,0,XS,tops
-Cloud Nine - 5 Items,4,104,0,S,tops
-Cloud Nine - 5 Items,4,150,0,M,tops
-Cloud Nine - 5 Items,4,200,0,L,tops
-Cloud Nine - 5 Items,4,75,0,XL,tops
-Cloud Nine - 5 Items,4,0,0,XS,leggings
-Cloud Nine - 5 Items,4,100,0,S,leggings
-Cloud Nine - 5 Items,4,150,0,M,leggings
-Cloud Nine - 5 Items,4,200,0,L,leggings
-Cloud Nine - 5 Items,4,75,0,XL,leggings
-Cloud Nine - 5 Items,4,0,0,XS,sports-bra
-Cloud Nine - 5 Items,4,70,0,S,sports-bra
-Cloud Nine - 5 Items,4,150,0,M,sports-bra
-Cloud Nine - 5 Items,4,200,0,L,sports-bra
-Cloud Nine - 5 Items,4,75,0,XL,sports-bra
-Roll The Dye - 5 Items,5,0,0,XS,tops
-Roll The Dye - 5 Items,5,50,0,S,tops
-Roll The Dye - 5 Items,5,328,0,M,tops
-Roll The Dye - 5 Items,5,317,0,L,tops
-Roll The Dye - 5 Items,5,133,0,XL,tops
-Roll The Dye - 5 Items,5,0,0,XS,leggings
-Roll The Dye - 5 Items,5,100,0,S,leggings
-Roll The Dye - 5 Items,5,200,0,M,leggings
-Roll The Dye - 5 Items,5,200,0,L,leggings
-Roll The Dye - 5 Items,5,100,0,XL,leggings
-Roll The Dye - 5 Items,5,0,0,XS,sports-bra
-Roll The Dye - 5 Items,5,168,0,S,sports-bra
-Roll The Dye - 5 Items,5,380,0,M,sports-bra
-Roll The Dye - 5 Items,5,375,0,L,sports-bra
-Roll The Dye - 5 Items,5,159,0,XL,sports-bra
-Wind Breaker - 5 Items,6,0,0,XS,tops
-Wind Breaker - 5 Items,6,100,0,S,tops
-Wind Breaker - 5 Items,6,250,0,M,tops
-Wind Breaker - 5 Items,6,350,0,L,tops
-Wind Breaker - 5 Items,6,300,0,XL,tops
-Wind Breaker - 5 Items,6,0,0,XS,leggings
-Wind Breaker - 5 Items,6,100,0,S,leggings
-Wind Breaker - 5 Items,6,250,0,M,leggings
-Wind Breaker - 5 Items,6,350,0,L,leggings
-Wind Breaker - 5 Items,6,300,0,XL,leggings
-Wind Breaker - 5 Items,6,0,0,XS,sports-bra
-Wind Breaker - 5 Items,6,100,0,S,sports-bra
-Wind Breaker - 5 Items,6,250,0,M,sports-bra
-Wind Breaker - 5 Items,6,350,0,L,sports-bra
-Wind Breaker - 5 Items,6,300,0,XL,sports-bra
-Peachy Keen - 5 Items,7,0,0,XS,tops
-Peachy Keen - 5 Items,7,150,0,S,tops
-Peachy Keen - 5 Items,7,450,0,M,tops
-Peachy Keen - 5 Items,7,194,0,L,tops
-Peachy Keen - 5 Items,7,0,0,XL,tops
-Peachy Keen - 5 Items,7,0,0,XS,leggings
-Peachy Keen - 5 Items,7,205,0,S,leggings
-Peachy Keen - 5 Items,7,647,0,M,leggings
-Peachy Keen - 5 Items,7,50,0,L,leggings
-Peachy Keen - 5 Items,7,0,0,XL,leggings
-Peachy Keen - 5 Items,7,60,0,XS,sports-bra
-Peachy Keen - 5 Items,7,196,0,S,sports-bra
-Peachy Keen - 5 Items,7,504,0,M,sports-bra
-Peachy Keen - 5 Items,7,650,0,L,sports-bra
-Peachy Keen - 5 Items,7,0,0,XL,sports-bra
-Emerald Tide - 5 Items,8,5,0,XS,tops
-Emerald Tide - 5 Items,8,125,0,S,tops
-Emerald Tide - 5 Items,8,325,0,M,tops
-Emerald Tide - 5 Items,8,225,0,L,tops
-Emerald Tide - 5 Items,8,0,0,XL,tops
-Emerald Tide - 5 Items,8,0,0,XS,leggings
-Emerald Tide - 5 Items,8,91,0,S,leggings
-Emerald Tide - 5 Items,8,261,0,M,leggings
-Emerald Tide - 5 Items,8,261,0,L,leggings
-Emerald Tide - 5 Items,8,93,0,XL,leggings
-Emerald Tide - 5 Items,8,125,0,XS,sports-bra
-Emerald Tide - 5 Items,8,323,0,S,sports-bra
-Emerald Tide - 5 Items,8,525,0,M,sports-bra
-Emerald Tide - 5 Items,8,625,0,L,sports-bra
-Emerald Tide - 5 Items,8,425,0,XL,sports-bra
-Fresh Tone - 5 Items,9,120,0,XS,tops
-Fresh Tone - 5 Items,9,150,0,S,tops
-Fresh Tone - 5 Items,9,0,0,M,tops
-Fresh Tone - 5 Items,9,0,0,L,tops
-Fresh Tone - 5 Items,9,0,0,XL,tops
-Fresh Tone - 5 Items,9,70,0,XS,leggings
-Fresh Tone - 5 Items,9,100,0,S,leggings
-Fresh Tone - 5 Items,9,0,0,M,leggings
-Fresh Tone - 5 Items,9,0,0,L,leggings
-Fresh Tone - 5 Items,9,0,0,XL,leggings
-Fresh Tone - 5 Items,9,40,0,XS,sports-bra
-Fresh Tone - 5 Items,9,150,0,S,sports-bra
-Fresh Tone - 5 Items,9,0,0,M,sports-bra
-Fresh Tone - 5 Items,9,0,0,L,sports-bra
-Fresh Tone - 5 Items,9,0,0,XL,sports-bra
-Mineral Love - 5 Items,10,40,0,XS,tops
-Mineral Love - 5 Items,10,50,0,S,tops
-Mineral Love - 5 Items,10,0,0,M,tops
-Mineral Love - 5 Items,10,0,0,L,tops
-Mineral Love - 5 Items,10,0,0,XL,tops
-Mineral Love - 5 Items,10,35,0,XS,leggings
-Mineral Love - 5 Items,10,10,0,S,leggings
-Mineral Love - 5 Items,10,0,0,M,leggings
-Mineral Love - 5 Items,10,0,0,L,leggings
-Mineral Love - 5 Items,10,0,0,XL,leggings
-Mineral Love - 5 Items,10,25,0,XS,sports-bra
-Mineral Love - 5 Items,10,10,0,S,sports-bra
-Mineral Love - 5 Items,10,0,0,M,sports-bra
-Mineral Love - 5 Items,10,0,0,L,sports-bra
-Mineral Love - 5 Items,10,0,0,XL,sports-bra
+Fresh Tone - 5 Items,1,52,0,XS,tops
+Fresh Tone - 5 Items,1,80,0,S,tops
+Fresh Tone - 5 Items,1,200,0,M,tops
+Fresh Tone - 5 Items,1,200,0,L,tops
+Fresh Tone - 5 Items,1,100,0,XL,tops
+Fresh Tone - 5 Items,1,36,0,XS,leggings
+Fresh Tone - 5 Items,1,30,0,S,leggings
+Fresh Tone - 5 Items,1,200,0,M,leggings
+Fresh Tone - 5 Items,1,200,0,L,leggings
+Fresh Tone - 5 Items,1,100,0,XL,leggings
+Fresh Tone - 5 Items,1,9,0,XS,sports-bra
+Fresh Tone - 5 Items,1,50,0,S,sports-bra
+Fresh Tone - 5 Items,1,200,0,M,sports-bra
+Fresh Tone - 5 Items,1,100,0,L,sports-bra
+Fresh Tone - 5 Items,1,50,0,XL,sports-bra
+Coastal Cool - 5 Items,2,115,0,XS,tops
+Coastal Cool - 5 Items,2,70,0,S,tops
+Coastal Cool - 5 Items,2,60,0,M,tops
+Coastal Cool - 5 Items,2,10,0,L,tops
+Coastal Cool - 5 Items,2,0,0,XL,tops
+Coastal Cool - 5 Items,2,58,0,XS,leggings
+Coastal Cool - 5 Items,2,50,0,S,leggings
+Coastal Cool - 5 Items,2,100,0,M,leggings
+Coastal Cool - 5 Items,2,40,0,L,leggings
+Coastal Cool - 5 Items,2,0,0,XL,leggings
+Coastal Cool - 5 Items,2,115,0,XS,sports-bra
+Coastal Cool - 5 Items,2,45,0,S,sports-bra
+Coastal Cool - 5 Items,2,45,0,M,sports-bra
+Coastal Cool - 5 Items,2,40,0,L,sports-bra
+Coastal Cool - 5 Items,2,0,0,XL,sports-bra
+Off The Grid - 5 Items,3,70,0,XS,tops
+Off The Grid - 5 Items,3,35,0,S,tops
+Off The Grid - 5 Items,3,5,0,M,tops
+Off The Grid - 5 Items,3,5,0,L,tops
+Off The Grid - 5 Items,3,0,0,XL,tops
+Off The Grid - 5 Items,3,28,0,XS,leggings
+Off The Grid - 5 Items,3,10,0,S,leggings
+Off The Grid - 5 Items,3,50,0,M,leggings
+Off The Grid - 5 Items,3,0,0,L,leggings
+Off The Grid - 5 Items,3,0,0,XL,leggings
+Off The Grid - 5 Items,3,0,0,XS,sports-bra
+Off The Grid - 5 Items,3,50,0,S,sports-bra
+Off The Grid - 5 Items,3,50,0,M,sports-bra
+Off The Grid - 5 Items,3,0,0,L,sports-bra
+Off The Grid - 5 Items,3,0,0,XL,sports-bra
+Peachy Keen - 5 Items,4,0,0,XS,tops
+Peachy Keen - 5 Items,4,90,0,S,tops
+Peachy Keen - 5 Items,4,5,0,M,tops
+Peachy Keen - 5 Items,4,90,0,L,tops
+Peachy Keen - 5 Items,4,0,0,XL,tops
+Peachy Keen - 5 Items,4,0,0,XS,leggings
+Peachy Keen - 5 Items,4,30,0,S,leggings
+Peachy Keen - 5 Items,4,30,0,M,leggings
+Peachy Keen - 5 Items,4,30,0,L,leggings
+Peachy Keen - 5 Items,4,0,0,XL,leggings
+Peachy Keen - 5 Items,4,30,0,XS,sports-bra
+Peachy Keen - 5 Items,4,30,0,S,sports-bra
+Peachy Keen - 5 Items,4,30,0,M,sports-bra
+Peachy Keen - 5 Items,4,30,0,L,sports-bra
+Peachy Keen - 5 Items,4,30,0,XL,sports-bra
+Emerald Tide - 5 Items,5,2,0,XS,tops
+Emerald Tide - 5 Items,5,30,0,S,tops
+Emerald Tide - 5 Items,5,30,0,M,tops
+Emerald Tide - 5 Items,5,30,0,L,tops
+Emerald Tide - 5 Items,5,5,0,XL,tops
+Emerald Tide - 5 Items,5,0,0,XS,leggings
+Emerald Tide - 5 Items,5,30,0,S,leggings
+Emerald Tide - 5 Items,5,30,0,M,leggings
+Emerald Tide - 5 Items,5,30,0,L,leggings
+Emerald Tide - 5 Items,5,0,0,XL,leggings
+Emerald Tide - 5 Items,5,30,0,XS,sports-bra
+Emerald Tide - 5 Items,5,30,0,S,sports-bra
+Emerald Tide - 5 Items,5,30,0,M,sports-bra
+Emerald Tide - 5 Items,5,30,0,L,sports-bra
+Emerald Tide - 5 Items,5,30,0,XL,sports-bra
