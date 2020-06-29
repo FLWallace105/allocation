@@ -1,76 +1,46 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Fresh Tone - 5 Items,1,52,0,XS,tops
-Fresh Tone - 5 Items,1,80,0,S,tops
-Fresh Tone - 5 Items,1,200,0,M,tops
-Fresh Tone - 5 Items,1,200,0,L,tops
-Fresh Tone - 5 Items,1,100,0,XL,tops
-Fresh Tone - 5 Items,1,36,0,XS,leggings
-Fresh Tone - 5 Items,1,30,0,S,leggings
-Fresh Tone - 5 Items,1,200,0,M,leggings
-Fresh Tone - 5 Items,1,200,0,L,leggings
-Fresh Tone - 5 Items,1,100,0,XL,leggings
-Fresh Tone - 5 Items,1,9,0,XS,sports-bra
-Fresh Tone - 5 Items,1,50,0,S,sports-bra
-Fresh Tone - 5 Items,1,200,0,M,sports-bra
-Fresh Tone - 5 Items,1,100,0,L,sports-bra
-Fresh Tone - 5 Items,1,50,0,XL,sports-bra
-Coastal Cool - 5 Items,2,115,0,XS,tops
-Coastal Cool - 5 Items,2,70,0,S,tops
-Coastal Cool - 5 Items,2,60,0,M,tops
-Coastal Cool - 5 Items,2,10,0,L,tops
-Coastal Cool - 5 Items,2,0,0,XL,tops
-Coastal Cool - 5 Items,2,58,0,XS,leggings
-Coastal Cool - 5 Items,2,50,0,S,leggings
-Coastal Cool - 5 Items,2,100,0,M,leggings
-Coastal Cool - 5 Items,2,40,0,L,leggings
-Coastal Cool - 5 Items,2,0,0,XL,leggings
-Coastal Cool - 5 Items,2,115,0,XS,sports-bra
-Coastal Cool - 5 Items,2,45,0,S,sports-bra
-Coastal Cool - 5 Items,2,45,0,M,sports-bra
-Coastal Cool - 5 Items,2,40,0,L,sports-bra
-Coastal Cool - 5 Items,2,0,0,XL,sports-bra
-Off The Grid - 5 Items,3,70,0,XS,tops
-Off The Grid - 5 Items,3,35,0,S,tops
-Off The Grid - 5 Items,3,5,0,M,tops
-Off The Grid - 5 Items,3,5,0,L,tops
-Off The Grid - 5 Items,3,0,0,XL,tops
-Off The Grid - 5 Items,3,28,0,XS,leggings
-Off The Grid - 5 Items,3,10,0,S,leggings
-Off The Grid - 5 Items,3,50,0,M,leggings
-Off The Grid - 5 Items,3,0,0,L,leggings
-Off The Grid - 5 Items,3,0,0,XL,leggings
-Off The Grid - 5 Items,3,0,0,XS,sports-bra
-Off The Grid - 5 Items,3,50,0,S,sports-bra
-Off The Grid - 5 Items,3,50,0,M,sports-bra
-Off The Grid - 5 Items,3,0,0,L,sports-bra
-Off The Grid - 5 Items,3,0,0,XL,sports-bra
-Peachy Keen - 5 Items,4,0,0,XS,tops
-Peachy Keen - 5 Items,4,90,0,S,tops
-Peachy Keen - 5 Items,4,5,0,M,tops
-Peachy Keen - 5 Items,4,90,0,L,tops
-Peachy Keen - 5 Items,4,0,0,XL,tops
-Peachy Keen - 5 Items,4,0,0,XS,leggings
-Peachy Keen - 5 Items,4,30,0,S,leggings
-Peachy Keen - 5 Items,4,30,0,M,leggings
-Peachy Keen - 5 Items,4,30,0,L,leggings
-Peachy Keen - 5 Items,4,0,0,XL,leggings
-Peachy Keen - 5 Items,4,30,0,XS,sports-bra
-Peachy Keen - 5 Items,4,30,0,S,sports-bra
-Peachy Keen - 5 Items,4,30,0,M,sports-bra
-Peachy Keen - 5 Items,4,30,0,L,sports-bra
-Peachy Keen - 5 Items,4,30,0,XL,sports-bra
-Emerald Tide - 5 Items,5,2,0,XS,tops
-Emerald Tide - 5 Items,5,30,0,S,tops
-Emerald Tide - 5 Items,5,30,0,M,tops
-Emerald Tide - 5 Items,5,30,0,L,tops
-Emerald Tide - 5 Items,5,5,0,XL,tops
-Emerald Tide - 5 Items,5,0,0,XS,leggings
-Emerald Tide - 5 Items,5,30,0,S,leggings
-Emerald Tide - 5 Items,5,30,0,M,leggings
-Emerald Tide - 5 Items,5,30,0,L,leggings
-Emerald Tide - 5 Items,5,0,0,XL,leggings
-Emerald Tide - 5 Items,5,30,0,XS,sports-bra
-Emerald Tide - 5 Items,5,30,0,S,sports-bra
-Emerald Tide - 5 Items,5,30,0,M,sports-bra
-Emerald Tide - 5 Items,5,30,0,L,sports-bra
-Emerald Tide - 5 Items,5,30,0,XL,sports-bra
+Berry Crush - 5 Items,1,98,0,XS,tops
+Berry Crush - 5 Items,1,650,0,S,tops
+Berry Crush - 5 Items,1,275,0,M,tops
+Berry Crush - 5 Items,1,46,0,L,tops
+Berry Crush - 5 Items,1,0,0,XL,tops
+Berry Crush - 5 Items,1,36,0,XS,leggings
+Berry Crush - 5 Items,1,450,0,S,leggings
+Berry Crush - 5 Items,1,400,0,M,leggings
+Berry Crush - 5 Items,1,100,0,L,leggings
+Berry Crush - 5 Items,1,0,0,XL,leggings
+Berry Crush - 5 Items,1,85,0,XS,sports-bra
+Berry Crush - 5 Items,1,650,0,S,sports-bra
+Berry Crush - 5 Items,1,450,0,M,sports-bra
+Berry Crush - 5 Items,1,24,0,L,sports-bra
+Berry Crush - 5 Items,1,0,0,XL,sports-bra
+Ooh La Lavender - 5 Items,2,0,0,XS,tops
+Ooh La Lavender - 5 Items,2,78,0,S,tops
+Ooh La Lavender - 5 Items,2,278,0,M,tops
+Ooh La Lavender - 5 Items,2,320,0,L,tops
+Ooh La Lavender - 5 Items,2,109,0,XL,tops
+Ooh La Lavender - 5 Items,2,0,0,XS,leggings
+Ooh La Lavender - 5 Items,2,180,0,S,leggings
+Ooh La Lavender - 5 Items,2,180,0,M,leggings
+Ooh La Lavender - 5 Items,2,180,0,L,leggings
+Ooh La Lavender - 5 Items,2,180,0,XL,leggings
+Ooh La Lavender - 5 Items,2,20,0,XS,sports-bra
+Ooh La Lavender - 5 Items,2,161,0,S,sports-bra
+Ooh La Lavender - 5 Items,2,206,0,M,sports-bra
+Ooh La Lavender - 5 Items,2,213,0,L,sports-bra
+Ooh La Lavender - 5 Items,2,80,0,XL,sports-bra
+Pinky Swear - 5 Items,3,163,0,XS,tops
+Pinky Swear - 5 Items,3,597,0,S,tops
+Pinky Swear - 5 Items,3,347,0,M,tops
+Pinky Swear - 5 Items,3,164,0,L,tops
+Pinky Swear - 5 Items,3,80,0,XL,tops
+Pinky Swear - 5 Items,3,0,0,XS,leggings
+Pinky Swear - 5 Items,3,0,0,S,leggings
+Pinky Swear - 5 Items,3,79,0,M,leggings
+Pinky Swear - 5 Items,3,402,0,L,leggings
+Pinky Swear - 5 Items,3,133,0,XL,leggings
+Pinky Swear - 5 Items,3,0,0,XS,sports-bra
+Pinky Swear - 5 Items,3,280,0,S,sports-bra
+Pinky Swear - 5 Items,3,450,0,M,sports-bra
+Pinky Swear - 5 Items,3,0,0,L,sports-bra
+Pinky Swear - 5 Items,3,0,0,XL,sports-bra
