@@ -252,9 +252,9 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-           # if (value == "XL")
-           #     contains_outlier_size = true
-           # end
+            if (value == "XS")
+                contains_outlier_size = true
+            end
             #if  (value == "L") 
            #     contains_outlier_size = true
            # end
@@ -504,8 +504,8 @@ module BackgroundHelper
                     #my_index = 7
                     puts "my_index = #{my_index}"
                 else
-                    puts "can generate random 1-3"
-                    my_total_length = 3
+                    puts "can generate random 1-2"
+                    my_total_length = 2
                     my_index = generate_random_index(my_total_length)
                     #my_index = 7
                     puts "my_index = #{my_index}"
