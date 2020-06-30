@@ -286,6 +286,12 @@ module BackgroundHelper
             temp_exclude = "sports-jacket"
         when 7
             temp_exclude = "sports-jacket"
+        when 8
+            temp_exclude = "sports-jacket"
+        when 9
+            temp_exclude = "sports-jacket"
+        when 10
+            temp_exclude = "sports-jacket"
 
         else
 
@@ -498,14 +504,14 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-3"
-                    my_total_length = 7
+                    my_total_length = 10
                     my_index = generate_random_index(my_total_length)
                     #temp fix to make namaste & Slay work only add in March allocation 2020
                     #my_index = 7
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-2"
-                    my_total_length = 7
+                    my_total_length = 10
                     my_index = generate_random_index(my_total_length)
                     #my_index = 7
                     puts "my_index = #{my_index}"
