@@ -1,46 +1,106 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Twilight - 5 Items,1,60,0,XS,tops
-Twilight - 5 Items,1,600,0,S,tops
-Twilight - 5 Items,1,700,0,M,tops
-Twilight - 5 Items,1,350,0,L,tops
-Twilight - 5 Items,1,150,0,XL,tops
-Twilight - 5 Items,1,30,0,XS,leggings
-Twilight - 5 Items,1,600,0,S,leggings
-Twilight - 5 Items,1,700,0,M,leggings
-Twilight - 5 Items,1,350,0,L,leggings
-Twilight - 5 Items,1,150,0,XL,leggings
-Twilight - 5 Items,1,50,0,XS,sports-bra
-Twilight - 5 Items,1,600,0,S,sports-bra
-Twilight - 5 Items,1,700,0,M,sports-bra
-Twilight - 5 Items,1,350,0,L,sports-bra
-Twilight - 5 Items,1,150,0,XL,sports-bra
-Moonlight Rose - 5 Items,2,0,0,XS,tops
-Moonlight Rose - 5 Items,2,638,0,S,tops
-Moonlight Rose - 5 Items,2,850,0,M,tops
-Moonlight Rose - 5 Items,2,362,0,L,tops
-Moonlight Rose - 5 Items,2,0,0,XL,tops
-Moonlight Rose - 5 Items,2,0,0,XS,leggings
-Moonlight Rose - 5 Items,2,230,0,S,leggings
-Moonlight Rose - 5 Items,2,464,0,M,leggings
-Moonlight Rose - 5 Items,2,650,0,L,leggings
-Moonlight Rose - 5 Items,2,356,0,XL,leggings
-Moonlight Rose - 5 Items,2,20,0,XS,sports-bra
-Moonlight Rose - 5 Items,2,609,0,S,sports-bra
-Moonlight Rose - 5 Items,2,1246,0,M,sports-bra
-Moonlight Rose - 5 Items,2,660,0,L,sports-bra
-Moonlight Rose - 5 Items,2,190,0,XL,sports-bra
-Laguna Getaway - 5 Items,3,0,0,XS,tops
-Laguna Getaway - 5 Items,3,550,0,S,tops
-Laguna Getaway - 5 Items,3,650,0,M,tops
-Laguna Getaway - 5 Items,3,650,0,L,tops
-Laguna Getaway - 5 Items,3,550,0,XL,tops
-Laguna Getaway - 5 Items,3,0,0,XS,leggings
-Laguna Getaway - 5 Items,3,550,0,S,leggings
-Laguna Getaway - 5 Items,3,650,0,M,leggings
-Laguna Getaway - 5 Items,3,650,0,L,leggings
-Laguna Getaway - 5 Items,3,0,0,XL,leggings
-Laguna Getaway - 5 Items,3,0,0,XS,sports-bra
-Laguna Getaway - 5 Items,3,365,0,S,sports-bra
-Laguna Getaway - 5 Items,3,651,0,M,sports-bra
-Laguna Getaway - 5 Items,3,290,0,L,sports-bra
-Laguna Getaway - 5 Items,3,15,0,XL,sports-bra
+Renewal - 5 Items,1,43,0,XS,tops
+Renewal - 5 Items,1,400,0,S,tops
+Renewal - 5 Items,1,600,0,M,tops
+Renewal - 5 Items,1,300,0,L,tops
+Renewal - 5 Items,1,85,0,XL,tops
+Renewal - 5 Items,1,10,0,XS,leggings
+Renewal - 5 Items,1,400,0,S,leggings
+Renewal - 5 Items,1,600,0,M,leggings
+Renewal - 5 Items,1,300,0,L,leggings
+Renewal - 5 Items,1,85,0,XL,leggings
+Renewal - 5 Items,1,10,0,XS,sports-bra
+Renewal - 5 Items,1,400,0,S,sports-bra
+Renewal - 5 Items,1,650,0,M,sports-bra
+Renewal - 5 Items,1,300,0,L,sports-bra
+Renewal - 5 Items,1,85,0,XL,sports-bra
+Serve It Up - 5 Items,2,0,0,XS,tops
+Serve It Up - 5 Items,2,200,0,S,tops
+Serve It Up - 5 Items,2,500,0,M,tops
+Serve It Up - 5 Items,2,500,0,L,tops
+Serve It Up - 5 Items,2,200,0,XL,tops
+Serve It Up - 5 Items,2,0,0,XS,leggings
+Serve It Up - 5 Items,2,250,0,S,leggings
+Serve It Up - 5 Items,2,500,0,M,leggings
+Serve It Up - 5 Items,2,500,0,L,leggings
+Serve It Up - 5 Items,2,200,0,XL,leggings
+Serve It Up - 5 Items,2,7,0,XS,sports-bra
+Serve It Up - 5 Items,2,250,0,S,sports-bra
+Serve It Up - 5 Items,2,275,0,M,sports-bra
+Serve It Up - 5 Items,2,95,0,L,sports-bra
+Serve It Up - 5 Items,2,25,0,XL,sports-bra
+Hibiscus Love - 5 Items,3,0,0,XS,tops
+Hibiscus Love - 5 Items,3,650,0,S,tops
+Hibiscus Love - 5 Items,3,1100,0,M,tops
+Hibiscus Love - 5 Items,3,325,0,L,tops
+Hibiscus Love - 5 Items,3,0,0,XL,tops
+Hibiscus Love - 5 Items,3,0,0,XS,leggings
+Hibiscus Love - 5 Items,3,49,0,S,leggings
+Hibiscus Love - 5 Items,3,231,0,M,leggings
+Hibiscus Love - 5 Items,3,225,0,L,leggings
+Hibiscus Love - 5 Items,3,85,0,XL,leggings
+Hibiscus Love - 5 Items,3,0,0,XS,sports-bra
+Hibiscus Love - 5 Items,3,83,0,S,sports-bra
+Hibiscus Love - 5 Items,3,238,0,M,sports-bra
+Hibiscus Love - 5 Items,3,245,0,L,sports-bra
+Hibiscus Love - 5 Items,3,125,0,XL,sports-bra
+Bright Idea - 5 Items,4,0,0,XS,tops
+Bright Idea - 5 Items,4,280,0,S,tops
+Bright Idea - 5 Items,4,219,0,M,tops
+Bright Idea - 5 Items,4,0,0,L,tops
+Bright Idea - 5 Items,4,0,0,XL,tops
+Bright Idea - 5 Items,4,0,0,XS,leggings
+Bright Idea - 5 Items,4,0,0,S,leggings
+Bright Idea - 5 Items,4,80,0,M,leggings
+Bright Idea - 5 Items,4,129,0,L,leggings
+Bright Idea - 5 Items,4,62,0,XL,leggings
+Bright Idea - 5 Items,4,0,0,XS,sports-bra
+Bright Idea - 5 Items,4,0,0,S,sports-bra
+Bright Idea - 5 Items,4,80,0,M,sports-bra
+Bright Idea - 5 Items,4,129,0,L,sports-bra
+Bright Idea - 5 Items,4,0,0,XL,sports-bra
+Peach Sorbet - 5 Items,5,0,0,XS,tops
+Peach Sorbet - 5 Items,5,112,0,S,tops
+Peach Sorbet - 5 Items,5,509,0,M,tops
+Peach Sorbet - 5 Items,5,127,0,L,tops
+Peach Sorbet - 5 Items,5,0,0,XL,tops
+Peach Sorbet - 5 Items,5,0,0,XS,leggings
+Peach Sorbet - 5 Items,5,97,0,S,leggings
+Peach Sorbet - 5 Items,5,275,0,M,leggings
+Peach Sorbet - 5 Items,5,259,0,L,leggings
+Peach Sorbet - 5 Items,5,100,0,XL,leggings
+Peach Sorbet - 5 Items,5,35,0,XS,sports-bra
+Peach Sorbet - 5 Items,5,35,0,S,sports-bra
+Peach Sorbet - 5 Items,5,135,0,M,sports-bra
+Peach Sorbet - 5 Items,5,235,0,L,sports-bra
+Peach Sorbet - 5 Items,5,235,0,XL,sports-bra
+Hillside Hike - 5 Items,6,0,0,XS,tops
+Hillside Hike - 5 Items,6,198,0,S,tops
+Hillside Hike - 5 Items,6,437,0,M,tops
+Hillside Hike - 5 Items,6,466,0,L,tops
+Hillside Hike - 5 Items,6,493,0,XL,tops
+Hillside Hike - 5 Items,6,0,0,XS,leggings
+Hillside Hike - 5 Items,5,450,0,S,leggings
+Hillside Hike - 5 Items,6,750,0,M,leggings
+Hillside Hike - 5 Items,6,450,0,L,leggings
+Hillside Hike - 5 Items,6,139,0,XL,leggings
+Hillside Hike - 5 Items,6,0,0,XS,sports-bra
+Hillside Hike - 5 Items,6,550,0,S,sports-bra
+Hillside Hike - 5 Items,6,550,0,M,sports-bra
+Hillside Hike - 5 Items,6,550,0,L,sports-bra
+Hillside Hike - 5 Items,6,0,0,XL,sports-bra
+One More Mile - 5 Items,7,0,0,XS,tops
+One More Mile - 5 Items,7,150,0,S,tops
+One More Mile - 5 Items,7,150,0,M,tops
+One More Mile - 5 Items,7,200,0,L,tops
+One More Mile - 5 Items,7,0,0,XL,tops
+One More Mile - 5 Items,7,0,0,XS,leggings
+One More Mile - 5 Items,7,0,0,S,leggings
+One More Mile - 5 Items,7,50,0,M,leggings
+One More Mile - 5 Items,7,50,0,L,leggings
+One More Mile - 5 Items,7,0,0,XL,leggings
+One More Mile - 5 Items,7,50,0,XS,sports-bra
+One More Mile - 5 Items,7,50,0,S,sports-bra
+One More Mile - 5 Items,7,50,0,M,sports-bra
+One More Mile - 5 Items,7,50,0,L,sports-bra
+One More Mile - 5 Items,7,50,0,XL,sports-bra
