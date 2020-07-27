@@ -1,151 +1,46 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Summer Sunset - 5 Items,1,35,0,XS,tops
-Summer Sunset - 5 Items,1,60,0,S,tops
-Summer Sunset - 5 Items,1,60,0,M,tops
-Summer Sunset - 5 Items,1,30,0,L,tops
-Summer Sunset - 5 Items,1,0,0,XL,tops
-Summer Sunset - 5 Items,1,37,0,XS,leggings
-Summer Sunset - 5 Items,1,60,0,S,leggings
-Summer Sunset - 5 Items,1,60,0,M,leggings
-Summer Sunset - 5 Items,1,30,0,L,leggings
-Summer Sunset - 5 Items,1,0,0,XL,leggings
-Summer Sunset - 5 Items,1,31,0,XS,sports-bra
-Summer Sunset - 5 Items,1,60,0,S,sports-bra
-Summer Sunset - 5 Items,1,60,0,M,sports-bra
-Summer Sunset - 5 Items,1,30,0,L,sports-bra
-Summer Sunset - 5 Items,1,0,0,XL,sports-bra
-Renewal - 5 Items,2,28,0,XS,tops
-Renewal - 5 Items,2,15,0,S,tops
-Renewal - 5 Items,2,10,0,M,tops
-Renewal - 5 Items,2,0,0,L,tops
-Renewal - 5 Items,2,0,0,XL,tops
-Renewal - 5 Items,2,28,0,XS,leggings
-Renewal - 5 Items,2,15,0,S,leggings
-Renewal - 5 Items,2,10,0,M,leggings
-Renewal - 5 Items,2,0,0,L,leggings
-Renewal - 5 Items,2,0,0,XL,leggings
-Renewal - 5 Items,2,28,0,XS,sports-bra
-Renewal - 5 Items,2,15,0,S,sports-bra
-Renewal - 5 Items,2,10,0,M,sports-bra
-Renewal - 5 Items,2,0,0,L,sports-bra
-Renewal - 5 Items,2,0,0,XL,sports-bra
-Twilight - 5 Items,3,65,0,XS,tops
-Twilight - 5 Items,3,30,0,S,tops
-Twilight - 5 Items,3,30,0,M,tops
-Twilight - 5 Items,3,20,0,L,tops
-Twilight - 5 Items,3,0,0,XL,tops
-Twilight - 5 Items,3,45,0,XS,leggings
-Twilight - 5 Items,3,30,0,S,leggings
-Twilight - 5 Items,3,30,0,M,leggings
-Twilight - 5 Items,3,20,0,L,leggings
-Twilight - 5 Items,3,0,0,XL,leggings
-Twilight - 5 Items,3,55,0,XS,sports-bra
-Twilight - 5 Items,3,30,0,S,sports-bra
-Twilight - 5 Items,3,30,0,M,sports-bra
-Twilight - 5 Items,3,20,0,L,sports-bra
-Twilight - 5 Items,3,0,0,XL,sports-bra
-Wild Instinct - 5 Items,4,40,0,XS,tops
-Wild Instinct - 5 Items,4,50,0,S,tops
-Wild Instinct - 5 Items,4,5,0,M,tops
-Wild Instinct - 5 Items,4,0,0,L,tops
-Wild Instinct - 5 Items,4,0,0,XL,tops
-Wild Instinct - 5 Items,4,10,0,XS,leggings
-Wild Instinct - 5 Items,4,70,0,S,leggings
-Wild Instinct - 5 Items,4,5,0,M,leggings
-Wild Instinct - 5 Items,4,0,0,L,leggings
-Wild Instinct - 5 Items,4,0,0,XL,leggings
-Wild Instinct - 5 Items,4,10,0,XS,sports-bra
-Wild Instinct - 5 Items,4,70,0,S,sports-bra
-Wild Instinct - 5 Items,4,5,0,M,sports-bra
-Wild Instinct - 5 Items,4,0,0,L,sports-bra
-Wild Instinct - 5 Items,4,0,0,XL,sports-bra
-Serve It Up - 5 Items,5,0,0,XS,tops
-Serve It Up - 5 Items,5,15,0,S,tops
-Serve It Up - 5 Items,5,10,0,M,tops
-Serve It Up - 5 Items,5,0,0,L,tops
-Serve It Up - 5 Items,5,0,0,XL,tops
-Serve It Up - 5 Items,5,0,0,XS,leggings
-Serve It Up - 5 Items,5,15,0,S,leggings
-Serve It Up - 5 Items,5,10,0,M,leggings
-Serve It Up - 5 Items,5,0,0,L,leggings
-Serve It Up - 5 Items,5,0,0,XL,leggings
-Serve It Up - 5 Items,5,15,0,XS,sports-bra
-Serve It Up - 5 Items,5,15,0,S,sports-bra
-Serve It Up - 5 Items,5,10,0,M,sports-bra
-Serve It Up - 5 Items,5,0,0,L,sports-bra
-Serve It Up - 5 Items,5,0,0,XL,sports-bra
-Bright Idea - 5 Items,6,20,0,XS,tops
-Bright Idea - 5 Items,6,10,0,S,tops
-Bright Idea - 5 Items,6,10,0,M,tops
-Bright Idea - 5 Items,6,0,0,L,tops
-Bright Idea - 5 Items,6,0,0,XL,tops
-Bright Idea - 5 Items,6,0,0,XS,leggings
-Bright Idea - 5 Items,6,10,0,S,leggings
-Bright Idea - 5 Items,6,10,0,M,leggings
-Bright Idea - 5 Items,6,0,0,L,leggings
-Bright Idea - 5 Items,6,0,0,XL,leggings
-Bright Idea - 5 Items,6,0,0,XS,sports-bra
-Bright Idea - 5 Items,6,10,0,S,sports-bra
-Bright Idea - 5 Items,6,10,0,M,sports-bra
-Bright Idea - 5 Items,6,0,0,L,sports-bra
-Bright Idea - 5 Items,6,0,0,XL,sports-bra
-Ooh La Lavender - 5 Items,7,0,0,XS,tops
-Ooh La Lavender - 5 Items,7,20,0,S,tops
-Ooh La Lavender - 5 Items,7,10,0,M,tops
-Ooh La Lavender - 5 Items,7,0,0,L,tops
-Ooh La Lavender - 5 Items,7,0,0,XL,tops
-Ooh La Lavender - 5 Items,7,0,0,XS,leggings
-Ooh La Lavender - 5 Items,7,20,0,S,leggings
-Ooh La Lavender - 5 Items,7,10,0,M,leggings
-Ooh La Lavender - 5 Items,7,0,0,L,leggings
-Ooh La Lavender - 5 Items,7,0,0,XL,leggings
-Ooh La Lavender - 5 Items,7,25,0,XS,sports-bra
-Ooh La Lavender - 5 Items,7,20,0,S,sports-bra
-Ooh La Lavender - 5 Items,7,10,0,M,sports-bra
-Ooh La Lavender - 5 Items,7,0,0,L,sports-bra
-Ooh La Lavender - 5 Items,7,0,0,XL,sports-bra
-One More Mile - 5 Items,8,0,0,XS,tops
-One More Mile - 5 Items,8,55,0,S,tops
-One More Mile - 5 Items,8,20,0,M,tops
-One More Mile - 5 Items,8,0,0,L,tops
-One More Mile - 5 Items,8,0,0,XL,tops
-One More Mile - 5 Items,8,0,0,XS,leggings
-One More Mile - 5 Items,8,55,0,S,leggings
-One More Mile - 5 Items,8,20,0,M,leggings
-One More Mile - 5 Items,8,0,0,L,leggings
-One More Mile - 5 Items,8,0,0,XL,leggings
-One More Mile - 5 Items,8,60,0,XS,sports-bra
-One More Mile - 5 Items,8,55,0,S,sports-bra
-One More Mile - 5 Items,8,20,0,M,sports-bra
-One More Mile - 5 Items,8,0,0,L,sports-bra
-One More Mile - 5 Items,8,0,0,XL,sports-bra
-Bootcamp Beauty - 5 Items,9,0,0,XS,tops
-Bootcamp Beauty - 5 Items,9,90,0,S,tops
-Bootcamp Beauty - 5 Items,9,20,0,M,tops
-Bootcamp Beauty - 5 Items,9,0,0,L,tops
-Bootcamp Beauty - 5 Items,9,0,0,XL,tops
-Bootcamp Beauty - 5 Items,9,0,0,XS,leggings
-Bootcamp Beauty - 5 Items,9,90,0,S,leggings
-Bootcamp Beauty - 5 Items,9,20,0,M,leggings
-Bootcamp Beauty - 5 Items,9,0,0,L,leggings
-Bootcamp Beauty - 5 Items,9,0,0,XL,leggings
-Bootcamp Beauty - 5 Items,9,95,0,XS,sports-bra
-Bootcamp Beauty - 5 Items,9,90,0,S,sports-bra
-Bootcamp Beauty - 5 Items,9,20,0,M,sports-bra
-Bootcamp Beauty - 5 Items,9,0,0,L,sports-bra
-Bootcamp Beauty - 5 Items,9,0,0,XL,sports-bra
-Laguna Getaway - 5 Items,10,0,0,XS,tops
-Laguna Getaway - 5 Items,10,20,0,S,tops
-Laguna Getaway - 5 Items,10,10,0,M,tops
-Laguna Getaway - 5 Items,10,0,0,L,tops
-Laguna Getaway - 5 Items,10,0,0,XL,tops
-Laguna Getaway - 5 Items,10,0,0,XS,leggings
-Laguna Getaway - 5 Items,10,20,0,S,leggings
-Laguna Getaway - 5 Items,10,10,0,M,leggings
-Laguna Getaway - 5 Items,10,0,0,L,leggings
-Laguna Getaway - 5 Items,10,0,0,XL,leggings
-Laguna Getaway - 5 Items,10,25,0,XS,sports-bra
-Laguna Getaway - 5 Items,10,20,0,S,sports-bra
-Laguna Getaway - 5 Items,10,10,0,M,sports-bra
-Laguna Getaway - 5 Items,10,0,0,L,sports-bra
-Laguna Getaway - 5 Items,10,0,0,XL,sports-bra
+Second Skin - 5 Items,1,143,0,XS,sports-jacket
+Second Skin - 5 Items,1,1248,0,S,sports-jacket
+Second Skin - 5 Items,1,1033,0,M,sports-jacket
+Second Skin - 5 Items,1,482,0,L,sports-jacket
+Second Skin - 5 Items,1,206,0,XL,sports-jacket
+Second Skin - 5 Items,1,0,0,XS,leggings
+Second Skin - 5 Items,1,569,0,S,leggings
+Second Skin - 5 Items,1,768,0,M,leggings
+Second Skin - 5 Items,1,168,0,L,leggings
+Second Skin - 5 Items,1,122,0,XL,leggings
+Second Skin - 5 Items,1,12,0,XS,sports-bra
+Second Skin - 5 Items,1,391,0,S,sports-bra
+Second Skin - 5 Items,1,598,0,M,sports-bra
+Second Skin - 5 Items,1,157,0,L,sports-bra
+Second Skin - 5 Items,1,81,0,XL,sports-bra
+Gear Up - 5 Items,2,99,0,XS,tops
+Gear Up - 5 Items,2,770,0,S,tops
+Gear Up - 5 Items,2,520,0,M,tops
+Gear Up - 5 Items,2,183,0,L,tops
+Gear Up - 5 Items,2,71,0,XL,tops
+Gear Up - 5 Items,2,15,0,XS,leggings
+Gear Up - 5 Items,2,578,0,S,leggings
+Gear Up - 5 Items,2,783,0,M,leggings
+Gear Up - 5 Items,2,328,0,L,leggings
+Gear Up - 5 Items,2,41,0,XL,leggings
+Gear Up - 5 Items,2,31,0,XS,sports-bra
+Gear Up - 5 Items,2,662,0,S,sports-bra
+Gear Up - 5 Items,2,645,0,M,sports-bra
+Gear Up - 5 Items,2,203,0,L,sports-bra
+Gear Up - 5 Items,2,55,0,XL,sports-bra
+City Limits - 5 Items,3,15,0,XS,tops
+City Limits - 5 Items,3,577,0,S,tops
+City Limits - 5 Items,3,809,0,M,tops
+City Limits - 5 Items,3,100,0,L,tops
+City Limits - 5 Items,3,0,0,XL,tops
+City Limits - 5 Items,3,50,0,XS,leggings
+City Limits - 5 Items,3,604,0,S,leggings
+City Limits - 5 Items,3,652,0,M,leggings
+City Limits - 5 Items,3,30,0,L,leggings
+City Limits - 5 Items,3,0,0,XL,leggings
+City Limits - 5 Items,3,140,0,XS,sports-jacket
+City Limits - 5 Items,3,816,0,S,sports-jacket
+City Limits - 5 Items,3,421,0,M,sports-jacket
+City Limits - 5 Items,3,0,0,L,sports-jacket
+City Limits - 5 Items,3,0,0,XL,sports-jacket
