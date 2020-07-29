@@ -273,11 +273,11 @@ module BackgroundHelper
         temp_exclude = ""
         case my_index
         when 1
-            temp_exclude = "tops"
-        when 2
             temp_exclude = "sports-jacket"
+        when 2
+            temp_exclude = "tops"
         when 3
-            temp_exclude = "sports-bra"
+            temp_exclude = "sports-jacket"
         when 4
             temp_exclude = "sports-jacket"
         when 5
