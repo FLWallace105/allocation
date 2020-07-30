@@ -1,106 +1,46 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-A New Gray - 5 Items,1,100,0,XS,tops
-A New Gray - 5 Items,1,250,0,S,tops
-A New Gray - 5 Items,1,400,0,M,tops
-A New Gray - 5 Items,1,350,0,L,tops
-A New Gray - 5 Items,1,200,0,XL,tops
-A New Gray - 5 Items,1,100,0,XS,leggings
-A New Gray - 5 Items,1,250,0,S,leggings
-A New Gray - 5 Items,1,400,0,M,leggings
-A New Gray - 5 Items,1,350,0,L,leggings
-A New Gray - 5 Items,1,200,0,XL,leggings
-A New Gray - 5 Items,1,75,0,XS,sports-bra
-A New Gray - 5 Items,1,250,0,S,sports-bra
-A New Gray - 5 Items,1,400,0,M,sports-bra
-A New Gray - 5 Items,1,350,0,L,sports-bra
-A New Gray - 5 Items,1,200,0,XL,sports-bra
-Silver Lining - 5 Items,2,0,0,XS,tops
-Silver Lining - 5 Items,2,120,0,S,tops
-Silver Lining - 5 Items,2,270,0,M,tops
-Silver Lining - 5 Items,2,270,0,L,tops
-Silver Lining - 5 Items,2,120,0,XL,tops
-Silver Lining - 5 Items,2,0,0,XS,leggings
-Silver Lining - 5 Items,2,120,0,S,leggings
-Silver Lining - 5 Items,2,321,0,M,leggings
-Silver Lining - 5 Items,2,346,0,L,leggings
-Silver Lining - 5 Items,2,124,0,XL,leggings
-Silver Lining - 5 Items,2,27,0,XS,sports-bra
-Silver Lining - 5 Items,2,436,0,S,sports-bra
-Silver Lining - 5 Items,2,449,0,M,sports-bra
-Silver Lining - 5 Items,2,0,0,L,sports-bra
-Silver Lining - 5 Items,2,0,0,XL,sports-bra
-Sweet Spot - 5 Items,3,0,0,XS,tops
-Sweet Spot - 5 Items,3,290,0,S,tops
-Sweet Spot - 5 Items,3,423,0,M,tops
-Sweet Spot - 5 Items,3,290,0,L,tops
-Sweet Spot - 5 Items,3,0,0,XL,tops
-Sweet Spot - 5 Items,3,0,0,XS,leggings
-Sweet Spot - 5 Items,3,140,0,S,leggings
-Sweet Spot - 5 Items,3,340,0,M,leggings
-Sweet Spot - 5 Items,3,340,0,L,leggings
-Sweet Spot - 5 Items,3,140,0,XL,leggings
-Sweet Spot - 5 Items,3,30,0,XS,sports-bra
-Sweet Spot - 5 Items,3,250,0,S,sports-bra
-Sweet Spot - 5 Items,3,290,0,M,sports-bra
-Sweet Spot - 5 Items,3,182,0,L,sports-bra
-Sweet Spot - 5 Items,3,131,0,XL,sports-bra
-Feel The Beet - 5 Items,4,80,0,XS,tops
-Feel The Beet - 5 Items,4,450,0,S,tops
-Feel The Beet - 5 Items,4,600,0,M,tops
-Feel The Beet - 5 Items,4,332,0,L,tops
-Feel The Beet - 5 Items,4,110,0,XL,tops
-Feel The Beet - 5 Items,4,0,0,XS,leggings
-Feel The Beet - 5 Items,4,315,0,S,leggings
-Feel The Beet - 5 Items,4,440,0,M,leggings
-Feel The Beet - 5 Items,4,440,0,L,leggings
-Feel The Beet - 5 Items,4,250,0,XL,leggings
-Feel The Beet - 5 Items,4,100,0,XS,sports-bra
-Feel The Beet - 5 Items,4,308,0,S,sports-bra
-Feel The Beet - 5 Items,4,553,0,M,sports-bra
-Feel The Beet - 5 Items,4,360,0,L,sports-bra
-Feel The Beet - 5 Items,4,110,0,XL,sports-bra
-Color Pop - 5 Items,5,100,0,XS,tops
-Color Pop - 5 Items,5,777,0,S,tops
-Color Pop - 5 Items,5,600,0,M,tops
-Color Pop - 5 Items,5,130,0,L,tops
-Color Pop - 5 Items,5,0,0,XL,tops
-Color Pop - 5 Items,5,0,0,XS,leggings
-Color Pop - 5 Items,5,550,0,S,leggings
-Color Pop - 5 Items,5,826,0,M,leggings
-Color Pop - 5 Items,5,357,0,L,leggings
-Color Pop - 5 Items,5,65,0,XL,leggings
-Color Pop - 5 Items,5,140,0,XS,sports-bra
-Color Pop - 5 Items,5,800,0,S,sports-bra
-Color Pop - 5 Items,5,580,0,M,sports-bra
-Color Pop - 5 Items,5,258,0,L,sports-bra
-Color Pop - 5 Items,5,80,0,XL,sports-bra
-Trail Blazer - 5 Items,6,200,0,XS,tops
-Trail Blazer - 5 Items,6,700,0,S,tops
-Trail Blazer - 5 Items,6,900,0,M,tops
-Trail Blazer - 5 Items,6,350,0,L,tops
-Trail Blazer - 5 Items,6,125,0,XL,tops
-Trail Blazer - 5 Items,6,0,0,XS,leggings
-Trail Blazer - 5 Items,6,600,0,S,leggings
-Trail Blazer - 5 Items,6,900,0,M,leggings
-Trail Blazer - 5 Items,6,550,0,L,leggings
-Trail Blazer - 5 Items,6,300,0,XL,leggings
-Trail Blazer - 5 Items,6,0,0,XS,sports-jacket
-Trail Blazer - 5 Items,6,600,0,S,sports-jacket
-Trail Blazer - 5 Items,6,900,0,M,sports-jacket
-Trail Blazer - 5 Items,6,550,0,L,sports-jacket
-Trail Blazer - 5 Items,6,300,0,XL,sports-jacket
-Blush Dreams - 5 Items,7,0,0,XS,tops
-Blush Dreams - 5 Items,7,0,0,S,tops
-Blush Dreams - 5 Items,7,100,0,M,tops
-Blush Dreams - 5 Items,7,300,0,L,tops
-Blush Dreams - 5 Items,7,150,0,XL,tops
-Blush Dreams - 5 Items,7,0,0,XS,leggings
-Blush Dreams - 5 Items,7,0,0,S,leggings
-Blush Dreams - 5 Items,7,100,0,M,leggings
-Blush Dreams - 5 Items,7,300,0,L,leggings
-Blush Dreams - 5 Items,7,150,0,XL,leggings
-Blush Dreams - 5 Items,7,0,0,XS,sports-bra
-Blush Dreams - 5 Items,7,0,0,S,sports-bra
-Blush Dreams - 5 Items,7,100,0,M,sports-bra
-Blush Dreams - 5 Items,7,300,0,L,sports-bra
-Blush Dreams - 5 Items,7,150,0,XL,sports-bra
+A New Gray - 5 Items,1,30,0,XS,tops
+A New Gray - 5 Items,1,40,0,S,tops
+A New Gray - 5 Items,1,0,0,M,tops
+A New Gray - 5 Items,1,0,0,L,tops
+A New Gray - 5 Items,1,0,0,XL,tops
+A New Gray - 5 Items,1,10,0,XS,leggings
+A New Gray - 5 Items,1,60,0,S,leggings
+A New Gray - 5 Items,1,0,0,M,leggings
+A New Gray - 5 Items,1,0,0,L,leggings
+A New Gray - 5 Items,1,0,0,XL,leggings
+A New Gray - 5 Items,1,30,0,XS,sports-bra
+A New Gray - 5 Items,1,40,0,S,sports-bra
+A New Gray - 5 Items,1,0,0,M,sports-bra
+A New Gray - 5 Items,1,0,0,L,sports-bra
+A New Gray - 5 Items,1,0,0,XL,sports-bra
+Nightfall - 5 Items,2,25,0,XS,sports-jacket
+Nightfall - 5 Items,2,50,0,S,sports-jacket
+Nightfall - 5 Items,2,0,0,M,sports-jacket
+Nightfall - 5 Items,2,0,0,L,sports-jacket
+Nightfall - 5 Items,2,0,0,XL,sports-jacket
+Nightfall - 5 Items,2,25,0,XS,leggings
+Nightfall - 5 Items,2,50,0,S,leggings
+Nightfall - 5 Items,2,0,0,M,leggings
+Nightfall - 5 Items,2,0,0,L,leggings
+Nightfall - 5 Items,2,0,0,XL,leggings
+Nightfall - 5 Items,2,25,0,XS,sports-bra
+Nightfall - 5 Items,2,50,0,S,sports-bra
+Nightfall - 5 Items,2,0,0,M,sports-bra
+Nightfall - 5 Items,2,0,0,L,sports-bra
+Nightfall - 5 Items,2,0,0,XL,sports-bra
+Blush Dreams - 5 Items,3,60,0,XS,tops
+Blush Dreams - 5 Items,3,100,0,S,tops
+Blush Dreams - 5 Items,3,0,0,M,tops
+Blush Dreams - 5 Items,3,0,0,L,tops
+Blush Dreams - 5 Items,3,0,0,XL,tops
+Blush Dreams - 5 Items,3,60,0,XS,leggings
+Blush Dreams - 5 Items,3,100,0,S,leggings
+Blush Dreams - 5 Items,3,0,0,M,leggings
+Blush Dreams - 5 Items,3,0,0,L,leggings
+Blush Dreams - 5 Items,3,0,0,XL,leggings
+Blush Dreams - 5 Items,3,20,0,XS,sports-bra
+Blush Dreams - 5 Items,3,150,0,S,sports-bra
+Blush Dreams - 5 Items,3,0,0,M,sports-bra
+Blush Dreams - 5 Items,3,0,0,L,sports-bra
+Blush Dreams - 5 Items,3,0,0,XL,sports-bra
