@@ -283,7 +283,7 @@ module BackgroundHelper
         when 5
             temp_exclude = "sports-jacket"
         when 6
-            temp_exclude = "tops"
+            temp_exclude = "sports-bra"
         when 7
             temp_exclude = "sports-jacket"
         when 8
