@@ -1,46 +1,46 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-A New Gray - 5 Items,1,30,0,XS,tops
-A New Gray - 5 Items,1,40,0,S,tops
-A New Gray - 5 Items,1,0,0,M,tops
-A New Gray - 5 Items,1,0,0,L,tops
-A New Gray - 5 Items,1,0,0,XL,tops
-A New Gray - 5 Items,1,10,0,XS,leggings
-A New Gray - 5 Items,1,60,0,S,leggings
-A New Gray - 5 Items,1,0,0,M,leggings
-A New Gray - 5 Items,1,0,0,L,leggings
-A New Gray - 5 Items,1,0,0,XL,leggings
-A New Gray - 5 Items,1,30,0,XS,sports-bra
-A New Gray - 5 Items,1,40,0,S,sports-bra
-A New Gray - 5 Items,1,0,0,M,sports-bra
-A New Gray - 5 Items,1,0,0,L,sports-bra
-A New Gray - 5 Items,1,0,0,XL,sports-bra
-Nightfall - 5 Items,2,25,0,XS,sports-jacket
-Nightfall - 5 Items,2,50,0,S,sports-jacket
-Nightfall - 5 Items,2,0,0,M,sports-jacket
-Nightfall - 5 Items,2,0,0,L,sports-jacket
-Nightfall - 5 Items,2,0,0,XL,sports-jacket
-Nightfall - 5 Items,2,25,0,XS,leggings
-Nightfall - 5 Items,2,50,0,S,leggings
-Nightfall - 5 Items,2,0,0,M,leggings
-Nightfall - 5 Items,2,0,0,L,leggings
-Nightfall - 5 Items,2,0,0,XL,leggings
-Nightfall - 5 Items,2,25,0,XS,sports-bra
-Nightfall - 5 Items,2,50,0,S,sports-bra
-Nightfall - 5 Items,2,0,0,M,sports-bra
-Nightfall - 5 Items,2,0,0,L,sports-bra
-Nightfall - 5 Items,2,0,0,XL,sports-bra
-Blush Dreams - 5 Items,3,60,0,XS,tops
-Blush Dreams - 5 Items,3,100,0,S,tops
-Blush Dreams - 5 Items,3,0,0,M,tops
-Blush Dreams - 5 Items,3,0,0,L,tops
-Blush Dreams - 5 Items,3,0,0,XL,tops
-Blush Dreams - 5 Items,3,60,0,XS,leggings
-Blush Dreams - 5 Items,3,100,0,S,leggings
-Blush Dreams - 5 Items,3,0,0,M,leggings
-Blush Dreams - 5 Items,3,0,0,L,leggings
-Blush Dreams - 5 Items,3,0,0,XL,leggings
-Blush Dreams - 5 Items,3,20,0,XS,sports-bra
-Blush Dreams - 5 Items,3,150,0,S,sports-bra
-Blush Dreams - 5 Items,3,0,0,M,sports-bra
-Blush Dreams - 5 Items,3,0,0,L,sports-bra
-Blush Dreams - 5 Items,3,0,0,XL,sports-bra
+Color Pop - 5 Items,1,25,0,XS,tops
+Color Pop - 5 Items,1,30,0,S,tops
+Color Pop - 5 Items,1,0,0,M,tops
+Color Pop - 5 Items,1,0,0,L,tops
+Color Pop - 5 Items,1,0,0,XL,tops
+Color Pop - 5 Items,1,15,0,XS,leggings
+Color Pop - 5 Items,1,30,0,S,leggings
+Color Pop - 5 Items,1,0,0,M,leggings
+Color Pop - 5 Items,1,0,0,L,leggings
+Color Pop - 5 Items,1,0,0,XL,leggings
+Color Pop - 5 Items,1,25,0,XS,sports-bra
+Color Pop - 5 Items,1,30,0,S,sports-bra
+Color Pop - 5 Items,1,0,0,M,sports-bra
+Color Pop - 5 Items,1,0,0,L,sports-bra
+Color Pop - 5 Items,1,0,0,XL,sports-bra
+Second Skin - 5 Items,2,15,0,XS,sports-jacket
+Second Skin - 5 Items,2,10,0,S,sports-jacket
+Second Skin - 5 Items,2,0,0,M,sports-jacket
+Second Skin - 5 Items,2,0,0,L,sports-jacket
+Second Skin - 5 Items,2,0,0,XL,sports-jacket
+Second Skin - 5 Items,2,15,0,XS,leggings
+Second Skin - 5 Items,2,10,0,S,leggings
+Second Skin - 5 Items,2,0,0,M,leggings
+Second Skin - 5 Items,2,0,0,L,leggings
+Second Skin - 5 Items,2,0,0,XL,leggings
+Second Skin - 5 Items,2,15,0,XS,sports-bra
+Second Skin - 5 Items,2,10,0,S,sports-bra
+Second Skin - 5 Items,2,0,0,M,sports-bra
+Second Skin - 5 Items,2,0,0,L,sports-bra
+Second Skin - 5 Items,2,0,0,XL,sports-bra
+Gear Up - 5 Items,3,15,0,XS,tops
+Gear Up - 5 Items,3,10,0,S,tops
+Gear Up - 5 Items,3,0,0,M,tops
+Gear Up - 5 Items,3,0,0,L,tops
+Gear Up - 5 Items,3,0,0,XL,tops
+Gear Up - 5 Items,3,15,0,XS,leggings
+Gear Up - 5 Items,3,10,0,S,leggings
+Gear Up - 5 Items,3,0,0,M,leggings
+Gear Up - 5 Items,3,0,0,L,leggings
+Gear Up - 5 Items,3,0,0,XL,leggings
+Gear Up - 5 Items,3,15,0,XS,sports-bra
+Gear Up - 5 Items,3,10,0,S,sports-bra
+Gear Up - 5 Items,3,0,0,M,sports-bra
+Gear Up - 5 Items,3,0,0,L,sports-bra
+Gear Up - 5 Items,3,0,0,XL,sports-bra
