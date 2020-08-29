@@ -232,7 +232,7 @@ module BackgroundHelper
                 body = recharge_data.to_json
                 puts body
 
-                exit
+                #exit
                 #Comment out below for dry run
                 my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
                 puts my_update_sub.inspect
