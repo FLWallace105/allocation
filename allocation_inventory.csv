@@ -1,46 +1,76 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Color Pop - 5 Items,1,25,0,XS,tops
-Color Pop - 5 Items,1,30,0,S,tops
-Color Pop - 5 Items,1,0,0,M,tops
-Color Pop - 5 Items,1,0,0,L,tops
-Color Pop - 5 Items,1,0,0,XL,tops
-Color Pop - 5 Items,1,15,0,XS,leggings
-Color Pop - 5 Items,1,30,0,S,leggings
-Color Pop - 5 Items,1,0,0,M,leggings
-Color Pop - 5 Items,1,0,0,L,leggings
-Color Pop - 5 Items,1,0,0,XL,leggings
-Color Pop - 5 Items,1,25,0,XS,sports-bra
-Color Pop - 5 Items,1,30,0,S,sports-bra
-Color Pop - 5 Items,1,0,0,M,sports-bra
-Color Pop - 5 Items,1,0,0,L,sports-bra
-Color Pop - 5 Items,1,0,0,XL,sports-bra
-Second Skin - 5 Items,2,15,0,XS,sports-jacket
-Second Skin - 5 Items,2,10,0,S,sports-jacket
-Second Skin - 5 Items,2,0,0,M,sports-jacket
-Second Skin - 5 Items,2,0,0,L,sports-jacket
-Second Skin - 5 Items,2,0,0,XL,sports-jacket
-Second Skin - 5 Items,2,15,0,XS,leggings
-Second Skin - 5 Items,2,10,0,S,leggings
-Second Skin - 5 Items,2,0,0,M,leggings
-Second Skin - 5 Items,2,0,0,L,leggings
-Second Skin - 5 Items,2,0,0,XL,leggings
-Second Skin - 5 Items,2,15,0,XS,sports-bra
-Second Skin - 5 Items,2,10,0,S,sports-bra
-Second Skin - 5 Items,2,0,0,M,sports-bra
-Second Skin - 5 Items,2,0,0,L,sports-bra
-Second Skin - 5 Items,2,0,0,XL,sports-bra
-Gear Up - 5 Items,3,15,0,XS,tops
-Gear Up - 5 Items,3,10,0,S,tops
-Gear Up - 5 Items,3,0,0,M,tops
-Gear Up - 5 Items,3,0,0,L,tops
-Gear Up - 5 Items,3,0,0,XL,tops
-Gear Up - 5 Items,3,15,0,XS,leggings
-Gear Up - 5 Items,3,10,0,S,leggings
-Gear Up - 5 Items,3,0,0,M,leggings
-Gear Up - 5 Items,3,0,0,L,leggings
-Gear Up - 5 Items,3,0,0,XL,leggings
-Gear Up - 5 Items,3,15,0,XS,sports-bra
-Gear Up - 5 Items,3,10,0,S,sports-bra
-Gear Up - 5 Items,3,0,0,M,sports-bra
-Gear Up - 5 Items,3,0,0,L,sports-bra
-Gear Up - 5 Items,3,0,0,XL,sports-bra
+Urban Instinct - 5 Items,1,41,0,XS,sports-jacket
+Urban Instinct - 5 Items,1,400,0,S,sports-jacket
+Urban Instinct - 5 Items,1,580,0,M,sports-jacket
+Urban Instinct - 5 Items,1,300,0,L,sports-jacket
+Urban Instinct - 5 Items,1,80,0,XL,sports-jacket
+Urban Instinct - 5 Items,1,18,0,XS,leggings
+Urban Instinct - 5 Items,1,400,0,S,leggings
+Urban Instinct - 5 Items,1,600,0,M,leggings
+Urban Instinct - 5 Items,1,300,0,L,leggings
+Urban Instinct - 5 Items,1,65,0,XL,leggings
+Urban Instinct - 5 Items,1,10,0,XS,sports-bra
+Urban Instinct - 5 Items,1,350,0,S,sports-bra
+Urban Instinct - 5 Items,1,600,0,M,sports-bra
+Urban Instinct - 5 Items,1,325,0,L,sports-bra
+Urban Instinct - 5 Items,1,85,0,XL,sports-bra
+Lunar Flare - 5 Items,2,50,0,XS,tops
+Lunar Flare - 5 Items,2,300,0,S,tops
+Lunar Flare - 5 Items,2,400,0,M,tops
+Lunar Flare - 5 Items,2,400,0,L,tops
+Lunar Flare - 5 Items,2,150,0,XL,tops
+Lunar Flare - 5 Items,2,50,0,XS,leggings
+Lunar Flare - 5 Items,2,300,0,S,leggings
+Lunar Flare - 5 Items,2,400,0,M,leggings
+Lunar Flare - 5 Items,2,400,0,L,leggings
+Lunar Flare - 5 Items,2,150,0,XL,leggings
+Lunar Flare - 5 Items,2,50,0,XS,sports-bra
+Lunar Flare - 5 Items,2,250,0,S,sports-bra
+Lunar Flare - 5 Items,2,200,0,M,sports-bra
+Lunar Flare - 5 Items,2,200,0,L,sports-bra
+Lunar Flare - 5 Items,2,150,0,XL,sports-bra
+Incognito - 5 Items,3,48,0,XS,tops
+Incognito - 5 Items,3,250,0,S,tops
+Incognito - 5 Items,3,248,0,M,tops
+Incognito - 5 Items,3,35,0,L,tops
+Incognito - 5 Items,3,6,0,XL,tops
+Incognito - 5 Items,3,0,0,XS,leggings
+Incognito - 5 Items,3,250,0,S,leggings
+Incognito - 5 Items,3,250,0,M,leggings
+Incognito - 5 Items,3,200,0,L,leggings
+Incognito - 5 Items,3,59,0,XL,leggings
+Incognito - 5 Items,3,0,0,XS,sports-bra
+Incognito - 5 Items,3,36,0,S,sports-bra
+Incognito - 5 Items,3,250,0,M,sports-bra
+Incognito - 5 Items,3,183,0,L,sports-bra
+Incognito - 5 Items,3,249,0,XL,sports-bra
+Mint Condition - 5 Items,4,30,0,XS,tops
+Mint Condition - 5 Items,4,400,0,S,tops
+Mint Condition - 5 Items,4,125,0,M,tops
+Mint Condition - 5 Items,4,0,0,L,tops
+Mint Condition - 5 Items,4,0,0,XL,tops
+Mint Condition - 5 Items,4,0,0,XS,leggings
+Mint Condition - 5 Items,4,70,0,S,leggings
+Mint Condition - 5 Items,4,200,0,M,leggings
+Mint Condition - 5 Items,4,175,0,L,leggings
+Mint Condition - 5 Items,4,0,0,XL,leggings
+Mint Condition - 5 Items,4,0,0,XS,sports-bra
+Mint Condition - 5 Items,4,65,0,S,sports-bra
+Mint Condition - 5 Items,4,200,0,M,sports-bra
+Mint Condition - 5 Items,4,140,0,L,sports-bra
+Mint Condition - 5 Items,4,0,0,XL,sports-bra
+Wine Not - 5 Items,5,0,0,XS,tops
+Wine Not - 5 Items,5,150,0,S,tops
+Wine Not - 5 Items,5,250,0,M,tops
+Wine Not - 5 Items,5,400,0,L,tops
+Wine Not - 5 Items,5,300,0,XL,tops
+Wine Not - 5 Items,5,0,0,XS,leggings
+Wine Not - 5 Items,5,150,0,S,leggings
+Wine Not - 5 Items,5,250,0,M,leggings
+Wine Not - 5 Items,5,400,0,L,leggings
+Wine Not - 5 Items,5,300,0,XL,leggings
+Wine Not - 5 Items,5,0,0,XS,sports-jacket
+Wine Not - 5 Items,5,150,0,S,sports-jacket
+Wine Not - 5 Items,5,250,0,M,sports-jacket
+Wine Not - 5 Items,5,400,0,L,sports-jacket
+Wine Not - 5 Items,5,300,0,XL,sports-jacket
