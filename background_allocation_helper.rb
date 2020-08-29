@@ -38,6 +38,10 @@ module BackgroundHelper
         found_sports_bra = false
         found_leggings = false
         found_gloves = false
+        
+        #8/29/2020 Floyd Wallace add outfit_id to properties so Scoutside portal will display properly
+        found_outfit_id = false
+
         sports_jacket_size = ""
 
         tops_size = ""
@@ -80,6 +84,11 @@ module BackgroundHelper
                 found_gloves = true
             end
 
+            if mystuff['name'] == "outfit_id"
+                found_outfit_id = true
+                mystuff['value'] = my_alternate_product.product_id
+            end
+
         end
         puts "my_line_items = #{my_line_items.inspect}"
         puts "---------"
@@ -105,6 +114,12 @@ module BackgroundHelper
         if found_sports_jacket == false
             puts "We are adding the sports-jacket size and using the tops size for this sub"
             my_line_items << {"name" => "sports-jacket", "value" => tops_size }
+
+        end
+
+        if found_outfit_id == false
+            puts "We are adding the outfit_id json key/value pair"
+            my_line_items << {"name" => "outfit_id", "value" => my_alternate_product.product_id }
 
         end
 
@@ -217,7 +232,7 @@ module BackgroundHelper
                 body = recharge_data.to_json
                 puts body
 
-                #exit
+                exit
                 #Comment out below for dry run
                 my_update_sub = HTTParty.put("https://api.rechargeapps.com/subscriptions/#{sub.subscription_id}", :headers => recharge_change_header, :body => body, :timeout => 80)
                 puts my_update_sub.inspect
@@ -252,9 +267,9 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-            #if (value == "XS")
-            #    contains_outlier_size = true
-            #end
+            if (value == "XS")
+                contains_outlier_size = true
+            end
             #if  (value == "S") 
             #    contains_outlier_size = true
             #end
@@ -273,15 +288,15 @@ module BackgroundHelper
         temp_exclude = ""
         case my_index
         when 1
-            temp_exclude = "sports-jacket"
-        when 2
             temp_exclude = "tops"
+        when 2
+            temp_exclude = "sports-jacket"
         when 3
             temp_exclude = "sports-jacket"
         when 4
             temp_exclude = "sports-jacket"
         when 5
-            temp_exclude = "sports-jacket"
+            temp_exclude = "sports-bra"
         when 6
             temp_exclude = "sports-bra"
         when 7
@@ -504,14 +519,14 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-7"
-                    my_total_length = 3
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     #temp fix to make namaste & Slay work only add in March allocation 2020
                     #my_index = 7
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-6"
-                    my_total_length = 3
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     #my_index = 7
                     puts "my_index = #{my_index}"
