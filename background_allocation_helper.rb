@@ -288,13 +288,13 @@ module BackgroundHelper
         temp_exclude = ""
         case my_index
         when 1
-            temp_exclude = "tops"
+            temp_exclude = "sports-jacket"
         when 2
             temp_exclude = "sports-jacket"
         when 3
-            temp_exclude = "sports-jacket"
+            temp_exclude = "sports-bra"
         when 4
-            temp_exclude = "sports-jacket"
+            temp_exclude = "sports-bra"
         when 5
             temp_exclude = "sports-bra"
         when 6
@@ -336,13 +336,13 @@ module BackgroundHelper
             when 2
                 my_size_hash.delete("sports-bra")
             when 3
-                my_size_hash.delete("sports-bra")
+                my_size_hash.delete("sports-jacket")
             when 4
-                my_size_hash.delete("sports-bra")
+                my_size_hash.delete("sports-jacket")
             when 5
-                my_size_hash.delete("sports-bra")
+                my_size_hash.delete("sports-jacket")
             when 6
-                my_size_hash.delete("sports-bra")
+                my_size_hash.delete("sports-jacket")
             when 7
                 my_size_hash.delete("sports-bra")
 
@@ -519,7 +519,7 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-7"
-                    my_total_length = 4
+                    my_total_length = 6
                     my_index = generate_random_index(my_total_length)
                     #temp fix to make namaste & Slay work only add in March allocation 2020
                     #my_index = 7
