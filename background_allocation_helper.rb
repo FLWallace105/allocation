@@ -290,7 +290,7 @@ module BackgroundHelper
         when 1
             temp_exclude = "sports-jacket"
         when 2
-            temp_exclude = "sports-jacket"
+            temp_exclude = "tops"
         when 3
             temp_exclude = "sports-bra"
         when 4
