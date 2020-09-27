@@ -1,91 +1,31 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Free Fall - 5 Items,1,82,0,XS,tops
-Free Fall - 5 Items,1,550,0,S,tops
-Free Fall - 5 Items,1,817,0,M,tops
-Free Fall - 5 Items,1,466,0,L,tops
-Free Fall - 5 Items,1,182,0,XL,tops
-Free Fall - 5 Items,1,50,0,XS,leggings
-Free Fall - 5 Items,1,550,0,S,leggings
-Free Fall - 5 Items,1,850,0,M,leggings
-Free Fall - 5 Items,1,500,0,L,leggings
-Free Fall - 5 Items,1,156,0,XL,leggings
-Free Fall - 5 Items,1,25,0,XS,sports-bra
-Free Fall - 5 Items,1,500,0,S,sports-bra
-Free Fall - 5 Items,1,815,0,M,sports-bra
-Free Fall - 5 Items,1,450,0,L,sports-bra
-Free Fall - 5 Items,1,180,0,XL,sports-bra
-Lunar Flare - 5 Items,2,50,0,XS,tops
-Lunar Flare - 5 Items,2,250,0,S,tops
-Lunar Flare - 5 Items,2,300,0,M,tops
-Lunar Flare - 5 Items,2,250,0,L,tops
-Lunar Flare - 5 Items,2,50,0,XL,tops
-Lunar Flare - 5 Items,2,50,0,XS,leggings
-Lunar Flare - 5 Items,2,250,0,S,leggings
-Lunar Flare - 5 Items,2,300,0,M,leggings
-Lunar Flare - 5 Items,2,250,0,L,leggings
-Lunar Flare - 5 Items,2,50,0,XL,leggings
-Lunar Flare - 5 Items,2,50,0,XS,sports-bra
-Lunar Flare - 5 Items,2,250,0,S,sports-bra
-Lunar Flare - 5 Items,2,300,0,M,sports-bra
-Lunar Flare - 5 Items,2,250,0,L,sports-bra
-Lunar Flare - 5 Items,2,50,0,XL,sports-bra
-Pacific Crest - 5 Items,3,45,0,XS,tops
-Pacific Crest - 5 Items,3,147,0,S,tops
-Pacific Crest - 5 Items,3,244,0,M,tops
-Pacific Crest - 5 Items,3,0,0,L,tops
-Pacific Crest - 5 Items,3,324,0,XL,tops
-Pacific Crest - 5 Items,3,0,0,XS,leggings
-Pacific Crest - 5 Items,3,219,0,S,leggings
-Pacific Crest - 5 Items,3,269,0,M,leggings
-Pacific Crest - 5 Items,3,0,0,L,leggings
-Pacific Crest - 5 Items,3,15,0,XL,leggings
-Pacific Crest - 5 Items,3,35,0,XS,sports-jacket
-Pacific Crest - 5 Items,3,421,0,S,sports-jacket
-Pacific Crest - 5 Items,3,418,0,M,sports-jacket
-Pacific Crest - 5 Items,3,200,0,L,sports-jacket
-Pacific Crest - 5 Items,3,54,0,XL,sports-jacket
-Press Paws - 5 Items,4,0,0,XS,tops
-Press Paws - 5 Items,4,225,0,S,tops
-Press Paws - 5 Items,4,440,0,M,tops
-Press Paws - 5 Items,4,625,0,L,tops
-Press Paws - 5 Items,4,400,0,XL,tops
-Press Paws - 5 Items,4,40,0,XS,leggings
-Press Paws - 5 Items,4,225,0,S,leggings
-Press Paws - 5 Items,4,600,0,M,leggings
-Press Paws - 5 Items,4,625,0,L,leggings
-Press Paws - 5 Items,4,340,0,XL,leggings
-Press Paws - 5 Items,4,0,0,XS,sports-jacket
-Press Paws - 5 Items,4,250,0,S,sports-jacket
-Press Paws - 5 Items,4,800,0,M,sports-jacket
-Press Paws - 5 Items,4,800,0,L,sports-jacket
-Press Paws - 5 Items,4,400,0,XL,sports-jacket
-& Chill - 5 Items,5,0,0,XS,tops
-& Chill - 5 Items,5,128,0,S,tops
-& Chill - 5 Items,5,128,0,M,tops
-& Chill - 5 Items,5,128,0,L,tops
-& Chill - 5 Items,5,128,0,XL,tops
-& Chill - 5 Items,5,0,0,XS,leggings
-& Chill - 5 Items,5,250,0,S,leggings
-& Chill - 5 Items,5,250,0,M,leggings
-& Chill - 5 Items,5,250,0,L,leggings
-& Chill - 5 Items,5,324,0,XL,leggings
-& Chill - 5 Items,5,0,0,XS,sports-jacket
-& Chill - 5 Items,5,200,0,S,sports-jacket
-& Chill - 5 Items,5,200,0,M,sports-jacket
-& Chill - 5 Items,5,200,0,L,sports-jacket
-& Chill - 5 Items,5,200,0,XL,sports-jacket
-Wine Not - 5 Items,6,0,0,XS,tops
-Wine Not - 5 Items,6,50,0,S,tops
-Wine Not - 5 Items,6,150,0,M,tops
-Wine Not - 5 Items,6,200,0,L,tops
-Wine Not - 5 Items,6,150,0,XL,tops
-Wine Not - 5 Items,6,0,0,XS,leggings
-Wine Not - 5 Items,6,50,0,S,leggings
-Wine Not - 5 Items,6,150,0,M,leggings
-Wine Not - 5 Items,6,200,0,L,leggings
-Wine Not - 5 Items,6,150,0,XL,leggings
-Wine Not - 5 Items,6,0,0,XS,sports-jacket
-Wine Not - 5 Items,6,50,0,S,sports-jacket
-Wine Not - 5 Items,6,150,0,M,sports-jacket
-Wine Not - 5 Items,6,200,0,L,sports-jacket
-Wine Not - 5 Items,6,150,0,XL,sports-jacket
+Wild Instinct - 5 Items,1,30,0,XS,tops
+Wild Instinct - 5 Items,1,150,0,S,tops
+Wild Instinct - 5 Items,1,400,0,M,tops
+Wild Instinct - 5 Items,1,175,0,L,tops
+Wild Instinct - 5 Items,1,25,0,XL,tops
+Wild Instinct - 5 Items,1,10,0,XS,leggings
+Wild Instinct - 5 Items,1,150,0,S,leggings
+Wild Instinct - 5 Items,1,400,0,M,leggings
+Wild Instinct - 5 Items,1,175,0,L,leggings
+Wild Instinct - 5 Items,1,25,0,XL,leggings
+Wild Instinct - 5 Items,1,0,0,XS,sports-bra
+Wild Instinct - 5 Items,1,80,0,S,sports-bra
+Wild Instinct - 5 Items,1,300,0,M,sports-bra
+Wild Instinct - 5 Items,1,150,0,L,sports-bra
+Wild Instinct - 5 Items,1,0,0,XL,sports-bra
+Nightfall - 5 Items,2,15,0,XS,sports-jacket
+Nightfall - 5 Items,2,100,0,S,sports-jacket
+Nightfall - 5 Items,2,200,0,M,sports-jacket
+Nightfall - 5 Items,2,100,0,L,sports-jacket
+Nightfall - 5 Items,2,10,0,XL,sports-jacket
+Nightfall - 5 Items,2,10,0,XS,leggings
+Nightfall - 5 Items,2,150,0,S,leggings
+Nightfall - 5 Items,2,250,0,M,leggings
+Nightfall - 5 Items,2,130,0,L,leggings
+Nightfall - 5 Items,2,0,0,XL,leggings
+Nightfall - 5 Items,2,15,0,XS,sports-bra
+Nightfall - 5 Items,2,150,0,S,sports-bra
+Nightfall - 5 Items,2,250,0,M,sports-bra
+Nightfall - 5 Items,2,100,0,L,sports-bra
+Nightfall - 5 Items,2,0,0,XL,sports-bra
