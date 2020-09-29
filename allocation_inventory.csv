@@ -1,31 +1,76 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Wild Instinct - 5 Items,1,30,0,XS,tops
-Wild Instinct - 5 Items,1,150,0,S,tops
-Wild Instinct - 5 Items,1,400,0,M,tops
-Wild Instinct - 5 Items,1,175,0,L,tops
-Wild Instinct - 5 Items,1,25,0,XL,tops
-Wild Instinct - 5 Items,1,10,0,XS,leggings
-Wild Instinct - 5 Items,1,150,0,S,leggings
-Wild Instinct - 5 Items,1,400,0,M,leggings
-Wild Instinct - 5 Items,1,175,0,L,leggings
-Wild Instinct - 5 Items,1,25,0,XL,leggings
-Wild Instinct - 5 Items,1,0,0,XS,sports-bra
-Wild Instinct - 5 Items,1,80,0,S,sports-bra
-Wild Instinct - 5 Items,1,300,0,M,sports-bra
-Wild Instinct - 5 Items,1,150,0,L,sports-bra
-Wild Instinct - 5 Items,1,0,0,XL,sports-bra
-Nightfall - 5 Items,2,15,0,XS,sports-jacket
-Nightfall - 5 Items,2,100,0,S,sports-jacket
-Nightfall - 5 Items,2,200,0,M,sports-jacket
-Nightfall - 5 Items,2,100,0,L,sports-jacket
-Nightfall - 5 Items,2,10,0,XL,sports-jacket
-Nightfall - 5 Items,2,10,0,XS,leggings
-Nightfall - 5 Items,2,150,0,S,leggings
-Nightfall - 5 Items,2,250,0,M,leggings
-Nightfall - 5 Items,2,130,0,L,leggings
-Nightfall - 5 Items,2,0,0,XL,leggings
-Nightfall - 5 Items,2,15,0,XS,sports-bra
-Nightfall - 5 Items,2,150,0,S,sports-bra
-Nightfall - 5 Items,2,250,0,M,sports-bra
-Nightfall - 5 Items,2,100,0,L,sports-bra
-Nightfall - 5 Items,2,0,0,XL,sports-bra
+Positively Pink - 5 Items,1,75,0,XS,tops
+Positively Pink - 5 Items,1,500,0,S,tops
+Positively Pink - 5 Items,1,300,0,M,tops
+Positively Pink - 5 Items,1,200,0,L,tops
+Positively Pink - 5 Items,1,100,0,XL,tops
+Positively Pink - 5 Items,1,50,0,XS,leggings
+Positively Pink - 5 Items,1,300,0,S,leggings
+Positively Pink - 5 Items,1,300,0,M,leggings
+Positively Pink - 5 Items,1,200,0,L,leggings
+Positively Pink - 5 Items,1,100,0,XL,leggings
+Positively Pink - 5 Items,1,60,0,XS,sports-bra
+Positively Pink - 5 Items,1,500,0,S,sports-bra
+Positively Pink - 5 Items,1,300,0,M,sports-bra
+Positively Pink - 5 Items,1,200,0,L,sports-bra
+Positively Pink - 5 Items,1,100,0,XL,sports-bra
+Namaste In - 5 Items,2,100,0,XS,sports-jacket
+Namaste In - 5 Items,2,600,0,S,sports-jacket
+Namaste In - 5 Items,2,700,0,M,sports-jacket
+Namaste In - 5 Items,2,400,0,L,sports-jacket
+Namaste In - 5 Items,2,150,0,XL,sports-jacket
+Namaste In - 5 Items,2,100,0,XS,leggings
+Namaste In - 5 Items,2,600,0,S,leggings
+Namaste In - 5 Items,2,700,0,M,leggings
+Namaste In - 5 Items,2,400,0,L,leggings
+Namaste In - 5 Items,2,150,0,XL,leggings
+Namaste In - 5 Items,2,80,0,XS,sports-bra
+Namaste In - 5 Items,2,500,0,S,sports-bra
+Namaste In - 5 Items,2,600,0,M,sports-bra
+Namaste In - 5 Items,2,400,0,L,sports-bra
+Namaste In - 5 Items,2,100,0,XL,sports-bra
+Guiding Light - 5 Items,3,250,0,XS,tops
+Guiding Light - 5 Items,3,2500,0,S,tops
+Guiding Light - 5 Items,3,3000,0,M,tops
+Guiding Light - 5 Items,3,1500,0,L,tops
+Guiding Light - 5 Items,3,700,0,XL,tops
+Guiding Light - 5 Items,3,250,0,XS,leggings
+Guiding Light - 5 Items,3,2500,0,S,leggings
+Guiding Light - 5 Items,3,3000,0,M,leggings
+Guiding Light - 5 Items,3,1500,0,L,leggings
+Guiding Light - 5 Items,3,700,0,XL,leggings
+Guiding Light - 5 Items,3,250,0,XS,sports-bra
+Guiding Light - 5 Items,3,2500,0,S,sports-bra
+Guiding Light - 5 Items,3,3000,0,M,sports-bra
+Guiding Light - 5 Items,3,1500,0,L,sports-bra
+Guiding Light - 5 Items,3,700,0,XL,sports-bra
+Full Bloom - 5 Items,4,30,0,XS,tops
+Full Bloom - 5 Items,4,600,0,S,tops
+Full Bloom - 5 Items,4,900,0,M,tops
+Full Bloom - 5 Items,4,250,0,L,tops
+Full Bloom - 5 Items,4,0,0,XL,tops
+Full Bloom - 5 Items,4,30,0,XS,leggings
+Full Bloom - 5 Items,4,600,0,S,leggings
+Full Bloom - 5 Items,4,900,0,M,leggings
+Full Bloom - 5 Items,4,250,0,L,leggings
+Full Bloom - 5 Items,4,0,0,XL,leggings
+Full Bloom - 5 Items,4,30,0,XS,sports-bra
+Full Bloom - 5 Items,4,600,0,S,sports-bra
+Full Bloom - 5 Items,4,900,0,M,sports-bra
+Full Bloom - 5 Items,4,250,0,L,sports-bra
+Full Bloom - 5 Items,4,0,0,XL,sports-bra
+What A Gem - 5 Items,5,0,0,XS,tops
+What A Gem - 5 Items,5,0,0,S,tops
+What A Gem - 5 Items,5,350,0,M,tops
+What A Gem - 5 Items,5,550,0,L,tops
+What A Gem - 5 Items,5,200,0,XL,tops
+What A Gem - 5 Items,5,0,0,XS,leggings
+What A Gem - 5 Items,5,0,0,S,leggings
+What A Gem - 5 Items,5,300,0,M,leggings
+What A Gem - 5 Items,5,300,0,L,leggings
+What A Gem - 5 Items,5,150,0,XL,leggings
+What A Gem - 5 Items,5,0,0,XS,sports-bra
+What A Gem - 5 Items,5,0,0,S,sports-bra
+What A Gem - 5 Items,5,250,0,M,sports-bra
+What A Gem - 5 Items,5,200,0,L,sports-bra
+What A Gem - 5 Items,5,0,0,XL,sports-bra
