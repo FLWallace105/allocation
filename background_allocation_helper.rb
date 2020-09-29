@@ -267,12 +267,12 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-            #if (value == "XS")
-            #    contains_outlier_size = true
-            #end
-            #if  (value == "S") 
-            #    contains_outlier_size = true
-            #end
+            if (value == "XS")
+                contains_outlier_size = true
+            end
+            if  (value == "S") 
+                contains_outlier_size = true
+            end
         end
         return contains_outlier_size
     end
@@ -292,13 +292,13 @@ module BackgroundHelper
         when 2
             temp_exclude = "tops"
         when 3
-            temp_exclude = "sports-bra"
+            temp_exclude = "sports-jacket"
         when 4
-            temp_exclude = "sports-bra"
+            temp_exclude = "sports-jacket"
         when 5
-            temp_exclude = "sports-bra"
+            temp_exclude = "sports-jacket"
         when 6
-            temp_exclude = "sports-bra"
+            temp_exclude = "sports-jacket"
         when 7
             temp_exclude = "sports-jacket"
         when 8
@@ -336,13 +336,13 @@ module BackgroundHelper
             when 2
                 my_size_hash.delete("sports-bra")
             when 3
-                my_size_hash.delete("sports-jacket")
+                my_size_hash.delete("sports-bra")
             when 4
-                my_size_hash.delete("sports-jacket")
+                my_size_hash.delete("sports-bra")
             when 5
-                my_size_hash.delete("sports-jacket")
+                my_size_hash.delete("sports-bra")
             when 6
-                my_size_hash.delete("sports-jacket")
+                my_size_hash.delete("sports-bra")
             when 7
                 my_size_hash.delete("sports-bra")
 
@@ -518,15 +518,15 @@ module BackgroundHelper
                 my_index = 999
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
-                    puts "must generate only random 1-7"
-                    my_total_length = 2
+                    puts "must generate only random 1-4"
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     #temp fix to make namaste & Slay work only add in March allocation 2020
                     #my_index = 7
                     puts "my_index = #{my_index}"
                 else
-                    puts "can generate random 1-6"
-                    my_total_length = 2
+                    puts "can generate random 1-5"
+                    my_total_length = 5
                     my_index = generate_random_index(my_total_length)
                     #my_index = 7
                     puts "my_index = #{my_index}"
