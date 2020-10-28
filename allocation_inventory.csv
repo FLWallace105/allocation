@@ -1,76 +1,61 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Positively Pink - 5 Items,1,75,0,XS,tops
-Positively Pink - 5 Items,1,500,0,S,tops
-Positively Pink - 5 Items,1,300,0,M,tops
-Positively Pink - 5 Items,1,200,0,L,tops
-Positively Pink - 5 Items,1,100,0,XL,tops
-Positively Pink - 5 Items,1,50,0,XS,leggings
-Positively Pink - 5 Items,1,300,0,S,leggings
-Positively Pink - 5 Items,1,300,0,M,leggings
-Positively Pink - 5 Items,1,200,0,L,leggings
-Positively Pink - 5 Items,1,100,0,XL,leggings
-Positively Pink - 5 Items,1,60,0,XS,sports-bra
-Positively Pink - 5 Items,1,500,0,S,sports-bra
-Positively Pink - 5 Items,1,300,0,M,sports-bra
-Positively Pink - 5 Items,1,200,0,L,sports-bra
-Positively Pink - 5 Items,1,100,0,XL,sports-bra
-Namaste In - 5 Items,2,100,0,XS,sports-jacket
-Namaste In - 5 Items,2,600,0,S,sports-jacket
-Namaste In - 5 Items,2,700,0,M,sports-jacket
-Namaste In - 5 Items,2,400,0,L,sports-jacket
-Namaste In - 5 Items,2,150,0,XL,sports-jacket
-Namaste In - 5 Items,2,100,0,XS,leggings
-Namaste In - 5 Items,2,600,0,S,leggings
-Namaste In - 5 Items,2,700,0,M,leggings
-Namaste In - 5 Items,2,400,0,L,leggings
-Namaste In - 5 Items,2,150,0,XL,leggings
-Namaste In - 5 Items,2,80,0,XS,sports-bra
-Namaste In - 5 Items,2,500,0,S,sports-bra
-Namaste In - 5 Items,2,600,0,M,sports-bra
-Namaste In - 5 Items,2,400,0,L,sports-bra
-Namaste In - 5 Items,2,100,0,XL,sports-bra
-Guiding Light - 5 Items,3,250,0,XS,tops
-Guiding Light - 5 Items,3,2500,0,S,tops
-Guiding Light - 5 Items,3,3000,0,M,tops
-Guiding Light - 5 Items,3,1500,0,L,tops
-Guiding Light - 5 Items,3,700,0,XL,tops
-Guiding Light - 5 Items,3,250,0,XS,leggings
-Guiding Light - 5 Items,3,2500,0,S,leggings
-Guiding Light - 5 Items,3,3000,0,M,leggings
-Guiding Light - 5 Items,3,1500,0,L,leggings
-Guiding Light - 5 Items,3,700,0,XL,leggings
-Guiding Light - 5 Items,3,250,0,XS,sports-bra
-Guiding Light - 5 Items,3,2500,0,S,sports-bra
-Guiding Light - 5 Items,3,3000,0,M,sports-bra
-Guiding Light - 5 Items,3,1500,0,L,sports-bra
-Guiding Light - 5 Items,3,700,0,XL,sports-bra
-Full Bloom - 5 Items,4,30,0,XS,tops
-Full Bloom - 5 Items,4,600,0,S,tops
-Full Bloom - 5 Items,4,900,0,M,tops
-Full Bloom - 5 Items,4,250,0,L,tops
-Full Bloom - 5 Items,4,0,0,XL,tops
-Full Bloom - 5 Items,4,30,0,XS,leggings
-Full Bloom - 5 Items,4,600,0,S,leggings
-Full Bloom - 5 Items,4,900,0,M,leggings
-Full Bloom - 5 Items,4,250,0,L,leggings
-Full Bloom - 5 Items,4,0,0,XL,leggings
-Full Bloom - 5 Items,4,30,0,XS,sports-bra
-Full Bloom - 5 Items,4,600,0,S,sports-bra
-Full Bloom - 5 Items,4,900,0,M,sports-bra
-Full Bloom - 5 Items,4,250,0,L,sports-bra
-Full Bloom - 5 Items,4,0,0,XL,sports-bra
-What A Gem - 5 Items,5,0,0,XS,tops
-What A Gem - 5 Items,5,0,0,S,tops
-What A Gem - 5 Items,5,350,0,M,tops
-What A Gem - 5 Items,5,550,0,L,tops
-What A Gem - 5 Items,5,200,0,XL,tops
-What A Gem - 5 Items,5,0,0,XS,leggings
-What A Gem - 5 Items,5,0,0,S,leggings
-What A Gem - 5 Items,5,300,0,M,leggings
-What A Gem - 5 Items,5,300,0,L,leggings
-What A Gem - 5 Items,5,150,0,XL,leggings
-What A Gem - 5 Items,5,0,0,XS,sports-bra
-What A Gem - 5 Items,5,0,0,S,sports-bra
-What A Gem - 5 Items,5,250,0,M,sports-bra
-What A Gem - 5 Items,5,200,0,L,sports-bra
-What A Gem - 5 Items,5,0,0,XL,sports-bra
+Balanced Beige - 5 Items,1,20,0,XS,tops
+Balanced Beige - 5 Items,1,1000,0,S,tops
+Balanced Beige - 5 Items,1,1500,0,M,tops
+Balanced Beige - 5 Items,1,450,0,L,tops
+Balanced Beige - 5 Items,1,0,0,XL,tops
+Balanced Beige - 5 Items,1,20,0,XS,leggings
+Balanced Beige - 5 Items,1,1000,0,S,leggings
+Balanced Beige - 5 Items,1,1500,0,M,leggings
+Balanced Beige - 5 Items,1,450,0,L,leggings
+Balanced Beige - 5 Items,1,0,0,XL,leggings
+Balanced Beige - 5 Items,1,20,0,XS,sports-jacket
+Balanced Beige - 5 Items,1,1000,0,S,sports-jacket
+Balanced Beige - 5 Items,1,1500,0,M,sports-jacket
+Balanced Beige - 5 Items,1,450,0,L,sports-jacket
+Balanced Beige - 5 Items,1,0,0,XL,sports-jacket
+Purple Haze - 5 Items,2,10,0,XS,sports-bra
+Purple Haze - 5 Items,2,1000,0,S,sports-bra
+Purple Haze - 5 Items,2,2000,0,M,sports-bra
+Purple Haze - 5 Items,2,1000,0,L,sports-bra
+Purple Haze - 5 Items,2,300,0,XL,sports-bra
+Purple Haze - 5 Items,2,10,0,XS,leggings
+Purple Haze - 5 Items,2,1000,0,S,leggings
+Purple Haze - 5 Items,2,2000,0,M,leggings
+Purple Haze - 5 Items,2,1000,0,L,leggings
+Purple Haze - 5 Items,2,300,0,XL,leggings
+Purple Haze - 5 Items,2,10,0,XS,sports-jacket
+Purple Haze - 5 Items,2,1000,0,S,sports-jacket
+Purple Haze - 5 Items,2,2000,0,M,sports-jacket
+Purple Haze - 5 Items,2,1000,0,L,sports-jacket
+Purple Haze - 5 Items,2,300,0,XL,sports-jacket
+Glamazon - 5 Items,3,80,0,XS,sports-bra
+Glamazon - 5 Items,3,1600,0,S,sports-bra
+Glamazon - 5 Items,3,1500,0,M,sports-bra
+Glamazon - 5 Items,3,1000,0,L,sports-bra
+Glamazon - 5 Items,3,400,0,XL,sports-bra
+Glamazon - 5 Items,3,80,0,XS,leggings
+Glamazon - 5 Items,3,1600,0,S,leggings
+Glamazon - 5 Items,3,1500,0,M,leggings
+Glamazon - 5 Items,3,1000,0,L,leggings
+Glamazon - 5 Items,3,400,0,XL,leggings
+Glamazon - 5 Items,3,80,0,XS,tops
+Glamazon - 5 Items,3,1600,0,S,tops
+Glamazon - 5 Items,3,1500,0,M,tops
+Glamazon - 5 Items,3,1000,0,L,tops
+Glamazon - 5 Items,3,400,0,XL,tops
+Wine Down - 5 Items,4,135,0,XS,sports-bra
+Wine Down - 5 Items,4,500,0,S,sports-bra
+Wine Down - 5 Items,4,500,0,M,sports-bra
+Wine Down - 5 Items,4,150,0,L,sports-bra
+Wine Down - 5 Items,4,150,0,XL,sports-bra
+Wine Down - 5 Items,4,0,0,XS,leggings
+Wine Down - 5 Items,4,70,0,S,leggings
+Wine Down - 5 Items,4,200,0,M,leggings
+Wine Down - 5 Items,4,700,0,L,leggings
+Wine Down - 5 Items,4,400,0,XL,leggings
+Wine Down - 5 Items,4,0,0,XS,tops
+Wine Down - 5 Items,4,150,0,S,tops
+Wine Down - 5 Items,4,400,0,M,tops
+Wine Down - 5 Items,4,400,0,L,tops
+Wine Down - 5 Items,4,150,0,XL,tops
