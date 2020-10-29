@@ -519,14 +519,14 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-4"
-                    my_total_length = 3
+                    my_total_length = 4
                     my_index = generate_random_index(my_total_length)
                     #temp fix to make namaste & Slay work only add in March allocation 2020
                     #my_index = 7
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-5"
-                    my_total_length = 4
+                    my_total_length = 5
                     my_index = generate_random_index(my_total_length)
                     #my_index = 7
                     puts "my_index = #{my_index}"
