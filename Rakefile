@@ -9,6 +9,16 @@ require_relative 'allocation'
 
 #require 'pry'
 
+namespace :summary do 
+desc 'provide summary of next months allocations'
+task :summary_allocation do |t|
+    Allocation::Setup.new.summary_product_collection
+
+end
+
+
+end
+
 namespace :allocate do
 
 #allocation_switchable_products_helper(myfile)

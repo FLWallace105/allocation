@@ -38,6 +38,68 @@ module Allocation
 
     end
 
+    def summary_product_collection
+        puts "Starting Summary Product Collection Assignments for Next Month"
+        my_end_month = Date.today.end_of_month
+        my_end_month_str = my_end_month.strftime("%Y-%m-%d")
+        puts "End of the month = #{my_end_month_str}"
+        my_start_month_plus = Date.today 
+        my_start_month_plus = my_start_month_plus >> 1
+        my_start_month_plus = my_start_month_plus.end_of_month + 1
+        my_start_month_plus_str = my_start_month_plus.strftime("%Y-%m-%d")
+        puts "my start_month_plus_str = #{my_start_month_plus_str}"
+
+        my_sub_counts = "select count(sub_collection_sizes.id), sub_collection_sizes.product_collection from sub_collection_sizes where sub_collection_sizes.next_charge_scheduled_at > \'#{my_end_month_str}\' and sub_collection_sizes.next_charge_scheduled_at < \'#{my_start_month_plus_str}\' group by sub_collection_sizes.product_collection order by sub_collection_sizes.product_collection asc "
+
+        sub_product_collections = ActiveRecord::Base.connection.execute(my_sub_counts).values
+        puts sub_product_collections.inspect
+
+        my_order_counts = "select count(order_collection_sizes.id), order_collection_sizes.product_collection from order_collection_sizes where order_collection_sizes.scheduled_at > \'#{my_end_month_str}\' and order_collection_sizes.scheduled_at < \'#{my_start_month_plus_str}\' group by order_collection_sizes.product_collection order by order_collection_sizes.product_collection asc "
+
+        order_product_collections = ActiveRecord::Base.connection.execute(my_order_counts).values
+        puts order_product_collections.inspect
+
+        sub_product_collections.each do |mysub|
+            puts mysub.inspect
+
+        end
+
+
+        
+
+        #delete old file
+        File.delete('allocation_next_month.csv') if File.exist?('allocation_next_month.csv')
+        #Headers for CSV
+        column_header = ["count", "product_collection"]
+        CSV.open('allocation_next_month.csv','a+', :write_headers=> true, :headers => column_header) do |hdr|
+            column_header = nil
+            #csv_data_out = [myorder.name, myorder.billing_address.attributes['first_name'], myorder.billing_address.attributes['last_name'],myorder.created_at, my_address1, my_address2, myorder.billing_address.attributes['city'],myorder.billing_address.attributes['province_code'], myorder.billing_address.attributes['zip'], myorder.email, mysku  ]
+            sub_product_collections.each do |mysub|
+                puts mysub.inspect
+                csv_data_out = mysub
+                hdr << csv_data_out
+    
+            end
+            puts "-------- Now Orders --------"
+            order_product_collections.each do |myord|
+                puts myord.inspect
+                csv_data_out = myord
+                hdr << csv_data_out
+
+            end
+
+
+            
+
+        end
+
+
+
+
+
+    end
+
+
     def figure_size_counts
         puts "Howdy figuring size counts"
         #Generate Initial Raw Size Totals

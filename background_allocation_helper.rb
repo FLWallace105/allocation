@@ -528,6 +528,7 @@ module BackgroundHelper
                     puts "can generate random 1-5"
                     my_total_length = 5
                     my_index = generate_random_index(my_total_length)
+                    
                     #my_index = 7
                     puts "my_index = #{my_index}"
                 end
