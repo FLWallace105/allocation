@@ -1,76 +1,106 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Balanced Beige - 5 Items,1,25,0,XS,tops
-Balanced Beige - 5 Items,1,100,0,S,tops
-Balanced Beige - 5 Items,1,0,0,M,tops
-Balanced Beige - 5 Items,1,0,0,L,tops
-Balanced Beige - 5 Items,1,0,0,XL,tops
-Balanced Beige - 5 Items,1,24,0,XS,leggings
-Balanced Beige - 5 Items,1,100,0,S,leggings
-Balanced Beige - 5 Items,1,0,0,M,leggings
-Balanced Beige - 5 Items,1,0,0,L,leggings
-Balanced Beige - 5 Items,1,0,0,XL,leggings
-Balanced Beige - 5 Items,1,24,0,XS,sports-jacket
-Balanced Beige - 5 Items,1,100,0,S,sports-jacket
-Balanced Beige - 5 Items,1,0,0,M,sports-jacket
-Balanced Beige - 5 Items,1,0,0,L,sports-jacket
-Balanced Beige - 5 Items,1,0,0,XL,sports-jacket
-Purple Haze - 5 Items,2,100,0,XS,sports-bra
-Purple Haze - 5 Items,2,150,0,S,sports-bra
-Purple Haze - 5 Items,2,0,0,M,sports-bra
-Purple Haze - 5 Items,2,0,0,L,sports-bra
-Purple Haze - 5 Items,2,0,0,XL,sports-bra
-Purple Haze - 5 Items,2,100,0,XS,leggings
-Purple Haze - 5 Items,2,150,0,S,leggings
-Purple Haze - 5 Items,2,0,0,M,leggings
-Purple Haze - 5 Items,2,0,0,L,leggings
-Purple Haze - 5 Items,2,0,0,XL,leggings
-Purple Haze - 5 Items,2,100,0,XS,sports-jacket
-Purple Haze - 5 Items,2,150,0,S,sports-jacket
-Purple Haze - 5 Items,2,0,0,M,sports-jacket
-Purple Haze - 5 Items,2,0,0,L,sports-jacket
-Purple Haze - 5 Items,2,0,0,XL,sports-jacket
-Glamazon - 5 Items,3,80,0,XS,sports-bra
-Glamazon - 5 Items,3,70,0,S,sports-bra
-Glamazon - 5 Items,3,30,0,M,sports-bra
-Glamazon - 5 Items,3,0,0,L,sports-bra
-Glamazon - 5 Items,3,0,0,XL,sports-bra
-Glamazon - 5 Items,3,80,0,XS,leggings
-Glamazon - 5 Items,3,70,0,S,leggings
-Glamazon - 5 Items,3,30,0,M,leggings
-Glamazon - 5 Items,3,0,0,L,leggings
-Glamazon - 5 Items,3,0,0,XL,leggings
-Glamazon - 5 Items,3,74,0,XS,tops
-Glamazon - 5 Items,3,75,0,S,tops
-Glamazon - 5 Items,3,30,0,M,tops
-Glamazon - 5 Items,3,0,0,L,tops
-Glamazon - 5 Items,3,0,0,XL,tops
-Wine Down - 5 Items,4,80,0,XS,sports-bra
-Wine Down - 5 Items,4,75,0,S,sports-bra
-Wine Down - 5 Items,4,0,0,M,sports-bra
-Wine Down - 5 Items,4,0,0,L,sports-bra
-Wine Down - 5 Items,4,0,0,XL,sports-bra
-Wine Down - 5 Items,4,0,0,XS,leggings
-Wine Down - 5 Items,4,75,0,S,leggings
-Wine Down - 5 Items,4,0,0,M,leggings
-Wine Down - 5 Items,4,0,0,L,leggings
-Wine Down - 5 Items,4,0,0,XL,leggings
-Wine Down - 5 Items,4,0,0,XS,tops
-Wine Down - 5 Items,4,50,0,S,tops
-Wine Down - 5 Items,4,0,0,M,tops
-Wine Down - 5 Items,4,0,0,L,tops
-Wine Down - 5 Items,4,0,0,XL,tops
-Gold Rush - 5 Items,5,5,0,XS,sports-bra
-Gold Rush - 5 Items,5,25,0,S,sports-bra
-Gold Rush - 5 Items,5,0,0,M,sports-bra
-Gold Rush - 5 Items,5,0,0,L,sports-bra
-Gold Rush - 5 Items,5,0,0,XL,sports-bra
-Gold Rush - 5 Items,5,60,0,XS,leggings
-Gold Rush - 5 Items,5,100,0,S,leggings
-Gold Rush - 5 Items,5,0,0,M,leggings
-Gold Rush - 5 Items,5,0,0,L,leggings
-Gold Rush - 5 Items,5,0,0,XL,leggings
-Gold Rush - 5 Items,5,60,0,XS,tops
-Gold Rush - 5 Items,5,100,0,S,tops
-Gold Rush - 5 Items,5,0,0,M,tops
-Gold Rush - 5 Items,5,0,0,L,tops
-Gold Rush - 5 Items,5,0,0,XL,tops
+Polar Perfection - 5 Items,1,50,0,XS,sports-bra
+Polar Perfection - 5 Items,1,1000,0,S,sports-bra
+Polar Perfection - 5 Items,1,1200,0,M,sports-bra
+Polar Perfection - 5 Items,1,800,0,L,sports-bra
+Polar Perfection - 5 Items,1,250,0,XL,sports-bra
+Polar Perfection - 5 Items,1,50,0,XS,leggings
+Polar Perfection - 5 Items,1,1000,0,S,leggings
+Polar Perfection - 5 Items,1,1200,0,M,leggings
+Polar Perfection - 5 Items,1,800,0,L,leggings
+Polar Perfection - 5 Items,1,250,0,XL,leggings
+Polar Perfection - 5 Items,1,50,0,XS,tops
+Polar Perfection - 5 Items,1,1000,0,S,tops
+Polar Perfection - 5 Items,1,1200,0,M,tops
+Polar Perfection - 5 Items,1,800,0,L,tops
+Polar Perfection - 5 Items,1,250,0,XL,tops
+Winter Bloom - 5 Items,2,10,0,XS,sports-bra
+Winter Bloom - 5 Items,2,300,0,S,sports-bra
+Winter Bloom - 5 Items,2,450,0,M,sports-bra
+Winter Bloom - 5 Items,2,200,0,L,sports-bra
+Winter Bloom - 5 Items,2,125,0,XL,sports-bra
+Winter Bloom - 5 Items,2,10,0,XS,leggings
+Winter Bloom - 5 Items,2,300,0,S,leggings
+Winter Bloom - 5 Items,2,450,0,M,leggings
+Winter Bloom - 5 Items,2,200,0,L,leggings
+Winter Bloom - 5 Items,2,125,0,XL,leggings
+Winter Bloom - 5 Items,2,10,0,XS,tops
+Winter Bloom - 5 Items,2,300,0,S,tops
+Winter Bloom - 5 Items,2,450,0,M,tops
+Winter Bloom - 5 Items,2,200,0,L,tops
+Winter Bloom - 5 Items,2,125,0,XL,tops
+Midnight Sky - 5 Items,3,60,0,XS,sports-jacket
+Midnight Sky - 5 Items,3,1160,0,S,sports-jacket
+Midnight Sky - 5 Items,3,2100,0,M,sports-jacket
+Midnight Sky - 5 Items,3,500,0,L,sports-jacket
+Midnight Sky - 5 Items,3,375,0,XL,sports-jacket
+Midnight Sky - 5 Items,3,65,0,XS,leggings
+Midnight Sky - 5 Items,3,1170,0,S,leggings
+Midnight Sky - 5 Items,3,2075,0,M,leggings
+Midnight Sky - 5 Items,3,500,0,L,leggings
+Midnight Sky - 5 Items,3,375,0,XL,leggings
+Midnight Sky - 5 Items,3,80,0,XS,tops
+Midnight Sky - 5 Items,3,1300,0,S,tops
+Midnight Sky - 5 Items,3,2200,0,M,tops
+Midnight Sky - 5 Items,3,580,0,L,tops
+Midnight Sky - 5 Items,3,375,0,XL,tops
+Elemental - 5 Items,4,0,0,XS,sports-bra
+Elemental - 5 Items,4,400,0,S,sports-bra
+Elemental - 5 Items,4,460,0,M,sports-bra
+Elemental - 5 Items,4,100,0,L,sports-bra
+Elemental - 5 Items,4,0,0,XL,sports-bra
+Elemental - 5 Items,4,0,0,XS,leggings
+Elemental - 5 Items,4,400,0,S,leggings
+Elemental - 5 Items,4,460,0,M,leggings
+Elemental - 5 Items,4,100,0,L,leggings
+Elemental - 5 Items,4,0,0,XL,leggings
+Elemental - 5 Items,4,0,0,XS,tops
+Elemental - 5 Items,4,400,0,S,tops
+Elemental - 5 Items,4,460,0,M,tops
+Elemental - 5 Items,4,100,0,L,tops
+Elemental - 5 Items,4,0,0,XL,tops
+Mauve Noir - 5 Items,5,0,0,XS,sports-jacket
+Mauve Noir - 5 Items,5,150,0,S,sports-jacket
+Mauve Noir - 5 Items,5,175,0,M,sports-jacket
+Mauve Noir - 5 Items,5,150,0,L,sports-jacket
+Mauve Noir - 5 Items,5,0,0,XL,sports-jacket
+Mauve Noir - 5 Items,5,0,0,XS,leggings
+Mauve Noir - 5 Items,5,150,0,S,leggings
+Mauve Noir - 5 Items,5,175,0,M,leggings
+Mauve Noir - 5 Items,5,150,0,L,leggings
+Mauve Noir - 5 Items,5,0,0,XL,leggings
+Mauve Noir - 5 Items,5,0,0,XS,tops
+Mauve Noir - 5 Items,5,150,0,S,tops
+Mauve Noir - 5 Items,5,250,0,M,tops
+Mauve Noir - 5 Items,5,75,0,L,tops
+Mauve Noir - 5 Items,5,0,0,XL,tops
+Malibu Moment - 5 Items,6,0,0,XS,sports-bra
+Malibu Moment - 5 Items,6,50,0,S,sports-bra
+Malibu Moment - 5 Items,6,150,0,M,sports-bra
+Malibu Moment - 5 Items,6,75,0,L,sports-bra
+Malibu Moment - 5 Items,6,10,0,XL,sports-bra
+Malibu Moment - 5 Items,6,0,0,XS,leggings
+Malibu Moment - 5 Items,6,50,0,S,leggings
+Malibu Moment - 5 Items,6,150,0,M,leggings
+Malibu Moment - 5 Items,6,50,0,L,leggings
+Malibu Moment - 5 Items,6,40,0,XL,leggings
+Malibu Moment - 5 Items,6,0,0,XS,tops
+Malibu Moment - 5 Items,6,50,0,S,tops
+Malibu Moment - 5 Items,6,150,0,M,tops
+Malibu Moment - 5 Items,6,50,0,L,tops
+Malibu Moment - 5 Items,6,50,0,XL,tops
+Posies In Paris - 5 Items,7,0,0,XS,sports-jacket
+Posies In Paris - 5 Items,7,0,0,S,sports-jacket
+Posies In Paris - 5 Items,7,0,0,M,sports-jacket
+Posies In Paris - 5 Items,7,100,0,L,sports-jacket
+Posies In Paris - 5 Items,7,50,0,XL,sports-jacket
+Posies In Paris - 5 Items,7,0,0,XS,leggings
+Posies In Paris - 5 Items,7,0,0,S,leggings
+Posies In Paris - 5 Items,7,0,0,M,leggings
+Posies In Paris - 5 Items,7,100,0,L,leggings
+Posies In Paris - 5 Items,7,50,0,XL,leggings
+Posies In Paris - 5 Items,7,0,0,XS,tops
+Posies In Paris - 5 Items,7,0,0,S,tops
+Posies In Paris - 5 Items,7,0,0,M,tops
+Posies In Paris - 5 Items,7,100,0,L,tops
+Posies In Paris - 5 Items,7,50,0,XL,tops
