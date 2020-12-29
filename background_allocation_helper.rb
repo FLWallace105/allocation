@@ -292,15 +292,15 @@ module BackgroundHelper
         temp_exclude = ""
         case my_index
         when 1
-            temp_exclude = "sports-jacket"
+            temp_exclude = "tops"
         when 2
-            temp_exclude = "sports-jacket"
-        when 3
             temp_exclude = "sports-bra"
+        when 3
+            temp_exclude = "sports-jacket"
         when 4
             temp_exclude = "sports-jacket"
         when 5
-            temp_exclude = "sports-bra"
+            temp_exclude = "sports-jacket"
         when 6
             temp_exclude = "sports-jacket"
         when 7
@@ -523,14 +523,14 @@ module BackgroundHelper
                 contains_outlier = determine_outlier_sizes(my_size_hash)
                 if contains_outlier
                     puts "must generate only random 1-4"
-                    my_total_length = 5
+                    my_total_length = 8
                     my_index = generate_random_index(my_total_length)
                     #temp fix to make namaste & Slay work only add in March allocation 2020
                     #my_index = 7
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-5"
-                    my_total_length = 5
+                    my_total_length = 8
                     my_index = generate_random_index(my_total_length)
                     
                     #my_index = 7
@@ -633,7 +633,7 @@ module BackgroundHelper
                 sub.save!
             else
                 puts "Can allocate this subscription"
-                my_index = 7
+                my_index = 8
                 allocate_single_subscription(my_index, my_size_hash, sub, "sports-jacket",recharge_change_header )
                 puts "done with a subscription!"
                 #see if running more than eight minutes
