@@ -1,121 +1,61 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-On The Run - 5 Items,1,60,0,XS,sports-bra
-On The Run - 5 Items,1,400,0,S,sports-bra
-On The Run - 5 Items,1,600,0,M,sports-bra
-On The Run - 5 Items,1,250,0,L,sports-bra
-On The Run - 5 Items,1,100,0,XL,sports-bra
-On The Run - 5 Items,1,40,0,XS,leggings
-On The Run - 5 Items,1,400,0,S,leggings
-On The Run - 5 Items,1,600,0,M,leggings
-On The Run - 5 Items,1,250,0,L,leggings
-On The Run - 5 Items,1,100,0,XL,leggings
-On The Run - 5 Items,1,60,0,XS,sports-jacket
-On The Run - 5 Items,1,400,0,S,sports-jacket
-On The Run - 5 Items,1,600,0,M,sports-jacket
-On The Run - 5 Items,1,250,0,L,sports-jacket
-On The Run - 5 Items,1,100,0,XL,sports-jacket
-Coral Kissed - 5 Items,2,10,0,XS,sports-jacket
-Coral Kissed - 5 Items,2,300,0,S,sports-jacket
-Coral Kissed - 5 Items,2,500,0,M,sports-jacket
-Coral Kissed - 5 Items,2,100,0,L,sports-jacket
-Coral Kissed - 5 Items,2,50,0,XL,sports-jacket
-Coral Kissed - 5 Items,2,10,0,XS,leggings
-Coral Kissed - 5 Items,2,300,0,S,leggings
-Coral Kissed - 5 Items,2,500,0,M,leggings
-Coral Kissed - 5 Items,2,100,0,L,leggings
-Coral Kissed - 5 Items,2,100,0,XL,leggings
-Coral Kissed - 5 Items,2,10,0,XS,tops
-Coral Kissed - 5 Items,2,300,0,S,tops
-Coral Kissed - 5 Items,2,500,0,M,tops
-Coral Kissed - 5 Items,2,100,0,L,tops
-Coral Kissed - 5 Items,2,50,0,XL,tops
-Funfetti - 5 Items,3,15,0,XS,sports-bra
-Funfetti - 5 Items,3,200,0,S,sports-bra
-Funfetti - 5 Items,3,400,0,M,sports-bra
-Funfetti - 5 Items,3,200,0,L,sports-bra
-Funfetti - 5 Items,3,100,0,XL,sports-bra
-Funfetti - 5 Items,3,0,0,XS,leggings
-Funfetti - 5 Items,3,100,0,S,leggings
-Funfetti - 5 Items,3,300,0,M,leggings
-Funfetti - 5 Items,3,50,0,L,leggings
-Funfetti - 5 Items,3,10,0,XL,leggings
-Funfetti - 5 Items,3,15,0,XS,tops
-Funfetti - 5 Items,3,200,0,S,tops
-Funfetti - 5 Items,3,400,0,M,tops
-Funfetti - 5 Items,3,200,0,L,tops
-Funfetti - 5 Items,3,100,0,XL,tops
-Island Sunrise - 5 Items,4,20,0,XS,sports-bra
-Island Sunrise - 5 Items,4,200,0,S,sports-bra
-Island Sunrise - 5 Items,4,600,0,M,sports-bra
-Island Sunrise - 5 Items,4,300,0,L,sports-bra
-Island Sunrise - 5 Items,4,50,0,XL,sports-bra
-Island Sunrise - 5 Items,4,20,0,XS,leggings
-Island Sunrise - 5 Items,4,200,0,S,leggings
-Island Sunrise - 5 Items,4,600,0,M,leggings
-Island Sunrise - 5 Items,4,300,0,L,leggings
-Island Sunrise - 5 Items,4,50,0,XL,leggings
-Island Sunrise - 5 Items,4,20,0,XS,tops
-Island Sunrise - 5 Items,4,200,0,S,tops
-Island Sunrise - 5 Items,4,600,0,M,tops
-Island Sunrise - 5 Items,4,300,0,L,tops
-Island Sunrise - 5 Items,4,50,0,XL,tops
-Island Splash - 5 Items,5,20,0,XS,sports-bra
-Island Splash - 5 Items,5,300,0,S,sports-bra
-Island Splash - 5 Items,5,600,0,M,sports-bra
-Island Splash - 5 Items,5,200,0,L,sports-bra
-Island Splash - 5 Items,5,100,0,XL,sports-bra
-Island Splash - 5 Items,5,20,0,XS,leggings
-Island Splash - 5 Items,5,300,0,S,leggings
-Island Splash - 5 Items,5,600,0,M,leggings
-Island Splash - 5 Items,5,200,0,L,leggings
-Island Splash - 5 Items,5,100,0,XL,leggings
-Island Splash - 5 Items,5,20,0,XS,tops
-Island Splash - 5 Items,5,300,0,S,tops
-Island Splash - 5 Items,5,600,0,M,tops
-Island Splash - 5 Items,5,200,0,L,tops
-Island Splash - 5 Items,5,100,0,XL,tops
-Force Of Nature - 5 Items,6,30,0,XS,sports-bra
-Force Of Nature - 5 Items,6,50,0,S,sports-bra
-Force Of Nature - 5 Items,6,100,0,M,sports-bra
-Force Of Nature - 5 Items,6,100,0,L,sports-bra
-Force Of Nature - 5 Items,6,25,0,XL,sports-bra
-Force Of Nature - 5 Items,6,0,0,XS,leggings
-Force Of Nature - 5 Items,6,50,0,S,leggings
-Force Of Nature - 5 Items,6,100,0,M,leggings
-Force Of Nature - 5 Items,6,100,0,L,leggings
-Force Of Nature - 5 Items,6,50,0,XL,leggings
-Force Of Nature - 5 Items,6,0,0,XS,tops
-Force Of Nature - 5 Items,6,25,0,S,tops
-Force Of Nature - 5 Items,6,60,0,M,tops
-Force Of Nature - 5 Items,6,60,0,L,tops
-Force Of Nature - 5 Items,6,25,0,XL,tops
-Daily Mantra - 5 Items,7,10,0,XS,sports-jacket
-Daily Mantra - 5 Items,7,100,0,S,sports-jacket
-Daily Mantra - 5 Items,7,200,0,M,sports-jacket
-Daily Mantra - 5 Items,7,50,0,L,sports-jacket
-Daily Mantra - 5 Items,7,20,0,XL,sports-jacket
-Daily Mantra - 5 Items,7,0,0,XS,leggings
-Daily Mantra - 5 Items,7,50,0,S,leggings
-Daily Mantra - 5 Items,7,100,0,M,leggings
-Daily Mantra - 5 Items,7,200,0,L,leggings
-Daily Mantra - 5 Items,7,30,0,XL,leggings
-Daily Mantra - 5 Items,7,0,0,XS,tops
-Daily Mantra - 5 Items,7,0,0,S,tops
-Daily Mantra - 5 Items,7,100,0,M,tops
-Daily Mantra - 5 Items,7,200,0,L,tops
-Daily Mantra - 5 Items,7,50,0,XL,tops
-Grayscale - 5 Items,8,30,0,XS,sports-bra
-Grayscale - 5 Items,8,150,0,S,sports-bra
-Grayscale - 5 Items,8,250,0,M,sports-bra
-Grayscale - 5 Items,8,100,0,L,sports-bra
-Grayscale - 5 Items,8,50,0,XL,sports-bra
-Grayscale - 5 Items,8,0,0,XS,leggings
-Grayscale - 5 Items,8,150,0,S,leggings
-Grayscale - 5 Items,8,250,0,M,leggings
-Grayscale - 5 Items,8,100,0,L,leggings
-Grayscale - 5 Items,8,0,0,XL,leggings
-Grayscale - 5 Items,8,0,0,XS,tops
-Grayscale - 5 Items,8,150,0,S,tops
-Grayscale - 5 Items,8,250,0,M,tops
-Grayscale - 5 Items,8,150,0,L,tops
-Grayscale - 5 Items,8,150,0,XL,tops
+On The Run - 5 Items,1,40,0,XS,sports-bra
+On The Run - 5 Items,1,100,0,S,sports-bra
+On The Run - 5 Items,1,0,0,M,sports-bra
+On The Run - 5 Items,1,0,0,L,sports-bra
+On The Run - 5 Items,1,0,0,XL,sports-bra
+On The Run - 5 Items,1,10,0,XS,leggings
+On The Run - 5 Items,1,100,0,S,leggings
+On The Run - 5 Items,1,0,0,M,leggings
+On The Run - 5 Items,1,0,0,L,leggings
+On The Run - 5 Items,1,0,0,XL,leggings
+On The Run - 5 Items,1,40,0,XS,sports-jacket
+On The Run - 5 Items,1,100,0,S,sports-jacket
+On The Run - 5 Items,1,0,0,M,sports-jacket
+On The Run - 5 Items,1,0,0,L,sports-jacket
+On The Run - 5 Items,1,0,0,XL,sports-jacket
+Island Sunrise - 5 Items,2,15,0,XS,sports-bra
+Island Sunrise - 5 Items,2,100,0,S,sports-bra
+Island Sunrise - 5 Items,2,0,0,M,sports-bra
+Island Sunrise - 5 Items,2,0,0,L,sports-bra
+Island Sunrise - 5 Items,2,0,0,XL,sports-bra
+Island Sunrise - 5 Items,2,20,0,XS,leggings
+Island Sunrise - 5 Items,2,100,0,S,leggings
+Island Sunrise - 5 Items,2,0,0,M,leggings
+Island Sunrise - 5 Items,2,0,0,L,leggings
+Island Sunrise - 5 Items,2,0,0,XL,leggings
+Island Sunrise - 5 Items,2,15,0,XS,tops
+Island Sunrise - 5 Items,2,100,0,S,tops
+Island Sunrise - 5 Items,2,0,0,M,tops
+Island Sunrise - 5 Items,2,0,0,L,tops
+Island Sunrise - 5 Items,2,0,0,XL,tops
+Island Splash - 5 Items,3,12,0,XS,sports-bra
+Island Splash - 5 Items,3,100,0,S,sports-bra
+Island Splash - 5 Items,3,0,0,M,sports-bra
+Island Splash - 5 Items,3,0,0,L,sports-bra
+Island Splash - 5 Items,3,0,0,XL,sports-bra
+Island Splash - 5 Items,3,10,0,XS,leggings
+Island Splash - 5 Items,3,100,0,S,leggings
+Island Splash - 5 Items,3,0,0,M,leggings
+Island Splash - 5 Items,3,0,0,L,leggings
+Island Splash - 5 Items,3,0,0,XL,leggings
+Island Splash - 5 Items,3,40,0,XS,tops
+Island Splash - 5 Items,3,100,0,S,tops
+Island Splash - 5 Items,3,0,0,M,tops
+Island Splash - 5 Items,3,0,0,L,tops
+Island Splash - 5 Items,3,0,0,XL,tops
+Grayscale - 5 Items,4,20,0,XS,sports-bra
+Grayscale - 5 Items,4,60,0,S,sports-bra
+Grayscale - 5 Items,4,0,0,M,sports-bra
+Grayscale - 5 Items,4,0,0,L,sports-bra
+Grayscale - 5 Items,4,0,0,XL,sports-bra
+Grayscale - 5 Items,4,0,0,XS,leggings
+Grayscale - 5 Items,4,40,0,S,leggings
+Grayscale - 5 Items,4,0,0,M,leggings
+Grayscale - 5 Items,4,0,0,L,leggings
+Grayscale - 5 Items,4,0,0,XL,leggings
+Grayscale - 5 Items,4,0,0,XS,tops
+Grayscale - 5 Items,4,40,0,S,tops
+Grayscale - 5 Items,4,0,0,M,tops
+Grayscale - 5 Items,4,0,0,L,tops
+Grayscale - 5 Items,4,0,0,XL,tops
