@@ -138,9 +138,9 @@ module BackgroundHelper
             end
 
            # Floyd Wallace 4/25/19 -- no longer pushing glove sizes into subs
-           # my_line_items << { "name" => "gloves", "value" => gloves_size}
-           # puts "pushing glove sizes: #{gloves_size}"
-           # puts my_line_items
+           my_line_items << { "name" => "gloves", "value" => gloves_size}
+           puts "pushing glove sizes: #{gloves_size}"
+           puts my_line_items
 
         end
 
@@ -267,12 +267,12 @@ module BackgroundHelper
         contains_outlier_size = false
         my_size_hash.each do |key, value|
             puts "#{key}, #{value}"
-            #if (value == "XS")
-            #    contains_outlier_size = true
-            #end
-            #if  (value == "S") 
-            #    contains_outlier_size = true
-            #end
+            if (value == "XS")
+                contains_outlier_size = true
+            end
+            if  (value == "XL") 
+                contains_outlier_size = true
+            end
             #if  (value == "M") 
             #    contains_outlier_size = true
             #end
@@ -292,11 +292,11 @@ module BackgroundHelper
         temp_exclude = ""
         case my_index
         when 1
-            temp_exclude = "tops"
+            temp_exclude = "sports-bra"
         when 2
-            temp_exclude = "sports-jacket"
+            temp_exclude = "tops"
         when 3
-            temp_exclude = "sports-jacket"
+            temp_exclude = "tops"
         when 4
             temp_exclude = "sports-jacket"
         when 5
@@ -336,7 +336,7 @@ module BackgroundHelper
         if sub.product_title =~ /2\sitem/i
             case my_index
             when 1
-                my_size_hash.delete("sports-bra")
+                my_size_hash.delete("sports-jacket")
             when 2
                 my_size_hash.delete("sports-bra")
             when 3
@@ -344,7 +344,7 @@ module BackgroundHelper
             when 4
                 my_size_hash.delete("sports-bra")
             when 5
-                my_size_hash.delete("sports-jacket")
+                my_size_hash.delete("sports-bra")
             when 6
                 my_size_hash.delete("sports-bra")
             when 7
@@ -530,7 +530,7 @@ module BackgroundHelper
                     puts "my_index = #{my_index}"
                 else
                     puts "can generate random 1-5"
-                    my_total_length = 4
+                    my_total_length = 5
                     my_index = generate_random_index(my_total_length)
                     
                     #my_index = 7
