@@ -1,76 +1,31 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Rosy Outlook - 5 Items,1,50,0,XS,sports-jacket
-Rosy Outlook - 5 Items,1,300,0,S,sports-jacket
-Rosy Outlook - 5 Items,1,500,0,M,sports-jacket
-Rosy Outlook - 5 Items,1,100,0,L,sports-jacket
-Rosy Outlook - 5 Items,1,50,0,XL,sports-jacket
-Rosy Outlook - 5 Items,1,50,0,XS,leggings
-Rosy Outlook - 5 Items,1,300,0,S,leggings
-Rosy Outlook - 5 Items,1,500,0,M,leggings
-Rosy Outlook - 5 Items,1,100,0,L,leggings
-Rosy Outlook - 5 Items,1,50,0,XL,leggings
-Rosy Outlook - 5 Items,1,50,0,XS,tops
-Rosy Outlook - 5 Items,1,300,0,S,tops
-Rosy Outlook - 5 Items,1,500,0,M,tops
-Rosy Outlook - 5 Items,1,100,0,L,tops
-Rosy Outlook - 5 Items,1,50,0,XL,tops
-Tilt The Scale - 5 Items,2,100,0,XS,sports-jacket
-Tilt The Scale - 5 Items,2,400,0,S,sports-jacket
-Tilt The Scale - 5 Items,2,500,0,M,sports-jacket
-Tilt The Scale - 5 Items,2,400,0,L,sports-jacket
-Tilt The Scale - 5 Items,2,150,0,XL,sports-jacket
-Tilt The Scale - 5 Items,2,100,0,XS,leggings
-Tilt The Scale - 5 Items,2,400,0,S,leggings
-Tilt The Scale - 5 Items,2,500,0,M,leggings
-Tilt The Scale - 5 Items,2,400,0,L,leggings
-Tilt The Scale - 5 Items,2,150,0,XL,leggings
-Tilt The Scale - 5 Items,2,100,0,XS,sports-bra
-Tilt The Scale - 5 Items,2,400,0,S,sports-bra
-Tilt The Scale - 5 Items,2,500,0,M,sports-bra
-Tilt The Scale - 5 Items,2,400,0,L,sports-bra
-Tilt The Scale - 5 Items,2,150,0,XL,sports-bra
-Midnight Garden - 5 Items,3,63,0,XS,sports-jacket
-Midnight Garden - 5 Items,3,532,0,S,sports-jacket
-Midnight Garden - 5 Items,3,995,0,M,sports-jacket
-Midnight Garden - 5 Items,3,354,0,L,sports-jacket
-Midnight Garden - 5 Items,3,59,0,XL,sports-jacket
-Midnight Garden - 5 Items,3,78,0,XS,leggings
-Midnight Garden - 5 Items,3,625,0,S,leggings
-Midnight Garden - 5 Items,3,1126,0,M,leggings
-Midnight Garden - 5 Items,3,412,0,L,leggings
-Midnight Garden - 5 Items,3,84,0,XL,leggings
-Midnight Garden - 5 Items,3,80,0,XS,sports-bra
-Midnight Garden - 5 Items,3,612,0,S,sports-bra
-Midnight Garden - 5 Items,3,1109,0,M,sports-bra
-Midnight Garden - 5 Items,3,410,0,L,sports-bra
-Midnight Garden - 5 Items,3,85,0,XL,sports-bra
-Punchline - 5 Items,4,28,0,XS,tops
-Punchline - 5 Items,4,455,0,S,tops
-Punchline - 5 Items,4,192,0,M,tops
-Punchline - 5 Items,4,15,0,L,tops
-Punchline - 5 Items,4,0,0,XL,tops
-Punchline - 5 Items,4,0,0,XS,leggings
-Punchline - 5 Items,4,25,0,S,leggings
-Punchline - 5 Items,4,160,0,M,leggings
-Punchline - 5 Items,4,196,0,L,leggings
-Punchline - 5 Items,4,83,0,XL,leggings
-Punchline - 5 Items,4,0,0,XS,sports-bra
-Punchline - 5 Items,4,473,0,S,sports-bra
-Punchline - 5 Items,4,686,0,M,sports-bra
-Punchline - 5 Items,4,150,0,L,sports-bra
-Punchline - 5 Items,4,64,0,XL,sports-bra
-Iridescent Dreams - 5 Items,5,0,0,XS,tops
-Iridescent Dreams - 5 Items,5,150,0,S,tops
-Iridescent Dreams - 5 Items,5,400,0,M,tops
-Iridescent Dreams - 5 Items,5,100,0,L,tops
-Iridescent Dreams - 5 Items,5,0,0,XL,tops
-Iridescent Dreams - 5 Items,5,0,0,XS,leggings
-Iridescent Dreams - 5 Items,5,150,0,S,leggings
-Iridescent Dreams - 5 Items,5,400,0,M,leggings
-Iridescent Dreams - 5 Items,5,100,0,L,leggings
-Iridescent Dreams - 5 Items,5,0,0,XL,leggings
-Iridescent Dreams - 5 Items,5,0,0,XS,sports-bra
-Iridescent Dreams - 5 Items,5,150,0,S,sports-bra
-Iridescent Dreams - 5 Items,5,400,0,M,sports-bra
-Iridescent Dreams - 5 Items,5,100,0,L,sports-bra
-Iridescent Dreams - 5 Items,5,0,0,XL,sports-bra
+Iridescent Dreams - 5 Items,1,119,0,XS,tops
+Iridescent Dreams - 5 Items,1,650,0,S,tops
+Iridescent Dreams - 5 Items,1,700,0,M,tops
+Iridescent Dreams - 5 Items,1,500,0,L,tops
+Iridescent Dreams - 5 Items,1,200,0,XL,tops
+Iridescent Dreams - 5 Items,1,99,0,XS,leggings
+Iridescent Dreams - 5 Items,1,650,0,S,leggings
+Iridescent Dreams - 5 Items,1,700,0,M,leggings
+Iridescent Dreams - 5 Items,1,500,0,L,leggings
+Iridescent Dreams - 5 Items,1,200,0,XL,leggings
+Iridescent Dreams - 5 Items,1,85,0,XS,sports-bra
+Iridescent Dreams - 5 Items,1,650,0,S,sports-bra
+Iridescent Dreams - 5 Items,1,700,0,M,sports-bra
+Iridescent Dreams - 5 Items,1,500,0,L,sports-bra
+Iridescent Dreams - 5 Items,1,200,0,XL,sports-bra
+Rosy Outlook - 5 Items,2,80,0,XS,sports-jacket
+Rosy Outlook - 5 Items,2,400,0,S,sports-jacket
+Rosy Outlook - 5 Items,2,650,0,M,sports-jacket
+Rosy Outlook - 5 Items,2,300,0,L,sports-jacket
+Rosy Outlook - 5 Items,2,150,0,XL,sports-jacket
+Rosy Outlook - 5 Items,2,80,0,XS,leggings
+Rosy Outlook - 5 Items,2,450,0,S,leggings
+Rosy Outlook - 5 Items,2,650,0,M,leggings
+Rosy Outlook - 5 Items,2,300,0,L,leggings
+Rosy Outlook - 5 Items,2,150,0,XL,leggings
+Rosy Outlook - 5 Items,2,80,0,XS,tops
+Rosy Outlook - 5 Items,2,450,0,S,tops
+Rosy Outlook - 5 Items,2,650,0,M,tops
+Rosy Outlook - 5 Items,2,300,0,L,tops
+Rosy Outlook - 5 Items,2,150,0,XL,tops
