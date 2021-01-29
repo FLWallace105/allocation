@@ -33,7 +33,7 @@ class OrderSize
         tops = my_json.select{|x| x['name'] == 'tops'}
         sports_bra = my_json.select{|x| x['name'] == 'sports-bra'}
         sports_jacket = my_json.select{|x| x['name'] == 'sports-jacket'}
-        gloves = my_json['properties'].select{|x| x['name'] == 'gloves'}
+        gloves = my_json.select{|x| x['name'] == 'gloves'}
         #puts "sports_bra = #{sports_bra}"
         #puts "tops = #{tops}"
         #puts "***********"
