@@ -15,7 +15,14 @@ task :summary_allocation do |t|
     Allocation::Setup.new.summary_product_collection
 
 end
+end
 
+namespace :loading do
+desc 'load ReCharge subs from csv file'
+task :load_recharge_subs_csv, :myfile do |t, args|
+    myfile = args['myfile']
+    Allocation::Setup.new.load_customers_from_csv(myfile)
+end
 
 end
 
