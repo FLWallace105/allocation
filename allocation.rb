@@ -41,20 +41,22 @@ module Allocation
     def summary_product_collection
         puts "Starting Summary Product Collection Assignments for Next Month"
         my_end_month = Date.today.end_of_month
-        my_end_month_str = my_end_month.strftime("%Y-%m-%d")
+        #my_end_month_str = my_end_month.strftime("%Y-%m-%d")
+        my_end_month_str = "2021-02-02"
         puts "End of the month = #{my_end_month_str}"
         my_start_month_plus = Date.today 
         my_start_month_plus = my_start_month_plus >> 1
         my_start_month_plus = my_start_month_plus.end_of_month + 1
-        my_start_month_plus_str = my_start_month_plus.strftime("%Y-%m-%d")
+        #my_start_month_plus_str = my_start_month_plus.strftime("%Y-%m-%d")
+        my_start_month_plus_str = "2021-03-01"
         puts "my start_month_plus_str = #{my_start_month_plus_str}"
 
-        my_sub_counts = "select count(sub_collection_sizes.id), sub_collection_sizes.product_collection from sub_collection_sizes where sub_collection_sizes.next_charge_scheduled_at > \'2020-12-31\' and sub_collection_sizes.next_charge_scheduled_at < \'2021-02-01\' and sub_collection_sizes.prepaid = 'f' group by sub_collection_sizes.product_collection order by sub_collection_sizes.product_collection asc "
+        my_sub_counts = "select count(sub_collection_sizes.id), sub_collection_sizes.product_collection from sub_collection_sizes where sub_collection_sizes.next_charge_scheduled_at > \'#{my_end_month_str}\' and sub_collection_sizes.next_charge_scheduled_at < \'#{my_start_month_plus_str}\' and sub_collection_sizes.prepaid = 'f' group by sub_collection_sizes.product_collection order by sub_collection_sizes.product_collection asc "
 
         sub_product_collections = ActiveRecord::Base.connection.execute(my_sub_counts).values
         puts sub_product_collections.inspect
 
-        my_order_counts = "select count(orders.order_id), order_collection_sizes.product_collection from order_collection_sizes, orders where order_collection_sizes.order_id = orders.order_id and orders.status = 'QUEUED' and orders.scheduled_at > '2020-12-31' and orders.scheduled_at < '2021-02-01' and orders.is_prepaid = '1' group by order_collection_sizes.product_collection order by order_collection_sizes.product_collection asc "
+        my_order_counts = "select count(orders.order_id), order_collection_sizes.product_collection from order_collection_sizes, orders where order_collection_sizes.order_id = orders.order_id and orders.status = 'QUEUED' and orders.scheduled_at > \'#{my_end_month_str}\' and orders.scheduled_at < \'#{my_start_month_plus_str}\' and orders.is_prepaid = '1' group by order_collection_sizes.product_collection order by order_collection_sizes.product_collection asc "
 
         order_product_collections = ActiveRecord::Base.connection.execute(my_order_counts).values
         puts order_product_collections.inspect
@@ -545,7 +547,7 @@ module Allocation
 
         #subs_update = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, created_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, created_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and (next_charge_scheduled_at is not null and next_charge_scheduled_at > '2020-07-31' and next_charge_scheduled_at < '2020-08-06')  and product_title  not ilike '3%month%' and product_title not ilike 'second%skin%' and product_title not ilike 'city%limit%' and product_title not ilike 'gear%up%' and product_title not ilike 'nightfall%' and product_title not ilike 'olive%grove%' and product_title not ilike 'a%new%gray%'"
 
-        subs_update_5_items = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, created_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscriptions.subscription_id, subscriptions.customer_id, subscriptions.updated_at, subscriptions.created_at, subscriptions.next_charge_scheduled_at, subscriptions.product_title, subscriptions.status, subscriptions.sku, subscriptions.shopify_product_id, subscriptions.shopify_variant_id, subscriptions.raw_line_item_properties from subscriptions, sub_collection_sizes where subscriptions.status = 'ACTIVE' and subscriptions.next_charge_scheduled_at > '2021-01-31' and sub_collection_sizes.subscription_id = subscriptions.subscription_id and  subscriptions.next_charge_scheduled_at < '2021-03-01' and  subscriptions.product_title not ilike '3%month%'  and subscriptions.is_prepaid = \'f\' and ( sub_collection_sizes.product_collection not ilike 'iridescent%' and sub_collection_sizes.product_collection not ilike 'rosy%outlook%' and sub_collection_sizes.product_collection not ilike 'tilt%scale%' and sub_collection_sizes.product_collection not ilike 'midnight%garden%' and sub_collection_sizes.product_collection not ilike 'punchline%'  ) and ( sub_collection_sizes.sports_bra = 'XS' or sub_collection_sizes.sports_jacket = 'XS' or sub_collection_sizes.leggings = 'XS' or sub_collection_sizes.tops = 'XS' )"
+        subs_update_xs = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, created_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscriptions.subscription_id, subscriptions.customer_id, subscriptions.updated_at, subscriptions.created_at, subscriptions.next_charge_scheduled_at, subscriptions.product_title, subscriptions.status, subscriptions.sku, subscriptions.shopify_product_id, subscriptions.shopify_variant_id, subscriptions.raw_line_item_properties from subscriptions, sub_collection_sizes where subscriptions.status = 'ACTIVE' and subscriptions.next_charge_scheduled_at > '2021-03-05' and sub_collection_sizes.subscription_id = subscriptions.subscription_id and  subscriptions.next_charge_scheduled_at < '2021-04-01' and  subscriptions.product_title not ilike '3%month%'  and subscriptions.is_prepaid = \'f\' and ( sub_collection_sizes.product_collection not ilike 'test%' ) and ( sub_collection_sizes.sports_bra = 'XS' or sub_collection_sizes.sports_jacket = 'XS' or sub_collection_sizes.leggings = 'XS' or sub_collection_sizes.tops = 'XS' or  sub_collection_sizes.sports_bra = 'XL' or sub_collection_sizes.sports_jacket = 'XL' or sub_collection_sizes.leggings = 'XL' or sub_collection_sizes.tops = 'XL' )"
 
         #subs_update_july_early = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, created_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscriptions.subscription_id, subscriptions.customer_id, subscriptions.updated_at, subscriptions.created_at, subscriptions.next_charge_scheduled_at, subscriptions.product_title, subscriptions.status, subscriptions.sku, subscriptions.shopify_product_id, subscriptions.shopify_variant_id, subscriptions.raw_line_item_properties from subscriptions where subscriptions.status = 'ACTIVE' and subscriptions.next_charge_scheduled_at > '2020-06-30' and subscriptions.next_charge_scheduled_at < '2020-07-07'  and subscriptions.product_title not ilike \'3%month%\'  and subscriptions.product_title not ilike 'ooh%la%lavender%' and subscriptions.product_title not ilike 'pinky%swear%' and subscriptions.product_title not ilike 'berry%crush%' and subscriptions.product_title not ilike 'twilight%' and subscriptions.product_title not ilike 'moonlight%rose%' and subscriptions.product_title not ilike 'laguna%getaway%' and subscriptions.product_title not ilike 'wild%instinct%' and subscriptions.product_title not ilike 'summer%sunset' "
 
@@ -553,7 +555,7 @@ module Allocation
 
         quick_estimation = "insert into subscriptions_next_month_updated (subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_items) select subscription_id, customer_id, updated_at, next_charge_scheduled_at, product_title, status, sku, shopify_product_id, shopify_variant_id, raw_line_item_properties from subscriptions where status = 'ACTIVE' and next_charge_scheduled_at is not null  "
 
-        ActiveRecord::Base.connection.execute(subs_update_5_items)
+        ActiveRecord::Base.connection.execute(subs_update_xs)
         ActiveRecord::Base.connection.execute(delete_prepaid)
         #ActiveRecord::Base.connection.execute(quick_estimation)
         puts "All done"
@@ -562,8 +564,34 @@ module Allocation
     end
 
     def load_customers_from_csv(myfile)
+
         CSV.foreach(myfile, :encoding => 'ISO8859-1:utf-8', :headers => true) do |row|
             puts row.inspect
+            subscription_id = row['subscription_id']
+            customer_id = row['customer_id']
+            customer_email = row['customer_email']
+            address_id = row['address_id']
+            status = row['status']
+            product_title = row['product_title']
+            price = row['price']
+            shopify_product_id = row['shopify_product_id']
+            shopify_variant_id = row['shopify_variant_id']
+            sku = row['sku']
+            quantity = row['quantity']
+            order_interval_unit = row['order_interval_unit']
+            order_interval_frequency = row['order_interval_frequency']
+            charge_interval_frequency = row['charge_interval_frequency']
+            created_at = row['created_at']
+            updated_at = row['updated_at']
+            line_item_properties = row['properties']
+
+
+
+            #<CSV::Row "subscription_id":"128354723" "customer_id":"58364767" "customer_email":"rdross302@gmail.com" "address_id":"62190597" "status":"ACTIVE" "product_title":"Midnight Sky - 3 Items" "variant_title":nil "recurring_price":"44.95" "price":"44.95" "quantity":"1" "shopify_product_id":"4601240649786" "shopify_variant_id":"32178527797306" "sku":"745934482897" "sku_override":nil "expire_after_specific_number_of_charges":nil "order_interval_frequency":"1" "charge_interval_frequency":"1" "order_interval_unit":"month" "charge_day_of_month":nil "charge_day_of_week":nil "properties":"[{\"name\": \"charge_interval_frequency\", \"value\": 1}, {\"name\": \"charge_interval_unit_type\", \"value\": \"Months\"}, {\"name\": \"leggings\", \"value\": \"XL\"}, {\"name\": \"main-product\", \"value\": \"true\"}, {\"name\": \"product_collection\", \"value\": \"Midnight Sky - 3 Items\"}, {\"name\": \"product_id\", \"value\": \"4601242091578\"}, {\"name\": \"shipping_interval_frequency\", \"value\": 1}, {\"name\": \"shipping_interval_unit_type\", \"value\": \"month\"}, {\"name\": \"sports-jacket\", \"value\": \"XL\"}, {\"name\": \"tops\", \"value\": \"XL\"}]" "cancelled_at":nil "cancellation_reason":nil "cancellation_reason_comments":nil "created_at":"2021-01-30 13:07:04" "deleted_at":nil "updated_at":"2021-01-30 13:07:04">
+
+            puts line_item_properties
+
+            break
         end
 
     end

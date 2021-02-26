@@ -1,61 +1,76 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Iridescent Dreams - 5 Items,1,60,0,XS,tops
-Iridescent Dreams - 5 Items,1,100,0,S,tops
-Iridescent Dreams - 5 Items,1,0,0,M,tops
-Iridescent Dreams - 5 Items,1,0,0,L,tops
-Iridescent Dreams - 5 Items,1,0,0,XL,tops
-Iridescent Dreams - 5 Items,1,60,0,XS,leggings
-Iridescent Dreams - 5 Items,1,100,0,S,leggings
-Iridescent Dreams - 5 Items,1,0,0,M,leggings
-Iridescent Dreams - 5 Items,1,0,0,L,leggings
-Iridescent Dreams - 5 Items,1,0,0,XL,leggings
-Iridescent Dreams - 5 Items,1,60,0,XS,sports-bra
-Iridescent Dreams - 5 Items,1,50,0,S,sports-bra
-Iridescent Dreams - 5 Items,1,0,0,M,sports-bra
-Iridescent Dreams - 5 Items,1,0,0,L,sports-bra
-Iridescent Dreams - 5 Items,1,0,0,XL,sports-bra
-Tilt The Scale - 5 Items,2,40,0,XS,sports-jacket
-Tilt The Scale - 5 Items,2,150,0,S,sports-jacket
-Tilt The Scale - 5 Items,2,0,0,M,sports-jacket
-Tilt The Scale - 5 Items,2,0,0,L,sports-jacket
-Tilt The Scale - 5 Items,2,0,0,XL,sports-jacket
-Tilt The Scale - 5 Items,2,40,0,XS,leggings
-Tilt The Scale - 5 Items,2,200,0,S,leggings
-Tilt The Scale - 5 Items,2,0,0,M,leggings
-Tilt The Scale - 5 Items,2,0,0,L,leggings
-Tilt The Scale - 5 Items,2,0,0,XL,leggings
-Tilt The Scale - 5 Items,2,40,0,XS,sports-bra
-Tilt The Scale - 5 Items,2,150,0,S,sports-bra
-Tilt The Scale - 5 Items,2,0,0,M,sports-bra
-Tilt The Scale - 5 Items,2,0,0,L,sports-bra
-Tilt The Scale - 5 Items,2,0,0,XL,sports-bra
-Midnight Garden - 5 Items,3,50,0,XS,sports-jacket
-Midnight Garden - 5 Items,3,70,0,S,sports-jacket
-Midnight Garden - 5 Items,3,0,0,M,sports-jacket
-Midnight Garden - 5 Items,3,0,0,L,sports-jacket
-Midnight Garden - 5 Items,3,0,0,XL,sports-jacket
-Midnight Garden - 5 Items,3,50,0,XS,leggings
-Midnight Garden - 5 Items,3,70,0,S,leggings
-Midnight Garden - 5 Items,3,0,0,M,leggings
-Midnight Garden - 5 Items,3,0,0,L,leggings
-Midnight Garden - 5 Items,3,0,0,XL,leggings
-Midnight Garden - 5 Items,3,50,0,XS,sports-bra
-Midnight Garden - 5 Items,3,70,0,S,sports-bra
-Midnight Garden - 5 Items,3,0,0,M,sports-bra
-Midnight Garden - 5 Items,3,0,0,L,sports-bra
-Midnight Garden - 5 Items,3,0,0,XL,sports-bra
-Punchline - 5 Items,4,25,0,XS,tops
-Punchline - 5 Items,4,20,0,S,tops
-Punchline - 5 Items,4,10,0,M,tops
-Punchline - 5 Items,4,0,0,L,tops
-Punchline - 5 Items,4,0,0,XL,tops
-Punchline - 5 Items,4,0,0,XS,leggings
-Punchline - 5 Items,4,30,0,S,leggings
-Punchline - 5 Items,4,20,0,M,leggings
-Punchline - 5 Items,4,0,0,L,leggings
-Punchline - 5 Items,4,0,0,XL,leggings
-Punchline - 5 Items,4,25,0,XS,sports-bra
-Punchline - 5 Items,4,20,0,S,sports-bra
-Punchline - 5 Items,4,10,0,M,sports-bra
-Punchline - 5 Items,4,0,0,L,sports-bra
-Punchline - 5 Items,4,0,0,XL,sports-bra
+Azure Dreams - 5 Items,1,70,0,XS,tops
+Azure Dreams - 5 Items,1,250,0,S,tops
+Azure Dreams - 5 Items,1,0,0,M,tops
+Azure Dreams - 5 Items,1,300,0,L,tops
+Azure Dreams - 5 Items,1,250,0,XL,tops
+Azure Dreams - 5 Items,1,70,0,XS,leggings
+Azure Dreams - 5 Items,1,250,0,S,leggings
+Azure Dreams - 5 Items,1,0,0,M,leggings
+Azure Dreams - 5 Items,1,300,0,L,leggings
+Azure Dreams - 5 Items,1,250,0,XL,leggings
+Azure Dreams - 5 Items,1,40,0,XS,sports-bra
+Azure Dreams - 5 Items,1,150,0,S,sports-bra
+Azure Dreams - 5 Items,1,0,0,M,sports-bra
+Azure Dreams - 5 Items,1,150,0,L,sports-bra
+Azure Dreams - 5 Items,1,85,0,XL,sports-bra
+Viper Vibe - 5 Items,2,50,0,XS,tops
+Viper Vibe - 5 Items,2,200,0,S,tops
+Viper Vibe - 5 Items,2,0,0,M,tops
+Viper Vibe - 5 Items,2,200,0,L,tops
+Viper Vibe - 5 Items,2,150,0,XL,tops
+Viper Vibe - 5 Items,2,50,0,XS,leggings
+Viper Vibe - 5 Items,2,200,0,S,leggings
+Viper Vibe - 5 Items,2,0,0,M,leggings
+Viper Vibe - 5 Items,2,200,0,L,leggings
+Viper Vibe - 5 Items,2,150,0,XL,leggings
+Viper Vibe - 5 Items,2,50,0,XS,sports-bra
+Viper Vibe - 5 Items,2,200,0,S,sports-bra
+Viper Vibe - 5 Items,2,0,0,M,sports-bra
+Viper Vibe - 5 Items,2,200,0,L,sports-bra
+Viper Vibe - 5 Items,2,150,0,XL,sports-bra
+On The Flipside - 5 Items,3,0,0,XS,tops
+On The Flipside - 5 Items,3,20,0,S,tops
+On The Flipside - 5 Items,3,40,0,M,tops
+On The Flipside - 5 Items,3,75,0,L,tops
+On The Flipside - 5 Items,3,70,0,XL,tops
+On The Flipside - 5 Items,3,0,0,XS,leggings
+On The Flipside - 5 Items,3,35,0,S,leggings
+On The Flipside - 5 Items,3,100,0,M,leggings
+On The Flipside - 5 Items,3,5,0,L,leggings
+On The Flipside - 5 Items,3,80,0,XL,leggings
+On The Flipside - 5 Items,3,50,0,XS,sports-bra
+On The Flipside - 5 Items,3,100,0,S,sports-bra
+On The Flipside - 5 Items,3,75,0,M,sports-bra
+On The Flipside - 5 Items,3,30,0,L,sports-bra
+On The Flipside - 5 Items,3,70,0,XL,sports-bra
+Precious Peak - 5 Items,4,75,0,XS,tops
+Precious Peak - 5 Items,4,150,0,S,tops
+Precious Peak - 5 Items,4,0,0,M,tops
+Precious Peak - 5 Items,4,150,0,L,tops
+Precious Peak - 5 Items,4,100,0,XL,tops
+Precious Peak - 5 Items,4,20,0,XS,leggings
+Precious Peak - 5 Items,4,75,0,S,leggings
+Precious Peak - 5 Items,4,0,0,M,leggings
+Precious Peak - 5 Items,4,70,0,L,leggings
+Precious Peak - 5 Items,4,50,0,XL,leggings
+Precious Peak - 5 Items,4,75,0,XS,sports-bra
+Precious Peak - 5 Items,4,150,0,S,sports-bra
+Precious Peak - 5 Items,4,0,0,M,sports-bra
+Precious Peak - 5 Items,4,150,0,L,sports-bra
+Precious Peak - 5 Items,4,100,0,XL,sports-bra
+Core Strength - 5 Items,5,0,0,XS,tops
+Core Strength - 5 Items,5,90,0,S,tops
+Core Strength - 5 Items,5,40,0,M,tops
+Core Strength - 5 Items,5,150,0,L,tops
+Core Strength - 5 Items,5,75,0,XL,tops
+Core Strength - 5 Items,5,0,0,XS,leggings
+Core Strength - 5 Items,5,20,0,S,leggings
+Core Strength - 5 Items,5,40,0,M,leggings
+Core Strength - 5 Items,5,50,0,L,leggings
+Core Strength - 5 Items,5,150,0,XL,leggings
+Core Strength - 5 Items,5,45,0,XS,sports-bra
+Core Strength - 5 Items,5,100,0,S,sports-bra
+Core Strength - 5 Items,5,40,0,M,sports-bra
+Core Strength - 5 Items,5,150,0,L,sports-bra
+Core Strength - 5 Items,5,30,0,XL,sports-bra
