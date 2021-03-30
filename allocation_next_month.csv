@@ -1,113 +1,21 @@
-count,product_collection
-8,Coral Kissed - 2 Items
-133,Coral Kissed - 3 Items
-21,Coral Kissed - 5 Items
-4,Elemental - 2 Items
-64,Elemental - 3 Items
-5,Elemental - 5 Items
-609,Ellie Picks - 2 Items
-7861,Ellie Picks - 3 Items
-84,Ellie Picks - 5 Items
-1,Force Of Nature - 3 Items
-1,Force Of Nature - 5 Items
-11,Funfetti - 2 Items
-174,Funfetti - 3 Items
-16,Funfetti - 5 Items
-7,Guiding Light - 2 Items
-57,Guiding Light - 3 Items
-4,Guiding Light - 5 Items
-25,Iridescent Dreams - 2 Items
-461,Iridescent Dreams - 3 Items
-724,Iridescent Dreams - 5 Items
-4,Island Splash - 2 Items
-85,Island Splash - 3 Items
-7,Island Splash - 5 Items
-2,Island Sunrise - 2 Items
-47,Island Sunrise - 3 Items
-7,Island Sunrise - 5 Items
-17,Liftoff - 2 Items
-323,Liftoff - 3 Items
-68,Liftoff - 5 Items
-69,Midnight Garden - 2 Items
-1171,Midnight Garden - 3 Items
-251,Midnight Garden - 5 Items
-10,Midnight Sky - 2 Items
-138,Midnight Sky - 3 Items
-21,Midnight Sky - 5 Items
-10,On The Run - 2 Items
-122,On The Run - 3 Items
-21,On The Run - 5 Items
-8,Polar Perfection - 2 Items
-99,Polar Perfection - 3 Items
-16,Polar Perfection - 5 Items
-2,Posies In Paris - 3 Items
-20,Positively Pink - 3 Items
-4,Positively Pink - 5 Items
-18,Punchline - 2 Items
-317,Punchline - 3 Items
-69,Punchline - 5 Items
-1,Purple Haze - 2 Items
-41,Purple Haze - 3 Items
-12,Purple Haze - 5 Items
-24,Rosy Outlook - 2 Items
-625,Rosy Outlook - 3 Items
-753,Rosy Outlook - 5 Items
-21,Tilt The Scale - 2 Items
-697,Tilt The Scale - 3 Items
-256,Tilt The Scale - 5 Items
-7,Winter Bloom - 2 Items
-113,Winter Bloom - 3 Items
-24,Winter Bloom - 5 Items
-3,Coral Kissed - 2 Items
-23,Coral Kissed - 3 Items
-7,Coral Kissed - 5 Items
-10,Elemental - 3 Items
-1,Elemental - 5 Items
-1,Ellie Picks - 3 Items
-8,Ellie Picks - 5 Items
-1,Funfetti - 2 Items
-27,Funfetti - 3 Items
-5,Funfetti - 5 Items
-10,Guiding Light - 3 Items
-4,Guiding Light - 5 Items
-34,Iridescent Dreams - 2 Items
-376,Iridescent Dreams - 3 Items
-39,Iridescent Dreams - 5 Items
-3,Island Splash - 2 Items
-19,Island Splash - 3 Items
-2,Island Splash - 5 Items
-1,Island Sunrise - 2 Items
-11,Island Sunrise - 3 Items
-2,Island Sunrise - 5 Items
-6,Liftoff - 2 Items
-52,Liftoff - 3 Items
-15,Liftoff - 5 Items
-35,Midnight Garden - 2 Items
-454,Midnight Garden - 3 Items
-36,Midnight Garden - 5 Items
-3,Midnight Sky - 2 Items
-24,Midnight Sky - 3 Items
-8,Midnight Sky - 5 Items
-1,On The Run - 2 Items
-36,On The Run - 3 Items
-5,On The Run - 5 Items
-2,Polar Perfection - 2 Items
-30,Polar Perfection - 3 Items
-8,Polar Perfection - 5 Items
-8,Positively Pink - 3 Items
-1,Positively Pink - 5 Items
-2,Punchline - 2 Items
-39,Punchline - 3 Items
-7,Punchline - 5 Items
-1,Purple Haze - 2 Items
-6,Purple Haze - 3 Items
-1,Purple Haze - 5 Items
-26,Rosy Outlook - 2 Items
-280,Rosy Outlook - 3 Items
-27,Rosy Outlook - 5 Items
-20,Tilt The Scale - 2 Items
-318,Tilt The Scale - 3 Items
-253,Tilt The Scale - 5 Items
-1,Tilt the Scale - 3 Items
-24,Winter Bloom - 3 Items
-5,Winter Bloom - 5 Items
+,SUBS,,
+count,product_collection,,
+1,Azure Dreams - 5 Items,,
+1171,Ellie Picks - 2 Items,,
+16779,Ellie Picks - 3 Items,,
+2916,Ellie Picks - 5 Items,,
+21,Head In The Clouds - 3 Items,,
+5,Head In The Clouds - 5 Items,,
+174,Viper Vibe - 2 Items,,
+3149,Viper Vibe - 3 Items,,
+456,Viper Vibe - 5 Items,,
+,,,
+,ORDERS,,
+99,Ellie Picks - 2 Items,,
+1485,Ellie Picks - 3 Items,,
+388,Ellie Picks - 5 Items,,
+16,Head In The Clouds - 2 Items,,
+341,Head In The Clouds - 3 Items,,
+80,Head In The Clouds - 5 Items,,
+1,Heart Felt - 3 Items,,"These two are nested properties orders, sent email to ReCharge support and CC'd Laura Rhaney, Laura Perry, Gabby Castro on these"
+1,Tilt The Scale - 3 Items,,

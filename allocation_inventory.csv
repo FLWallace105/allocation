@@ -1,76 +1,91 @@
 collection_name,collection_id,inventory_available,inventory_reserved,size,mytype
-Azure Dreams - 5 Items,1,70,0,XS,tops
-Azure Dreams - 5 Items,1,250,0,S,tops
-Azure Dreams - 5 Items,1,0,0,M,tops
-Azure Dreams - 5 Items,1,300,0,L,tops
-Azure Dreams - 5 Items,1,250,0,XL,tops
-Azure Dreams - 5 Items,1,70,0,XS,leggings
-Azure Dreams - 5 Items,1,250,0,S,leggings
-Azure Dreams - 5 Items,1,0,0,M,leggings
-Azure Dreams - 5 Items,1,300,0,L,leggings
-Azure Dreams - 5 Items,1,250,0,XL,leggings
-Azure Dreams - 5 Items,1,40,0,XS,sports-bra
-Azure Dreams - 5 Items,1,150,0,S,sports-bra
-Azure Dreams - 5 Items,1,0,0,M,sports-bra
-Azure Dreams - 5 Items,1,150,0,L,sports-bra
-Azure Dreams - 5 Items,1,85,0,XL,sports-bra
-Viper Vibe - 5 Items,2,50,0,XS,tops
-Viper Vibe - 5 Items,2,200,0,S,tops
-Viper Vibe - 5 Items,2,0,0,M,tops
-Viper Vibe - 5 Items,2,200,0,L,tops
-Viper Vibe - 5 Items,2,150,0,XL,tops
-Viper Vibe - 5 Items,2,50,0,XS,leggings
-Viper Vibe - 5 Items,2,200,0,S,leggings
-Viper Vibe - 5 Items,2,0,0,M,leggings
-Viper Vibe - 5 Items,2,200,0,L,leggings
-Viper Vibe - 5 Items,2,150,0,XL,leggings
-Viper Vibe - 5 Items,2,50,0,XS,sports-bra
-Viper Vibe - 5 Items,2,200,0,S,sports-bra
-Viper Vibe - 5 Items,2,0,0,M,sports-bra
-Viper Vibe - 5 Items,2,200,0,L,sports-bra
-Viper Vibe - 5 Items,2,150,0,XL,sports-bra
-On The Flipside - 5 Items,3,0,0,XS,tops
-On The Flipside - 5 Items,3,20,0,S,tops
-On The Flipside - 5 Items,3,40,0,M,tops
-On The Flipside - 5 Items,3,75,0,L,tops
-On The Flipside - 5 Items,3,70,0,XL,tops
-On The Flipside - 5 Items,3,0,0,XS,leggings
-On The Flipside - 5 Items,3,35,0,S,leggings
-On The Flipside - 5 Items,3,100,0,M,leggings
-On The Flipside - 5 Items,3,5,0,L,leggings
-On The Flipside - 5 Items,3,80,0,XL,leggings
-On The Flipside - 5 Items,3,50,0,XS,sports-bra
-On The Flipside - 5 Items,3,100,0,S,sports-bra
-On The Flipside - 5 Items,3,75,0,M,sports-bra
-On The Flipside - 5 Items,3,30,0,L,sports-bra
-On The Flipside - 5 Items,3,70,0,XL,sports-bra
-Precious Peak - 5 Items,4,75,0,XS,tops
-Precious Peak - 5 Items,4,150,0,S,tops
-Precious Peak - 5 Items,4,0,0,M,tops
-Precious Peak - 5 Items,4,150,0,L,tops
-Precious Peak - 5 Items,4,100,0,XL,tops
-Precious Peak - 5 Items,4,20,0,XS,leggings
-Precious Peak - 5 Items,4,75,0,S,leggings
-Precious Peak - 5 Items,4,0,0,M,leggings
-Precious Peak - 5 Items,4,70,0,L,leggings
-Precious Peak - 5 Items,4,50,0,XL,leggings
-Precious Peak - 5 Items,4,75,0,XS,sports-bra
-Precious Peak - 5 Items,4,150,0,S,sports-bra
-Precious Peak - 5 Items,4,0,0,M,sports-bra
-Precious Peak - 5 Items,4,150,0,L,sports-bra
-Precious Peak - 5 Items,4,100,0,XL,sports-bra
-Core Strength - 5 Items,5,0,0,XS,tops
-Core Strength - 5 Items,5,90,0,S,tops
-Core Strength - 5 Items,5,40,0,M,tops
-Core Strength - 5 Items,5,150,0,L,tops
-Core Strength - 5 Items,5,75,0,XL,tops
-Core Strength - 5 Items,5,0,0,XS,leggings
-Core Strength - 5 Items,5,20,0,S,leggings
-Core Strength - 5 Items,5,40,0,M,leggings
-Core Strength - 5 Items,5,50,0,L,leggings
-Core Strength - 5 Items,5,150,0,XL,leggings
-Core Strength - 5 Items,5,45,0,XS,sports-bra
-Core Strength - 5 Items,5,100,0,S,sports-bra
-Core Strength - 5 Items,5,40,0,M,sports-bra
-Core Strength - 5 Items,5,150,0,L,sports-bra
-Core Strength - 5 Items,5,30,0,XL,sports-bra
+Spring Fling - 5 Items,1,40,0,XS,tops
+Spring Fling - 5 Items,1,250,0,S,tops
+Spring Fling - 5 Items,1,0,0,M,tops
+Spring Fling - 5 Items,1,0,0,L,tops
+Spring Fling - 5 Items,1,0,0,XL,tops
+Spring Fling - 5 Items,1,40,0,XS,leggings
+Spring Fling - 5 Items,1,250,0,S,leggings
+Spring Fling - 5 Items,1,0,0,M,leggings
+Spring Fling - 5 Items,1,0,0,L,leggings
+Spring Fling - 5 Items,1,0,0,XL,leggings
+Spring Fling - 5 Items,1,40,0,XS,sports-bra
+Spring Fling - 5 Items,1,150,0,S,sports-bra
+Spring Fling - 5 Items,1,0,0,M,sports-bra
+Spring Fling - 5 Items,1,0,0,L,sports-bra
+Spring Fling - 5 Items,1,0,0,XL,sports-bra
+Sassy Sol - 5 Items,2,30,0,XS,tops
+Sassy Sol - 5 Items,2,50,0,S,tops
+Sassy Sol - 5 Items,2,0,0,M,tops
+Sassy Sol - 5 Items,2,100,0,L,tops
+Sassy Sol - 5 Items,2,75,0,XL,tops
+Sassy Sol - 5 Items,2,30,0,XS,leggings
+Sassy Sol - 5 Items,2,50,0,S,leggings
+Sassy Sol - 5 Items,2,0,0,M,leggings
+Sassy Sol - 5 Items,2,100,0,L,leggings
+Sassy Sol - 5 Items,2,75,0,XL,leggings
+Sassy Sol - 5 Items,2,30,0,XS,sports-bra
+Sassy Sol - 5 Items,2,50,0,S,sports-bra
+Sassy Sol - 5 Items,2,0,0,M,sports-bra
+Sassy Sol - 5 Items,2,100,0,L,sports-bra
+Sassy Sol - 5 Items,2,75,0,XL,sports-bra
+Stargazer - 5 Items,3,65,0,XS,tops
+Stargazer - 5 Items,3,100,0,S,tops
+Stargazer - 5 Items,3,0,0,M,tops
+Stargazer - 5 Items,3,200,0,L,tops
+Stargazer - 5 Items,3,100,0,XL,tops
+Stargazer - 5 Items,3,65,0,XS,leggings
+Stargazer - 5 Items,3,100,0,S,leggings
+Stargazer - 5 Items,3,0,0,M,leggings
+Stargazer - 5 Items,3,150,0,L,leggings
+Stargazer - 5 Items,3,100,0,XL,leggings
+Stargazer - 5 Items,3,90,0,XS,sports-jacket
+Stargazer - 5 Items,3,100,0,S,sports-jacket
+Stargazer - 5 Items,3,0,0,M,sports-jacket
+Stargazer - 5 Items,3,150,0,L,sports-jacket
+Stargazer - 5 Items,3,100,0,XL,sports-jacket
+After The Storm - 5 Items,4,100,0,XS,sports-bra
+After The Storm - 5 Items,4,150,0,S,sports-bra
+After The Storm - 5 Items,4,0,0,M,sports-bra
+After The Storm - 5 Items,4,150,0,L,sports-bra
+After The Storm - 5 Items,4,100,0,XL,sports-bra
+After The Storm - 5 Items,4,100,0,XS,leggings
+After The Storm - 5 Items,4,150,0,S,leggings
+After The Storm - 5 Items,4,0,0,M,leggings
+After The Storm - 5 Items,4,150,0,L,leggings
+After The Storm - 5 Items,4,100,0,XL,leggings
+After The Storm - 5 Items,4,100,0,XS,sports-jacket
+After The Storm - 5 Items,4,150,0,S,sports-jacket
+After The Storm - 5 Items,4,0,0,M,sports-jacket
+After The Storm - 5 Items,4,150,0,L,sports-jacket
+After The Storm - 5 Items,4,100,0,XL,sports-jacket
+Royal Flush - 5 Items,5,50,0,XS,sports-bra
+Royal Flush - 5 Items,5,150,0,S,sports-bra
+Royal Flush - 5 Items,5,0,0,M,sports-bra
+Royal Flush - 5 Items,5,250,0,L,sports-bra
+Royal Flush - 5 Items,5,100,0,XL,sports-bra
+Royal Flush - 5 Items,5,75,0,XS,leggings
+Royal Flush - 5 Items,5,200,0,S,leggings
+Royal Flush - 5 Items,5,0,0,M,leggings
+Royal Flush - 5 Items,5,200,0,L,leggings
+Royal Flush - 5 Items,5,100,0,XL,leggings
+Royal Flush - 5 Items,5,75,0,XS,tops
+Royal Flush - 5 Items,5,200,0,S,tops
+Royal Flush - 5 Items,5,0,0,M,tops
+Royal Flush - 5 Items,5,200,0,L,tops
+Royal Flush - 5 Items,5,100,0,XL,tops
+Pacific Crush - 5 Items,6,15,0,XS,sports-bra
+Pacific Crush - 5 Items,6,60,0,S,sports-bra
+Pacific Crush - 5 Items,6,0,0,M,sports-bra
+Pacific Crush - 5 Items,6,0,0,L,sports-bra
+Pacific Crush - 5 Items,6,50,0,XL,sports-bra
+Pacific Crush - 5 Items,6,30,0,XS,leggings
+Pacific Crush - 5 Items,6,40,0,S,leggings
+Pacific Crush - 5 Items,6,0,0,M,leggings
+Pacific Crush - 5 Items,6,0,0,L,leggings
+Pacific Crush - 5 Items,6,50,0,XL,leggings
+Pacific Crush - 5 Items,6,30,0,XS,tops
+Pacific Crush - 5 Items,6,40,0,S,tops
+Pacific Crush - 5 Items,6,0,0,M,tops
+Pacific Crush - 5 Items,6,0,0,L,tops
+Pacific Crush - 5 Items,6,50,0,XL,tops
