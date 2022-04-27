@@ -4,6 +4,19 @@ class Subscription < ActiveRecord::Base
     self.table_name = "subscriptions"
 end
 
+class SubCollectionSize < ActiveRecord::Base
+    self.table_name = "sub_collection_sizes"
+
+end
+
+class Order < ActiveRecord::Base
+    self.table_name = "orders"
+end
+
+class OrderCollectionSize < ActiveRecord::Base
+    self.table_name = "order_collection_sizes"
+end
+
 class SubscriptionLineItem < ActiveRecord::Base
     self.table_name = "sub_line_items"
 end

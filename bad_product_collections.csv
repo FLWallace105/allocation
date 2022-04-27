@@ -1,0 +1,15 @@
+subscription_id,email,product_collection,
+93859097,erikalohr@icloud.com, Posies In Paris - 3 Items,"Reactivation, looks like a CS Rep error"
+179276544,carion.amy@gmail.com,3 Months - 2 Items,Looks like a Purchase
+179276558,carion.amy@gmail.com,3 Months - 3 Items,Looks like a Purchase
+179276569,carion.amy@gmail.com,3 Months - 5 Items,Looks like a Purchase
+155901280,melaz1@cox.net,Purple Rain - 5 Items,Looks like a CS Error
+------ ORDERS ----------,,,
+order_id,scheduled_at,email,product_collection
+281938276,2021-09-05 00:00:00 UTC,ashley.jass@gmail.com,Ellie Picks
+286745888,2021-09-26 00:00:00 UTC,jenna.mandolini@hotmail.com,null product collection
+286484541,2021-09-25 00:00:00 UTC,ajcoyne77@gmail.com,null product collection
+286111952,2021-09-24 00:00:00 UTC,jennysedlacko@gmail.com,null product collection
+286745889,2021-10-26 00:00:00 UTC,jenna.mandolini@hotmail.com,null product collection
+286484542,2021-10-25 00:00:00 UTC,ajcoyne77@gmail.com,null product collection
+286111956,2021-10-24 00:00:00 UTC,jennysedlacko@gmail.com,null product collection

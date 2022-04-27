@@ -38,20 +38,77 @@ module Allocation
 
     end
 
+    def bad_product_collections
+        my_bad_product_collections_subs = [' Posies In Paris - 3 Items', '3 Months - 2 Items', '3 Months - 3 Items', '3 Months - 5 Items', 'Purple Rain - 5 Items']
+        my_bad_product_collection_orders = ['Ellie Picks', nil]
+
+        File.delete('bad_product_collections.csv') if File.exist?('bad_product_collections.csv')
+        #Headers for CSV
+        column_header = ["subscription_id", "email", "product_collection"]
+        CSV.open('bad_product_collections.csv','a+', :write_headers=> true, :headers => column_header) do |hdr|
+            column_header = nil
+
+        my_bad_product_collections_subs.each do |myb|
+            my_prod_coll = SubCollectionSize.where("product_collection = ?",myb )
+            my_prod_coll.each do |myprd|
+                #puts myprd.inspect
+                subscription_id = myprd.subscription_id
+                my_subscription = Subscription.find_by_subscription_id(subscription_id)
+                #puts my_subscription.inspect
+                puts "#{my_subscription.subscription_id}, #{my_subscription.email}, #{myb}"
+                csv_data_out = [my_subscription.subscription_id, my_subscription.email,myb ]
+                hdr << csv_data_out
+
+            end
+        end
+        csv_data_out = ["------ ORDERS ----------" ]
+        hdr << csv_data_out
+        csv_data_out = ["order_id", "scheduled_at", "email", "product_collection" ]
+        hdr << csv_data_out
+
+        my_bad_product_collection_orders.each do |mybad|
+            my_prod_coll = OrderCollectionSize.where("product_collection = ?", mybad)
+            my_prod_coll.each do |myprd|
+                #puts myprd.inspect
+                order_id = myprd.order_id
+                my_order = Order.find_by_order_id(order_id)
+                puts my_order.inspect
+                csv_data_out = [my_order.order_id, my_order.scheduled_at, my_order.email, mybad ]
+                hdr << csv_data_out
+            end
+
+        end
+
+        my_orders = OrderCollectionSize.where("product_collection is null")
+        my_orders.each do |ord|
+            puts ord.inspect
+            order_id = ord.order_id
+            my_order = Order.find_by_order_id(order_id)
+            puts my_order.inspect
+            if my_order.status == 'QUEUED' && my_order.is_prepaid  == 1
+                csv_data_out = [my_order.order_id, my_order.scheduled_at, my_order.email, "null product collection" ]
+                hdr << csv_data_out
+            end
+
+        end
+
+        end #csv
+    end
+
     def summary_product_collection
         puts "Starting Summary Product Collection Assignments for Next Month"
         my_end_month = Date.today.end_of_month
-        #my_end_month_str = my_end_month.strftime("%Y-%m-%d")
-        my_end_month_str = "2021-02-28"
+        my_end_month_str = my_end_month.strftime("%Y-%m-%d")
+        my_end_month_str = "2022-03-31"
         puts "End of the month = #{my_end_month_str}"
         my_start_month_plus = Date.today 
         my_start_month_plus = my_start_month_plus >> 1
         my_start_month_plus = my_start_month_plus.end_of_month + 1
-        #my_start_month_plus_str = my_start_month_plus.strftime("%Y-%m-%d")
-        my_start_month_plus_str = "2021-04-01"
+        my_start_month_plus_str = my_start_month_plus.strftime("%Y-%m-%d")
+        my_start_month_plus_str = "2022-05-01"
         puts "my start_month_plus_str = #{my_start_month_plus_str}"
 
-        my_sub_counts = "select count(sub_collection_sizes.id), sub_collection_sizes.product_collection from sub_collection_sizes where sub_collection_sizes.next_charge_scheduled_at > \'#{my_end_month_str}\' and sub_collection_sizes.next_charge_scheduled_at < \'#{my_start_month_plus_str}\' and sub_collection_sizes.prepaid = 'f' group by sub_collection_sizes.product_collection order by sub_collection_sizes.product_collection asc "
+        my_sub_counts = "select count(sub_collection_sizes.id), sub_collection_sizes.product_collection from sub_collection_sizes where DATE(sub_collection_sizes.next_charge_scheduled_at) > \'#{my_end_month_str}\' and DATE(sub_collection_sizes.next_charge_scheduled_at) < \'#{my_start_month_plus_str}\'  group by sub_collection_sizes.product_collection order by sub_collection_sizes.product_collection asc "
 
         sub_product_collections = ActiveRecord::Base.connection.execute(my_sub_counts).values
         puts sub_product_collections.inspect
@@ -83,6 +140,7 @@ module Allocation
     
             end
             puts "-------- Now Orders --------"
+            hdr << ["-------- Now Orders --------"]
             order_product_collections.each do |myord|
                 puts myord.inspect
                 csv_data_out = myord
@@ -110,11 +168,17 @@ module Allocation
         # Now reset index
         ActiveRecord::Base.connection.reset_pk_sequence!('raw_size_totals')
 
+        my_sub_count = Subscription.all.count
+        puts "we have #{my_sub_count} subs"
+        
+
         size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
 
         new_size_count_sql = "insert into raw_size_totals (size_count, size_name, size_value) select count(subscriptions.id), sub_line_items.name, sub_line_items.value from subscriptions, sub_line_items where subscriptions.subscription_id = sub_line_items.subscription_id and subscriptions.status = 'ACTIVE' and subscriptions.product_title not ilike '3%month%' and subscriptions.next_charge_scheduled_at is not null and (sub_line_items.name = 'leggings' or sub_line_items.name = 'sports-bra' or sub_line_items.name = 'tops' or sub_line_items.name = 'sports-jacket') group by sub_line_items.name, sub_line_items.value"
 
         ActiveRecord::Base.connection.execute(new_size_count_sql)
+
+        
 
 
     end
@@ -204,6 +268,9 @@ module Allocation
         
         when "XL", "xl", "Xl", "xL"
             my_sizes["XL"] = my_sizes["XL"] + size_count
+
+        when "XXL", "xxl", "xxL"
+            my_sizes["XXL"] = my_sizes["XXL"] + size_count 
         
         else 
             #figure its a blank, assign to XS
@@ -239,10 +306,10 @@ module Allocation
         puts "Getting real size counts SUBS"
         figure_size_counts
         #start with tops
-        tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-        leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-        sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-        sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+        tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+        leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+        sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+        sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
 
         my_raw_sizes = RawSizeTotal.all
         my_raw_sizes.each do |myraw|
@@ -271,37 +338,37 @@ module Allocation
         size_file = File.open('size_count.csv', 'w')
         size_file.write("SUBSCRIPTION SIZES\n")
         size_file.write("Tops\n")
-        size_file.write("XS,S,M,L,XL\n")
-        size_array = ["XS", "S", "M", "L", "XL"]
+        size_file.write("XS,S,M,L,XL,XXL\n")
+        size_array = ["XS", "S", "M", "L", "XL", "XXL"]
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{tops_sizes[mys]},")
             else
                 size_file.write("#{tops_sizes[mys]}\n")
             end
         end
         size_file.write("Leggings\n")
-        size_file.write("XS,S,M,L,XL\n")
+        size_file.write("XS,S,M,L,XL,XXL\n")
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{leggings_sizes[mys]},")
             else
                 size_file.write("#{leggings_sizes[mys]}\n")
             end
         end
         size_file.write("Sports Bra\n")
-        size_file.write("XS,S,M,L,XL\n")
+        size_file.write("XS,S,M,L,XL,XXL\n")
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{sports_bra_sizes[mys]},")
             else
                 size_file.write("#{sports_bra_sizes[mys]}\n")
             end
         end
         size_file.write("Sports Jacket\n")
-        size_file.write("XS,S,M,L,XL\n")
+        size_file.write("XS,S,M,L,XL,XXL\n")
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{sports_jacket_sizes[mys]},")
             else
                 size_file.write("#{sports_jacket_sizes[mys]}\n")
@@ -315,10 +382,10 @@ module Allocation
         puts "Getting real size counts ORDERS"
         
         #start with tops
-        tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-        leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-        sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-        sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+        tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+        leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+        sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+        sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
 
         my_raw_sizes = RawSizeTotal.all
         my_raw_sizes.each do |myraw|
@@ -343,37 +410,37 @@ module Allocation
 
         size_file.write("ORDERS SIZES\n")
         size_file.write("Tops\n")
-        size_file.write("XS,S,M,L,XL\n")
-        size_array = ["XS", "S", "M", "L", "XL"]
+        size_file.write("XS,S,M,L,XL,XXL\n")
+        size_array = ["XS", "S", "M", "L", "XL", "XXL"]
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{tops_sizes[mys]},")
             else
                 size_file.write("#{tops_sizes[mys]}\n")
             end
         end
         size_file.write("Leggings\n")
-        size_file.write("XS,S,M,L,XL\n")
+        size_file.write("XS,S,M,L,XL,XXL\n")
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{leggings_sizes[mys]},")
             else
                 size_file.write("#{leggings_sizes[mys]}\n")
             end
         end
         size_file.write("Sports Bra\n")
-        size_file.write("XS,S,M,L,XL\n")
+        size_file.write("XS,S,M,L,XL,XXL\n")
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{sports_bra_sizes[mys]},")
             else
                 size_file.write("#{sports_bra_sizes[mys]}\n")
             end
         end
         size_file.write("Sports Jacket\n")
-        size_file.write("XS,S,M,L,XL\n")
+        size_file.write("XS,S,M,L,XL,XXL\n")
         size_array.each do |mys|
-            if mys != "XL"
+            if mys != "XXL"
                 size_file.write("#{sports_jacket_sizes[mys]},")
             else
                 size_file.write("#{sports_jacket_sizes[mys]}\n")
@@ -385,10 +452,10 @@ module Allocation
     puts "Getting real size counts NULL VALUE SUBS"
     
     #start with tops
-    tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-    leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-    sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-    sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+    tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+    leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+    sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+    sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
 
     my_raw_sizes = RawSizeTotal.all
     my_raw_sizes.each do |myraw|
@@ -413,37 +480,37 @@ module Allocation
 
     size_file.write("NULLS (could include prepaid nulls) SIZES\n")
     size_file.write("Tops\n")
-    size_file.write("XS,S,M,L,XL\n")
-    size_array = ["XS", "S", "M", "L", "XL"]
+    size_file.write("XS,S,M,L,XL,XXL\n")
+    size_array = ["XS", "S", "M", "L", "XL", "XXL"]
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{tops_sizes[mys]},")
         else
             size_file.write("#{tops_sizes[mys]}\n")
         end
     end
     size_file.write("Leggings\n")
-    size_file.write("XS,S,M,L,XL\n")
+    size_file.write("XS,S,M,L,XL,XXL\n")
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{leggings_sizes[mys]},")
         else
             size_file.write("#{leggings_sizes[mys]}\n")
         end
     end
     size_file.write("Sports Bra\n")
-    size_file.write("XS,S,M,L,XL\n")
+    size_file.write("XS,S,M,L,XL,XXL\n")
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{sports_bra_sizes[mys]},")
         else
             size_file.write("#{sports_bra_sizes[mys]}\n")
         end
     end
     size_file.write("Sports Jacket\n")
-    size_file.write("XS,S,M,L,XL\n")
+    size_file.write("XS,S,M,L,XL,XXL\n")
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{sports_jacket_sizes[mys]},")
         else
             size_file.write("#{sports_jacket_sizes[mys]}\n")
@@ -455,10 +522,10 @@ module Allocation
     puts "Getting real size counts Prepaid Subs Charging Next Month"
     
     #start with tops
-    tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-    leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-    sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
-    sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0}
+    tops_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+    leggings_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+    sports_bra_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
+    sports_jacket_sizes = {"XS" => 0, "S" => 0, "M" => 0, "L" => 0, "XL" => 0, "XXL" => 0}
 
     my_raw_sizes = RawSizeTotal.all
     my_raw_sizes.each do |myraw|
@@ -483,37 +550,37 @@ module Allocation
 
     size_file.write("Prepaid Charging Next Month Subs SIZES\n")
     size_file.write("Tops\n")
-    size_file.write("XS,S,M,L,XL\n")
-    size_array = ["XS", "S", "M", "L", "XL"]
+    size_file.write("XS,S,M,L,XL,XXK\n")
+    size_array = ["XS", "S", "M", "L", "XL", "XXL"]
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{tops_sizes[mys]},")
         else
             size_file.write("#{tops_sizes[mys]}\n")
         end
     end
     size_file.write("Leggings\n")
-    size_file.write("XS,S,M,L,XL\n")
+    size_file.write("XS,S,M,L,XL,XXL\n")
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{leggings_sizes[mys]},")
         else
             size_file.write("#{leggings_sizes[mys]}\n")
         end
     end
     size_file.write("Sports Bra\n")
-    size_file.write("XS,S,M,L,XL\n")
+    size_file.write("XS,S,M,L,XL,XXL\n")
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{sports_bra_sizes[mys]},")
         else
             size_file.write("#{sports_bra_sizes[mys]}\n")
         end
     end
     size_file.write("Sports Jacket\n")
-    size_file.write("XS,S,M,L,XL\n")
+    size_file.write("XS,S,M,L,XL,XXL\n")
     size_array.each do |mys|
-        if mys != "XL"
+        if mys != "XXL"
             size_file.write("#{sports_jacket_sizes[mys]},")
         else
             size_file.write("#{sports_jacket_sizes[mys]}\n")

@@ -26,6 +26,16 @@ end
 
 end
 
+namespace :reporting do
+    desc 'reporting bad product_collections'
+    task :report_bad_product_collections do |t|
+        Allocation::Setup.new.bad_product_collections
+
+    end
+
+
+end
+
 namespace :allocate do
 
 #allocation_switchable_products_helper(myfile)
